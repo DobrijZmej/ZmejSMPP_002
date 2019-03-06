@@ -7,13 +7,20 @@ import java.util.Map;
 public class Configuration {
     private final String fileName = "config.yml";
     private Yaml yaml;
-    private Map<String, Object> data = new LinkedHashMap<>();
+
+    private Map<String, Map<String, Object>> data = new LinkedHashMap<>();
 
     public Configuration(){
         yaml = new Yaml();
+        readFile();
+    }
+
+    private void readFile(){
         InputStream is = this.getClass().getClassLoader().getResourceAsStream(fileName);
         if(is != null) {
             data = yaml.load(is);
+//            System.out.println(data);
+//            System.out.println(data.General.get("Port"));
             try {
                 is.close();
             } catch (IOException e) {
@@ -23,7 +30,6 @@ public class Configuration {
             setDefault();
             dump();
         };
-//        System.out.println(data);
     }
 
     private void setDefault(){
@@ -41,6 +47,16 @@ public class Configuration {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
 
+    public int readPort(){
+//        Map<String, Object> general = new LinkedHashMap<>();
+//        System.out.println(data);
+//        general = data.get("General");
+//        System.out.println(data.get("General"));
+//        System.out.println(data.get("General").get("Port"));
+//        System.out.println(data.get("General"));
+        return Integer.parseInt(data.get("General").get("Port").toString());
+//        return 1;
     }
 }

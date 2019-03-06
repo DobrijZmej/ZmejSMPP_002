@@ -9,7 +9,7 @@ public class ZmejSMPP {
     public static void main(String[] args) {
         try{
             Configuration conf = new Configuration();
-            Listener l = new Listener(2775);
+            Listener l = new Listener(conf.readPort());
             l.stop();
         } catch (IOException e) {
             logger.error(e.getMessage());
