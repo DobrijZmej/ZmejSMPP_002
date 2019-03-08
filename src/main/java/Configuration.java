@@ -10,14 +10,14 @@ public class Configuration {
 
     private Map<String, Map<String, Object>> data = new LinkedHashMap<>();
 
-    public Configuration(){
+    public Configuration() {
         yaml = new Yaml();
         readFile();
     }
 
-    private void readFile(){
+    private void readFile() {
         InputStream is = this.getClass().getClassLoader().getResourceAsStream(fileName);
-        if(is != null) {
+        if (is != null) {
             data = yaml.load(is);
 //            System.out.println(data);
 //            System.out.println(data.General.get("Port"));
@@ -29,27 +29,26 @@ public class Configuration {
         } else {
             setDefault();
             dump();
-        };
+        }
     }
 
-    private void setDefault(){
+    private void setDefault() {
         Map<String, Object> general = new LinkedHashMap<>();
         general.put("Port", 2775);
+        general.put("LogLevel", "DEBUG");
         data.put("General", general);
     }
 
     private void dump() {
-        String filePath = this.getClass().getResource("").getPath()+fileName;
-        try (StringWriter sw = new StringWriter();
-               FileWriter fw = new FileWriter(filePath);) {
-            yaml.dump(data, sw);
-            fw.write(sw.toString());
+        String filePath = this.getClass().getResource("").getPath() + fileName;
+        try (FileWriter fw = new FileWriter(filePath)) {
+            fw.write(yaml.dumpAsMap(data));
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public int readPort(){
+    public int readPort() {
 //        Map<String, Object> general = new LinkedHashMap<>();
 //        System.out.println(data);
 //        general = data.get("General");
