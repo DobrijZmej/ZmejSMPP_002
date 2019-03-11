@@ -1,11 +1,19 @@
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.yaml.snakeyaml.Yaml;
 
-import java.io.*;
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class Configuration {
-    private final String fileName = "config.yml";
+    static final Logger logger = LoggerFactory.getLogger(ZmejSMPP.class);
+    private static final String FILE_NAME = "config.yml";
     private Yaml yaml;
 
     private Map<String, Map<String, Object>> data = new LinkedHashMap<>();
@@ -16,33 +24,34 @@ public class Configuration {
     }
 
     private void readFile() {
-        InputStream is = this.getClass().getClassLoader().getResourceAsStream(fileName);
-        if (is != null) {
-            data = yaml.load(is);
-//            System.out.println(data);
-//            System.out.println(data.General.get("Port"));
-            try {
-                is.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        } else {
+        // если файла конфига нет - то заполняем значения по умолчанию и сохраняем
+        if (Files.notExists(Paths.get(FILE_NAME))) {
             setDefault();
-            dump();
+            save();
+        }
+        // тут конфиг уже должен быть, соответственно читаем из него данные и загружаем в нашу переменную
+        try {
+            String s = new String(Files.readAllBytes(Paths.get(FILE_NAME)));
+//            System.out.println(s);
+            data = yaml.load(s);
+//            System.out.println(data);
+        } catch (IOException e) {
+            e.printStackTrace();
+
         }
     }
 
     private void setDefault() {
         Map<String, Object> general = new LinkedHashMap<>();
         general.put("Port", 2775);
-        general.put("LogLevel", "DEBUG");
         data.put("General", general);
     }
 
-    private void dump() {
-        String filePath = this.getClass().getResource("").getPath() + fileName;
-        try (FileWriter fw = new FileWriter(filePath)) {
-            fw.write(yaml.dumpAsMap(data));
+    private void save() {
+        String stringYaml = yaml.dumpAsMap(data);
+        ByteBuffer buffer = ByteBuffer.wrap(stringYaml.getBytes());
+        try (FileChannel file = FileChannel.open(Paths.get(FILE_NAME), StandardOpenOption.CREATE, StandardOpenOption.WRITE)) {
+            file.write(buffer);
         } catch (IOException e) {
             e.printStackTrace();
         }
