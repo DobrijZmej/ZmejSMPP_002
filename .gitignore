@@ -1,0 +1,6 @@
+.idea/
+config.yml
+log_file.log
+target/
+*.iml
+
