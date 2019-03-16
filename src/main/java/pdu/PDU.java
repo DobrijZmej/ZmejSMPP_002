@@ -63,17 +63,15 @@ public class PDU {
      * @return - повертається одна чи інша послідовність, у залежності від переданого типу
      */
     public static String PDUtoString(byte[] data, int type) {
-        StringBuilder s = new StringBuilder();
-        int i = data.length;
-        for (int r = 0; r < i; r++) {
-            int b = data[r];
+        StringBuilder result = new StringBuilder();
+        for (int b : data) {
             if (type == 16) {
-                s.append(b < 10 ? "0" + Integer.toString(b, 16) : Integer.toString(b, 16));
+                result.append(b < 10 ? "0" + Integer.toString(b, 16) : Integer.toString(b, 16));
             } else {
-                s.append(b).append(" ");
+                result.append(b).append(" ");
             }
         }
-        return s.toString();
+        return result.toString();
     }
 
     /**
@@ -92,6 +90,25 @@ public class PDU {
             shiftBits -= 8;
         }
         return result;
+    }
+
+    /**
+     * Метод приймає байтовий масив, так конвертує його з вказаної позиції у стрічку символів
+     * Конвертація відбувається доти, доки не буде знайдено символ 0x00, чи до завершення байтового масиву
+     *
+     * @param data   - байтовий масив
+     * @param offset - позиція, з якої треба почати конвертацію
+     * @return - стрічка символів
+     */
+    public static String getStringData(byte[] data, int offset) {
+        StringBuilder result = new StringBuilder();
+        for (int i = offset; i < data.length; i++) {
+            result.append(data[i]);
+            if (data[i] == 0) {
+                return result.toString();
+            }
+        }
+        return result.toString();
     }
 
 }

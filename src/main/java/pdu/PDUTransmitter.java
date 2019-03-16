@@ -36,11 +36,11 @@ public class PDUTransmitter extends PDU {
         offset += 4;
         this.sequenceNumber = ByteBuffer.wrap(data, offset, 4).getInt();
         offset += 4;
-        this.systemId = getStringData(data, offset);
+        this.systemId = PDU.getStringData(data, offset);
         offset += systemId.length();
-        this.password = getStringData(data, offset);
+        this.password = PDU.getStringData(data, offset);
         offset += password.length();
-        this.systemTun = getStringData(data, offset);
+        this.systemTun = PDU.getStringData(data, offset);
 //        System.arraycopy(data, 0, this.commandLength, 0, 4);
         logger.debug("systemId:" + systemId);
         logger.debug("password:" + password);
@@ -53,14 +53,4 @@ public class PDUTransmitter extends PDU {
         return sequenceNumber;
     }
 
-    private String getStringData(byte[] data, int offset) {
-        String result = "";
-        for (int i = offset; i < data.length; i++) {
-            result += Character.toString(data[i]);
-            if (data[i] == 0) {
-                return result;
-            }
-        }
-        return result;
-    }
 }
