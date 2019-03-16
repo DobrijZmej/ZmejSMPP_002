@@ -1,13 +1,11 @@
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.naming.ldap.SortKey;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.ByteBuffer;
 import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * Клас для запису в чергу повідомлень, що надходять із мережі
@@ -27,17 +25,25 @@ public class MessageProducer implements Runnable {
         this.queue = queue;
     }
 
+    /**
+     * Основний цикл обробки даних із сокету
+     *
+     */
     @Override
     public void run() {
 
         while (true) {
             try {
+                   // підключаємось до сокету
                 fromclient = this.server.accept();
+                   // стартуємо обмін даними
                 startSession(fromclient);
 //                startSession(fromclient);
+                    // закриваємо сесію
                 fromclient.close();
-//                Thread.sleep(1000);
                 logger.info("Waiting data");
+
+                //Thread.sleep(100);
 //            } catch (InterruptedException e) {
 //                e.printStackTrace();
 //                return;
@@ -54,11 +60,14 @@ public class MessageProducer implements Runnable {
      *
      * @param fromClient
      */
-    private void startSession(Socket fromClient){
+    private void startSession(Socket fromClient) throws IOException {
         byte[] buffer = readData(fromClient);
 //        System.out.println(buffer);
         if(buffer.length>0){
-            decodeData(buffer);
+            PDUTransmitter trans = decodeData(buffer);
+            OutputStream os = fromClient.getOutputStream();
+            PDUTransmitterResp resp = new PDUTransmitterResp(PduConstants.ESME_ROK, trans.getSequenceNumber(), "TascomBank");
+            os.write(resp.getPdu());
         }
 
 
@@ -70,10 +79,12 @@ public class MessageProducer implements Runnable {
      *
      * @param buffer
      */
-    private void decodeData(byte[] buffer) {
-        for(int i = 0; i<buffer.length; i++){
-            System.out.println(buffer[i]);
-        }
+    private PDUTransmitter decodeData(byte[] buffer) {
+//        for(int i = 0; i<buffer.length; i++){
+//            System.out.println(buffer[i]);
+//        }
+        PDUTransmitter trans = new PDUTransmitter(buffer);
+        return trans;
     }
 
     /**
