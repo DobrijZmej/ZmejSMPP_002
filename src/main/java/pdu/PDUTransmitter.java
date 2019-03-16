@@ -1,3 +1,5 @@
+package pdu;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -6,8 +8,8 @@ import java.nio.ByteBuffer;
 /**
  * Клас для обробки початкового PDU з початковими командами
  */
-public class PDUTransmitter {
-    static final Logger logger = LoggerFactory.getLogger(ZmejSMPP.class);
+public class PDUTransmitter extends PDU {
+    static final Logger logger = LoggerFactory.getLogger(PDUTransmitter.class);
     private byte[] data;
 
     private int commandLength;
@@ -23,6 +25,7 @@ public class PDUTransmitter {
     private int addrRange;
 
     public PDUTransmitter(byte[] data) {
+        super(data);
         int offset = 0;
         this.data = data;
         this.commandLength = ByteBuffer.wrap(data, offset, 4).getInt();
@@ -39,12 +42,9 @@ public class PDUTransmitter {
         offset += password.length();
         this.systemTun = getStringData(data, offset);
 //        System.arraycopy(data, 0, this.commandLength, 0, 4);
-        System.out.println(systemId);
-        System.out.println(password);
-        System.out.println(systemTun);
-        logger.debug("systemId:"+systemId);
-        logger.debug("password:"+password);
-        logger.debug("systemTun:"+systemTun);
+        logger.debug("systemId:" + systemId);
+        logger.debug("password:" + password);
+        logger.debug("systemTun:" + systemTun);
 
     }
 
@@ -55,9 +55,9 @@ public class PDUTransmitter {
 
     private String getStringData(byte[] data, int offset) {
         String result = "";
-        for(int i=offset;i<data.length;i++){
+        for (int i = offset; i < data.length; i++) {
             result += Character.toString(data[i]);
-            if(data[i]==0){
+            if (data[i] == 0) {
                 return result;
             }
         }

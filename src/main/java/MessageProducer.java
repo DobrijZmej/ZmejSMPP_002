@@ -1,5 +1,6 @@
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import pdu.*;
 
 import java.io.*;
 import java.net.ServerSocket;
@@ -27,64 +28,73 @@ public class MessageProducer implements Runnable {
 
     /**
      * Основний цикл обробки даних із сокету
-     *
      */
     @Override
     public void run() {
 
-        while (true) {
-            try {
-                   // підключаємось до сокету
-                fromclient = this.server.accept();
-                   // стартуємо обмін даними
-                startSession(fromclient);
-//                startSession(fromclient);
-                    // закриваємо сесію
-                fromclient.close();
-                logger.info("Waiting data");
-
-                //Thread.sleep(100);
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//                return;
-            } catch (IOException e) {
-                e.printStackTrace();
-                return;
-            }
+        do try {
+            // підключаємось до сокету
+            fromclient = this.server.accept();
+            // стартуємо обмін даними
+            startSession(fromclient);
+            // закриваємо сесію
+            fromclient.close();
+            // Очікуємо наступного підключення
+            logger.info("Waiting data");
+        } catch (IOException e) {
+            e.printStackTrace();
+            logger.error("EXCEPTION: ", e);
         }
+        while (true);
 
     }
 
     /**
      * Очікування даних від клієнта з черги
      *
-     * @param fromClient
+     * @param fromClient - посилання на сесію з сокетом
      */
     private void startSession(Socket fromClient) throws IOException {
         byte[] buffer = readData(fromClient);
-//        System.out.println(buffer);
-        if(buffer.length>0){
-            PDUTransmitter trans = decodeData(buffer);
-            OutputStream os = fromClient.getOutputStream();
-            PDUTransmitterResp resp = new PDUTransmitterResp(PduConstants.ESME_ROK, trans.getSequenceNumber(), "TascomBank");
-            os.write(resp.getPdu());
+        if (buffer.length <= 0) {
+            return;
         }
-
-
-
+        PDU pdu = new PDU(buffer);
+        switch (pdu.getCommandId()) {
+            case (PduConstants.BIND_TRANSMITTER):
+                logger.info("Incoming command_id is defined as TRANSMITTER");
+                processTransmitter(buffer, fromClient);
+                break;
+        }
     }
 
     /**
-     * Дешифрування надісланих даних
+     * Обробка запиту, який починається з команди трансмітера
      *
-     * @param buffer
+     * @param data    - байтовий потік
+     * @param session - посилання на сессію з сокетом
+     * @throws IOException - так, таке може статися
      */
-    private PDUTransmitter decodeData(byte[] buffer) {
-//        for(int i = 0; i<buffer.length; i++){
-//            System.out.println(buffer[i]);
-//        }
-        PDUTransmitter trans = new PDUTransmitter(buffer);
-        return trans;
+    private void processTransmitter(byte[] data, Socket session) throws IOException {
+        // це перший запрос із черги, розпочинаємо обробку
+        PDUTransmitter trans = new PDUTransmitter(data);
+        // вдалося отримати дані, починаємо зворотній зв'язок
+        OutputStream os = session.getOutputStream();
+        // формуємо першу відповідь
+        PDUTransmitterResp resp = new PDUTransmitterResp(PduConstants.ESME_ROK, trans.getSequenceNumber(), "TascomBank");
+        os.write(resp.getPdu());
+        // Отримуємо наступну чергу даних
+        data = readData(session);
+        if (data.length <= 0) {
+            throw new RuntimeException("Not found data on second step...");
+        }
+        PDU pdu = new PDU(data);
+        if (pdu.getCommandId() == PduConstants.ENQUIRE_LINK) {
+            PDUEnquireLinkResp linkResp = new PDUEnquireLinkResp(PduConstants.ESME_ROK, pdu.getSequenceNumber());
+            os.write(linkResp.getPdu());
+        }
+        // Отримуємо наступну чергу даних
+        data = readData(session);
     }
 
     /**
@@ -93,69 +103,22 @@ public class MessageProducer implements Runnable {
      * @param fromClient - сокет, з якого очікуються дані
      * @return масив отриманих даних
      */
-    private byte[] readData(Socket fromClient) {
+    private byte[] readData(Socket fromClient) throws IOException {
         byte[] buffer = new byte[1024];
         byte[] bufferReturn = null;
         try {
             int i = fromClient.getInputStream().read(buffer);
-            if(i > -1) {
+            if (i > -1) {
                 bufferReturn = new byte[i];
                 System.arraycopy(buffer, 0, bufferReturn, 0, i);
-                logger.debug("Read ["+i+"] bytes:");
-                StringBuilder s = new StringBuilder();
-                StringBuilder d = new StringBuilder();
-                for (int r = 0; r<i; r++){
-                    int b = buffer[r];
-                    s.append(b<10?"0"+Integer.toString(b, 16):Integer.toString(b, 16));
-                    d.append(b).append(" ");
-                }
-                logger.debug(s.toString());
-                logger.debug(d.toString());
+                logger.debug("Read [" + i + "] bytes:");
+                logger.debug(PDU.PDUtoString(bufferReturn, 16));
+                logger.debug(PDU.PDUtoString(bufferReturn, 10));
             }
         } catch (IOException e) {
-            e.printStackTrace();
-            System.out.println("Error create BufferedReader");
             logger.error(e.getMessage(), e);
+            throw e;
         }
         return bufferReturn;
-    }
-
-    private void StartSession_old(Socket fromclient) {
-//        BufferedReader in;
-        PrintWriter out;
-        try {
-            DataInputStream in = new DataInputStream(new BufferedInputStream(fromclient.getInputStream()));
-//            in = new BufferedReader(new InputStreamReader(fromclient.getInputStream()));
-            out = new PrintWriter(fromclient.getOutputStream(), true);
-            byte[] buffer = new byte[1024];
-            String s = "";
-//            int i = in.read(buffer);
-            int i = fromclient.getInputStream().read(buffer);
-//            if(i > -1) {
-//                byte[]
-//            }
-            while (i > -1) {
-                logger.info("Read " + i + " bytes");
-                String r = String.valueOf((int) buffer[0]);
-                logger.info(r);
-                s = s + r;
-                i = fromclient.getInputStream().read(buffer);
-            }
-            logger.info(s);
-//            ReadSesion(in, out);
-            String input;
-//            while ((input = in.readLine()) != null) {
-//                if (input.equalsIgnoreCase("exit")) break;
-//                out.println("S ::: " + input);
-//                System.out.println(input);
-//                logger.info(input);
-//            }
-            out.close();
-            in.close();
-        } catch (IOException e) {
-            System.out.println("Error create BufferedReader");
-            logger.error(e.getMessage(), e);
-            System.exit(-1);
-        }
     }
 }
