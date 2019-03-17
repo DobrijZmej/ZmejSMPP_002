@@ -95,6 +95,19 @@ public class MessageProducer implements Runnable {
         }
         // Отримуємо наступну чергу даних
         data = readData(session);
+        pdu = new PDU(data);
+        if(pdu.getCommandId()==PduConstants.SUBMIT_SM){
+            PDUSubmitSm message = new PDUSubmitSm(data);
+            message.init();
+            PDUSubmitSmResp messageResp = new PDUSubmitSmResp(PduConstants.ESME_ROK, pdu.getSequenceNumber(), "1");
+            os.write(messageResp.getPdu());
+        }
+        data = readData(session);
+        pdu = new PDU(data);
+        if (pdu.getCommandId() == PduConstants.UNBIND) {
+            PDUUnbindResp unbindResp = new PDUUnbindResp(PduConstants.ESME_ROK, pdu.getSequenceNumber());
+            os.write(unbindResp.getPdu());
+        }
     }
 
     /**

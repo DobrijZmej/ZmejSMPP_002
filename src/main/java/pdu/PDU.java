@@ -103,7 +103,7 @@ public class PDU {
     public static String getStringData(byte[] data, int offset) {
         StringBuilder result = new StringBuilder();
         for (int i = offset; i < data.length; i++) {
-            result.append(data[i]);
+            result.append((char) data[i]);
             if (data[i] == 0) {
                 return result.toString();
             }
