@@ -12,27 +12,25 @@ public class PDUSubmitSmResp {
     private String uuid;
     private int commandStatus;
     private int sequenceNumber;
-    private String messageId;
 
-    public PDUSubmitSmResp(String uuid, int commandStatus, int sequenceNumber, String messageId) {
+    public PDUSubmitSmResp(String uuid, int commandStatus, int sequenceNumber) {
 
         this.uuid = uuid;
         this.commandStatus = commandStatus;
         this.sequenceNumber = sequenceNumber;
-        this.messageId = messageId;
 //        System.out.println(":"+sequenceNumber+"/"+this.sequenceNumber);
     }
 
     public byte[] getPdu() throws IOException {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         out.reset();
-        int bytes = 4 + 4 + 4 + 4 + messageId.length() + 1;
+        int bytes = 4 + 4 + 4 + 4 + uuid.length() + 1;
 
         out.write(PDU.makeByteArrayFromInt(bytes, 4));
         out.write(PDU.makeByteArrayFromInt(PduConstants.SUBMIT_SM_RESP, 4));
         out.write(PDU.makeByteArrayFromInt(commandStatus, 4));
         out.write(PDU.makeByteArrayFromInt(sequenceNumber, 4));
-        out.write(messageId.getBytes());
+        out.write(uuid.getBytes());
         out.write(PDU.makeByteArrayFromInt(0, 1));
         byte[] res = out.toByteArray();
 

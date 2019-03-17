@@ -92,7 +92,7 @@ public class ClientSession {
     private void processSubmitSm(byte[] buffer) throws IOException {
         PDUSubmitSm message = new PDUSubmitSm(uuid, buffer);
         message.init();
-        PDUSubmitSmResp resp = new PDUSubmitSmResp(uuid, ESME_ROK, message.getSequenceNumber(), uuid);
+        PDUSubmitSmResp resp = new PDUSubmitSmResp(uuid, ESME_ROK, message.getSequenceNumber());
         writeStream.write(resp.getPdu());
     }
 
