@@ -12,6 +12,7 @@ public class PDUSubmitSm extends PDU {
     static final Logger logger = LoggerFactory.getLogger(PDUSubmitSm.class);
     private byte[] data;
 
+    private String uuid;
     private int commandLength;
     private int commandId;
     private int commandStatus;
@@ -40,8 +41,9 @@ public class PDUSubmitSm extends PDU {
      *
      * @param data
      */
-    public PDUSubmitSm(byte[] data) {
-        super(data);
+    public PDUSubmitSm(String uuid, byte[] data) {
+        super(uuid, data);
+        this.uuid = uuid;
         this.data = data;
     }
 
@@ -94,10 +96,17 @@ public class PDUSubmitSm extends PDU {
         offset += 1;
         this.shortMessage = PDU.getStringData(data, offset);
 
-        logger.debug("serviceType:" + serviceType);
-        logger.debug("sourceAddr:" + sourceAddr);
-        logger.debug("destinationAddr:" + destinationAddr);
-        logger.debug("shortMessage:" + shortMessage);
+        logger.trace("SessionId " + uuid + " | sequenceNumber:" + sequenceNumber);
+        logger.trace("SessionId " + uuid + " | serviceType:" + serviceType);
+        logger.trace("SessionId " + uuid + " | sourceAddr:" + sourceAddr);
+        logger.trace("SessionId " + uuid + " | destinationAddr:" + destinationAddr);
+        logger.trace("SessionId " + uuid + " | dataCoding:" + dataCoding);
+        logger.trace("SessionId " + uuid + " | shortMessage:" + shortMessage);
 
+    }
+
+    @Override
+    public int getSequenceNumber() {
+        return sequenceNumber;
     }
 }

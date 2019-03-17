@@ -12,7 +12,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class Configuration {
-    static final Logger logger = LoggerFactory.getLogger(ZmejSMPP.class);
+    static final Logger logger = LoggerFactory.getLogger(Configuration.class);
     private static final String FILE_NAME = "config.yml";
     private Yaml yaml;
 

@@ -12,12 +12,18 @@ public class PDU {
     static final Logger logger = LoggerFactory.getLogger(PDU.class);
     private byte[] data;
 
+    private String uuid;
     private int commandLength;
     private int commandId;
     private int commandStatus;
     private int sequenceNumber;
 
-    public PDU(byte[] data) {
+    public PDU(String uuid, byte[] data) {
+        this.uuid = uuid;
+        this.data = data;
+    }
+
+    public void init() {
         String text = "Start read PDU from data";
         try {
             int offset = 0;
@@ -34,7 +40,7 @@ public class PDU {
             text = "Before read sequenceNumber";
             this.sequenceNumber = ByteBuffer.wrap(data, offset, 4).getInt();
         } catch (RuntimeException e) {
-            logger.error(text, e);
+            logger.error("SessionId " + uuid + " | " + text, e);
             throw e;
         }
     }

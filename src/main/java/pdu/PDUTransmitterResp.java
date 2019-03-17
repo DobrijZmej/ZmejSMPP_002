@@ -9,14 +9,15 @@ import java.io.IOException;
 public class PDUTransmitterResp {
     private static final Logger logger = LoggerFactory.getLogger(PDUTransmitterResp.class);
 
+    private String uuid;
     //    private int commandId;
     private int commandStatus;
     private int sequenceNumber;
     private String systemId;
 
-    public PDUTransmitterResp(int commandStatus, int sequenceNumber, String systemId) {
+    public PDUTransmitterResp(String uuid, int commandStatus, int sequenceNumber, String systemId) {
 
-//        this.commandId = commandId;
+        this.uuid = uuid;
         this.commandStatus = commandStatus;
         this.sequenceNumber = sequenceNumber;
         this.systemId = systemId;
@@ -36,17 +37,9 @@ public class PDUTransmitterResp {
         out.write(PDU.makeByteArrayFromInt(0, 1));
         byte[] res = out.toByteArray();
 
-        StringBuilder s = new StringBuilder();
-        StringBuilder d = new StringBuilder();
-        for (int r = 0; r < bytes; r++) {
-            int b = res[r];
-            s.append(b < 10 ? "0" + Integer.toString(b, 16) : Integer.toString(b, 16));
-            d.append(b).append(" ");
-        }
-
-        logger.debug("Prepare response:");
-        logger.debug(s.toString());
-        logger.debug(d.toString());
+        logger.trace("SessionId " + uuid + " | Prepare response:");
+        logger.trace("SessionId " + uuid + " | " + PDU.PDUtoString(res, 16));
+        logger.trace("SessionId " + uuid + " | " + PDU.PDUtoString(res, 10));
 
         return res;
     }

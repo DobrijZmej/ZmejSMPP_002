@@ -12,6 +12,7 @@ public class PDUTransmitter extends PDU {
     static final Logger logger = LoggerFactory.getLogger(PDUTransmitter.class);
     private byte[] data;
 
+    private String uuid;
     private int commandLength;
     private int commandId;
     private int commandStatus;
@@ -24,10 +25,14 @@ public class PDUTransmitter extends PDU {
     private int addrNpi;
     private int addrRange;
 
-    public PDUTransmitter(byte[] data) {
-        super(data);
-        int offset = 0;
+    public PDUTransmitter(String uuid, byte[] data) {
+        super(uuid, data);
         this.data = data;
+        this.uuid = uuid;
+    }
+
+    public void init() {
+        int offset = 0;
         this.commandLength = ByteBuffer.wrap(data, offset, 4).getInt();
         offset += 4;
         this.commandId = ByteBuffer.wrap(data, offset, 4).getInt();
@@ -42,9 +47,9 @@ public class PDUTransmitter extends PDU {
         offset += password.length();
         this.systemTun = PDU.getStringData(data, offset);
 //        System.arraycopy(data, 0, this.commandLength, 0, 4);
-        logger.debug("systemId:" + systemId);
-        logger.debug("password:" + password);
-        logger.debug("systemTun:" + systemTun);
+        logger.debug("SessionID " + uuid + " | systemId:" + systemId);
+        logger.debug("SessionId " + uuid + " | password:" + password);
+        logger.debug("SessionId " + uuid + " | systemTun:" + systemTun);
 
     }
 

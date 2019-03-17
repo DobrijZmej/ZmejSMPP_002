@@ -8,7 +8,7 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class Listener {
-    static final Logger logger = LoggerFactory.getLogger(ZmejSMPP.class);
+    static final Logger logger = LoggerFactory.getLogger(Listener.class);
     private ServerSocket server;
     private BlockingQueue<ByteBuffer> queue = new LinkedBlockingQueue<>(1);
 
@@ -16,7 +16,7 @@ public class Listener {
 
     public Listener(int port) throws IOException {
 //        server = new ServerSocket(port);
-        logger.info("Server listener start on port "+port);
+//        logger.info("Server listener start on port "+port);
         MessageProducer writer = new MessageProducer(queue);
         MessageConsumer reader = new MessageConsumer(queue);
 

@@ -12,10 +12,10 @@ public class ZmejSMPP {
             Listener l = new Listener(conf.readPort());
             l.stop();
         } catch (IOException e) {
-            logger.error(e.getMessage());
-            logger.error(e.getStackTrace().toString());
+            logger.error("MAIN EXCEPTION", e);
+//            logger.error(e.getStackTrace().toString());
         };
-        logger.info("!!!");
+//        logger.info("!!!");
     }
 
 
