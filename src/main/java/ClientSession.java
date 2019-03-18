@@ -1,5 +1,5 @@
+import log.Log;
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import pdu.*;
 
 import java.io.IOException;
@@ -13,9 +13,10 @@ import static pdu.PduConstants.*;
  * Клас реалізації клієнтської сесії
  */
 public class ClientSession {
-    private static final Logger logger = LoggerFactory.getLogger(ClientSession.class);
-    private Socket clientChannel;
+//    private static final Logger logger = LoggerFactory.getLogger(ClientSession.class);
     private String uuid = UUID.randomUUID().toString();
+    private static final Logger logger = Log.initLog(ClientSession.class, "sessions");
+    private Socket clientChannel;
 
     private OutputStream writeStream;
 

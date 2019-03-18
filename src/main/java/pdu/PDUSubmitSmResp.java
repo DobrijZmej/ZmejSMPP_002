@@ -1,5 +1,6 @@
 package pdu;
 
+import log.Log;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -7,7 +8,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 public class PDUSubmitSmResp {
-    private static final Logger logger = LoggerFactory.getLogger(PDUSubmitSmResp.class);
+    private static final Logger logger = Log.initLog(PDU.class, "sessions");
 
     private String uuid;
     private int commandStatus;

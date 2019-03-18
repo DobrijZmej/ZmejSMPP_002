@@ -1,5 +1,6 @@
 package pdu;
 
+import log.Log;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,7 +10,7 @@ import java.nio.ByteBuffer;
  * Клас для обробки початкового PDU з початковими командами
  */
 public class PDUTransmitter extends PDU {
-    static final Logger logger = LoggerFactory.getLogger(PDUTransmitter.class);
+    private static final Logger logger = Log.initLog(PDU.class, "sessions");
     private byte[] data;
 
     private String uuid;

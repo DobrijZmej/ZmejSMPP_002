@@ -1,5 +1,5 @@
+import log.Log;
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -8,7 +8,7 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class Listener {
-    static final Logger logger = LoggerFactory.getLogger(Listener.class);
+    private static final Logger logger = Log.initLog(ClientSession.class, "main");
     private ServerSocket server;
     private BlockingQueue<ByteBuffer> queue = new LinkedBlockingQueue<>(1);
 

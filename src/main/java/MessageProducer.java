@@ -1,6 +1,5 @@
+import log.Log;
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import pdu.*;
 
 import java.io.*;
 import java.net.ServerSocket;
@@ -12,7 +11,7 @@ import java.util.concurrent.BlockingQueue;
  * Клас для запису в чергу повідомлень, що надходять із мережі
  */
 public class MessageProducer implements Runnable {
-    static final Logger logger = LoggerFactory.getLogger(MessageProducer.class);
+    private static final Logger logger = Log.initLog(ClientSession.class, "main");
 
     private ServerSocket server;
     Socket fromclient;
