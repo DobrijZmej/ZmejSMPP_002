@@ -10,7 +10,7 @@ import java.util.Calendar;
 
 public class Log {
     public static Logger initLog(Class classObject, String fileName) {
-        String today = new SimpleDateFormat("yyyyMMDD").format(Calendar.getInstance().getTime());
+        String today = new SimpleDateFormat("yyyyMMdd").format(Calendar.getInstance().getTime());
         System.setProperty("logFileName", today + "_" + fileName);
         final Logger logger = LoggerFactory.getLogger(classObject);
         PropertyConfigurator.configure("log4j.properties");
