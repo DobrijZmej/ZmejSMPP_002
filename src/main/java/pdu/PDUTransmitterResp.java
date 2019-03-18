@@ -10,7 +10,7 @@ public class PDUTransmitterResp {
     private static final Logger logger = LoggerFactory.getLogger(PDUTransmitterResp.class);
 
     private String uuid;
-    //    private int commandId;
+    protected int commandId;
     private int commandStatus;
     private int sequenceNumber;
     private String systemId;
@@ -21,6 +21,7 @@ public class PDUTransmitterResp {
         this.commandStatus = commandStatus;
         this.sequenceNumber = sequenceNumber;
         this.systemId = systemId;
+        this.commandId = PduConstants.BIND_TRANSMITTER_RESP;
     }
 
 
@@ -30,7 +31,7 @@ public class PDUTransmitterResp {
         int bytes = 4 + 4 + 4 + 4 + systemId.length() + 1;
 
         out.write(PDU.makeByteArrayFromInt(bytes, 4));
-        out.write(PDU.makeByteArrayFromInt(PduConstants.BIND_TRANSMITTER_RESP, 4));
+        out.write(PDU.makeByteArrayFromInt(commandId, 4));
         out.write(PDU.makeByteArrayFromInt(commandStatus, 4));
         out.write(PDU.makeByteArrayFromInt(sequenceNumber, 4));
         out.write(systemId.getBytes());

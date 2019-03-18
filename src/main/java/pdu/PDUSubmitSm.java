@@ -99,9 +99,9 @@ public class PDUSubmitSm extends PDU {
         logger.trace("SessionId " + uuid + " | sequenceNumber:" + sequenceNumber);
         logger.trace("SessionId " + uuid + " | serviceType:" + serviceType);
         logger.trace("SessionId " + uuid + " | sourceAddr:" + sourceAddr);
-        logger.trace("SessionId " + uuid + " | destinationAddr:" + destinationAddr);
+        logger.info("SessionId " + uuid + " | destinationAddr:" + destinationAddr);
         logger.trace("SessionId " + uuid + " | dataCoding:" + dataCoding);
-        logger.trace("SessionId " + uuid + " | shortMessage:" + shortMessage);
+        logger.info("SessionId " + uuid + " | shortMessage:" + shortMessage);
 
     }
 

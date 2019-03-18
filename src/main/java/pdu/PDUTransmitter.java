@@ -47,7 +47,7 @@ public class PDUTransmitter extends PDU {
         offset += password.length();
         this.systemTun = PDU.getStringData(data, offset);
 //        System.arraycopy(data, 0, this.commandLength, 0, 4);
-        logger.debug("SessionID " + uuid + " | systemId:" + systemId);
+        logger.info("SessionID " + uuid + " | systemId:" + systemId);
         logger.debug("SessionId " + uuid + " | password:" + password);
         logger.debug("SessionId " + uuid + " | systemTun:" + systemTun);
 

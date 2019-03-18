@@ -36,9 +36,17 @@ public class ClientSession {
                 PDU pdu = new PDU(uuid, buffer);
                 pdu.init();
                 switch (pdu.getCommandId()) {
+                    case (BIND_RECEIVER):
+                        logger.info("SessionID " + uuid + " | Incoming command_id is defined as RECEIVER");
+                        processReceiver(buffer);
+                        break;
                     case (BIND_TRANSMITTER):
                         logger.info("SessionID " + uuid + " | Incoming command_id is defined as TRANSMITTER");
                         processTransmitter(buffer);
+                        break;
+                    case (BIND_TRANSCEIVER):
+                        logger.info("SessionID " + uuid + " | Incoming command_id is defined as TRANSCEIVER");
+                        processTransciver(buffer);
                         break;
                     case (ENQUIRE_LINK):
                         logger.info("SessionID " + uuid + " | Incoming command_id is defined as ENQUIRE_LINK");
@@ -58,7 +66,7 @@ public class ClientSession {
                         logger.error("SessionID " + uuid + " | Command is not defined. Can not continue the session, I interrupt contact with the client. command_id=" + pdu.getCommandId());
                         isProcessed = false;
                 }
-            } catch (IOException e) {
+            } catch (IOException | RuntimeException e) {
                 logger.error("EXCEPTION", e);
                 isProcessed = false;
             }
@@ -69,10 +77,30 @@ public class ClientSession {
     /**
      * @param buffer
      */
+    private void processReceiver(byte[] buffer) throws IOException {
+        PDUTransmitter trans = new PDUTransmitter(uuid, buffer);
+        trans.init();
+        PDUTransmitterResp resp = new PDUReceieverResp(uuid, PduConstants.ESME_ROK, trans.getSequenceNumber(), "TascomBank");
+        writeStream.write(resp.getPdu());
+    }
+
+    /**
+     * @param buffer
+     */
     private void processTransmitter(byte[] buffer) throws IOException {
         PDUTransmitter trans = new PDUTransmitter(uuid, buffer);
         trans.init();
         PDUTransmitterResp resp = new PDUTransmitterResp(uuid, PduConstants.ESME_ROK, trans.getSequenceNumber(), "TascomBank");
+        writeStream.write(resp.getPdu());
+    }
+
+    /**
+     * @param buffer
+     */
+    private void processTransciver(byte[] buffer) throws IOException {
+        PDUTransmitter trans = new PDUTransmitter(uuid, buffer);
+        trans.init();
+        PDUTranscieverResp resp = new PDUTranscieverResp(uuid, PduConstants.ESME_ROK, trans.getSequenceNumber(), "TascomBank");
         writeStream.write(resp.getPdu());
     }
 
