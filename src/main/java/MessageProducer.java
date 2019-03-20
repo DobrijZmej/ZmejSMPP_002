@@ -5,6 +5,7 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.ByteBuffer;
+import java.nio.channels.InterruptedByTimeoutException;
 import java.util.concurrent.BlockingQueue;
 
 /**
@@ -40,6 +41,14 @@ public class MessageProducer implements Runnable {
             fromclient.close();
             // Очікуємо наступного підключення
             logger.info("Waiting data");
+            if (Thread.currentThread().isInterrupted()) {
+                logger.info("Stream disconnection detected. Complete the work cycle.");
+                break;
+            }
+            Thread.sleep(50);
+        } catch (InterruptedIOException | InterruptedByTimeoutException | InterruptedException e) {
+            logger.error("Stream exception disconnection detected. Complete the work cycle.", e);
+            break;
         } catch (IOException e) {
             e.printStackTrace();
             logger.error("EXCEPTION: ", e);
