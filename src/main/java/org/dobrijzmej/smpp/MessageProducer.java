@@ -20,9 +20,9 @@ public class MessageProducer implements Runnable {
 
     private ServerSocket server;
     Socket fromclient;
-    private BlockingQueue<ByteBuffer> queue;
+    private BlockingQueue<String> queue;
 
-    public MessageProducer(BlockingQueue<ByteBuffer> queue) throws IOException {
+    public MessageProducer(BlockingQueue<String> queue) throws IOException {
         Configuration conf = new Configuration();
         int port = conf.readPort();
         server = new ServerSocket(port);
@@ -68,7 +68,7 @@ public class MessageProducer implements Runnable {
      */
     private void startSession(Socket fromClient) throws IOException {
 
-        ClientSession session = new ClientSession(fromClient);
+        ClientSession session = new ClientSession(fromClient, this.queue);
         session.process();
     }
 

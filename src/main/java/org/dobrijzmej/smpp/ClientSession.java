@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.Socket;
 import java.util.UUID;
+import java.util.concurrent.BlockingQueue;
 
 import static org.dobrijzmej.smpp.pdu.PduConstants.*;
 
@@ -19,12 +20,14 @@ public class ClientSession {
     private String uuid = UUID.randomUUID().toString();
     private static final Logger logger = Log.initLog(ClientSession.class, "sessions");
     private Socket clientChannel;
+    private BlockingQueue<String> queue;
 
     private OutputStream writeStream;
 
-    public ClientSession(Socket clientChannel) throws IOException {
+    public ClientSession(Socket clientChannel, BlockingQueue<String> queue) throws IOException {
         this.clientChannel = clientChannel;
         this.writeStream = clientChannel.getOutputStream();
+        this.queue = queue;
     }
 
     public void process() {

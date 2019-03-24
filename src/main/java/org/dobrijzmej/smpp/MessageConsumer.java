@@ -8,9 +8,9 @@ import java.util.concurrent.BlockingQueue;
  */
 public class MessageConsumer implements Runnable {
 
-    private BlockingQueue<ByteBuffer> queue;
+    private BlockingQueue<String> queue;
 
-    public MessageConsumer(BlockingQueue<ByteBuffer> queue) {
+    public MessageConsumer(BlockingQueue<String> queue) {
         this.queue = queue;
     }
 
