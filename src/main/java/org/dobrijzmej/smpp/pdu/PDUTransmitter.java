@@ -53,6 +53,9 @@ public class PDUTransmitter extends PDU {
 
     }
 
+    public String getSystemId() {
+        return systemId;
+    }
 
     public int getSequenceNumber() {
         return sequenceNumber;

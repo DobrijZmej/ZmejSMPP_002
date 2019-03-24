@@ -37,4 +37,9 @@ public class Output {
 
     public Output() {
     }
+
+    @Override
+    public String toString() {
+        return "Recipient on method ["+method+"] to URL ["+url+"] with mask ["+mask+"].";
+    }
 }

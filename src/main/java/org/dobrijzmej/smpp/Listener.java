@@ -13,7 +13,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class Listener {
     private static final Logger logger = Log.initLog(ClientSession.class, "main");
     private ServerSocket server;
-    private BlockingQueue<String> queue = new LinkedBlockingQueue<>(10);
+    private BlockingQueue<MessageQueue> queue = new LinkedBlockingQueue<>(10);
 
 
 

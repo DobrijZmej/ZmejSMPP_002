@@ -108,4 +108,8 @@ public class Configuration {
     public Output getOutput(String outputCode){
         return params.outputs.get(outputCode);
     }
+
+    public Map<String, Output> getOutputs(){
+        return this.params.outputs;
+    }
 }

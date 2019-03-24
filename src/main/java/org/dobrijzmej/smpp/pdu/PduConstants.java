@@ -123,7 +123,7 @@ public class PduConstants {
 
     public static final int ESME_RINVMSGLEN = 0x00000001;
 
-    // Message Length is invalid
+    // message Length is invalid
     public static final int ESME_RINVCMDLEN = 0x00000002;
 
     // Command Length is invalid
@@ -153,7 +153,7 @@ public class PduConstants {
     // Invalid Dest Addr
     public static final int ESME_RINVMSGID = 0x0000000C;
 
-    // Message ID is invalid
+    // message ID is invalid
     public static final int ESME_RBINDFAIL = 0x0000000D; // Bind Failed
 
     public static final int ESME_RINVPASWD = 0x0000000E; // Invalid Password
@@ -171,7 +171,7 @@ public class PduConstants {
     // Replace SM Failed
     public static final int ESME_RMSGQFUL = 0x00000014;
 
-    // Message Queue Full
+    // message Queue Full
     public static final int ESME_RINVSERTYP = 0x00000015;
 
     // Invalid Service Type
@@ -237,7 +237,7 @@ public class PduConstants {
     // Invalid message validity period (Expiry time)
     public static final int ESME_RINVDFTMSGID = 0x00000063;
 
-    // Predefined Message Invalid or Not Found
+    // Predefined message Invalid or Not Found
     public static final int ESME_RX_T_APPN = 0x00000064;
 
     // ESME Receiver Temporary App Error Code
@@ -246,7 +246,7 @@ public class PduConstants {
     // ESME Receiver Permanent App Error Code
     public static final int ESME_RX_R_APPN = 0x00000066;
 
-    // ESME Receiver Reject Message Error Code
+    // ESME Receiver Reject message Error Code
     public static final int ESME_RQUERYFAIL = 0x00000067;
 
     // query_sm request failed

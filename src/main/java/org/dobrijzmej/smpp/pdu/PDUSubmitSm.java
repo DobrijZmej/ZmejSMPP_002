@@ -105,6 +105,14 @@ public class PDUSubmitSm extends PDU {
 
     }
 
+    public String getShortMessage() {
+        return shortMessage;
+    }
+
+    public String getDestinationAddr() {
+        return destinationAddr;
+    }
+
     @Override
     public int getSequenceNumber() {
         return sequenceNumber;
