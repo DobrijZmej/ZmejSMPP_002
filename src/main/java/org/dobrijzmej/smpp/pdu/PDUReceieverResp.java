@@ -1,4 +1,4 @@
-package pdu;
+package org.dobrijzmej.smpp.pdu;
 
 public class PDUReceieverResp extends PDUTransmitterResp {
     public PDUReceieverResp(String uuid, int commandStatus, int sequenceNumber, String systemId) {

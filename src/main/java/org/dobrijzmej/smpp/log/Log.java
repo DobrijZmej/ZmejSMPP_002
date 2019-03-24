@@ -1,4 +1,4 @@
-package log;
+package org.dobrijzmej.smpp.log;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.slf4j.Logger;
@@ -24,7 +24,7 @@ public class Log {
             "# Апендер для работы с файлами\n" +
             "log4j.appender.file=org.apache.log4j.RollingFileAppender\n" +
             "# Путь где будет создаваться лог файл\n" +
-            "log4j.appender.file.File=logs/${logFileName}.log\n" +
+            "log4j.appender.file.File=logs/${logFileName}.org.dobrijzmej.smpp.log\n" +
             "# Указываем максимальный размер файла с логами\n" +
             "log4j.appender.file.MaxFileSize=10MB\n" +
             "# Конфигурируем шаблон вывода логов в файл\n" +

@@ -1,4 +1,8 @@
-import log.Log;
+package org.dobrijzmej.smpp;
+
+import org.dobrijzmej.smpp.config.Configuration;
+import org.dobrijzmej.smpp.log.Log;
+import org.dobrijzmej.smpp.ClientSession;
 import org.slf4j.Logger;
 
 import java.io.*;

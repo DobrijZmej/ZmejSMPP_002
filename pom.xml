@@ -14,7 +14,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>ZmejSMPP</mainClass>
+                            <mainClass>org.dobrijzmej.smpp.ZmejSMPP</mainClass>
                             <!--mainClass>ua.com.tascombank.tastestbot.testtasbot</mainClass-->
                         </manifest>
                     </archive>

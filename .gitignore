@@ -1,6 +1,6 @@
 .idea/
 config.yml
-log_file.log
+log_file.org.dobrijzmej.smpp.log
 target/
 *.iml
 .logs/

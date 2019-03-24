@@ -1,37 +1,40 @@
-package pdu;
+package org.dobrijzmej.smpp.pdu;
 
-import log.Log;
+import org.dobrijzmej.smpp.log.Log;
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
-public class PDUSubmitSmResp {
+public class PDUTransmitterResp {
     private static final Logger logger = Log.initLog(PDU.class, "sessions");
 
     private String uuid;
+    protected int commandId;
     private int commandStatus;
     private int sequenceNumber;
+    private String systemId;
 
-    public PDUSubmitSmResp(String uuid, int commandStatus, int sequenceNumber) {
+    public PDUTransmitterResp(String uuid, int commandStatus, int sequenceNumber, String systemId) {
 
         this.uuid = uuid;
         this.commandStatus = commandStatus;
         this.sequenceNumber = sequenceNumber;
-//        System.out.println(":"+sequenceNumber+"/"+this.sequenceNumber);
+        this.systemId = systemId;
+        this.commandId = PduConstants.BIND_TRANSMITTER_RESP;
     }
+
 
     public byte[] getPdu() throws IOException {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         out.reset();
-        int bytes = 4 + 4 + 4 + 4 + uuid.length() + 1;
+        int bytes = 4 + 4 + 4 + 4 + systemId.length() + 1;
 
         out.write(PDU.makeByteArrayFromInt(bytes, 4));
-        out.write(PDU.makeByteArrayFromInt(PduConstants.SUBMIT_SM_RESP, 4));
+        out.write(PDU.makeByteArrayFromInt(commandId, 4));
         out.write(PDU.makeByteArrayFromInt(commandStatus, 4));
         out.write(PDU.makeByteArrayFromInt(sequenceNumber, 4));
-        out.write(uuid.getBytes());
+        out.write(systemId.getBytes());
         out.write(PDU.makeByteArrayFromInt(0, 1));
         byte[] res = out.toByteArray();
 
@@ -41,5 +44,4 @@ public class PDUSubmitSmResp {
 
         return res;
     }
-
 }

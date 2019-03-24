@@ -1,3 +1,5 @@
+package org.dobrijzmej.smpp;
+
 import java.nio.ByteBuffer;
 import java.util.concurrent.BlockingQueue;
 

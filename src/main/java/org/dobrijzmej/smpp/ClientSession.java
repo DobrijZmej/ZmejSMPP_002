@@ -1,19 +1,21 @@
-import log.Log;
+package org.dobrijzmej.smpp;
+
+import org.dobrijzmej.smpp.log.Log;
 import org.slf4j.Logger;
-import pdu.*;
+import org.dobrijzmej.smpp.pdu.*;
 
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.Socket;
 import java.util.UUID;
 
-import static pdu.PduConstants.*;
+import static org.dobrijzmej.smpp.pdu.PduConstants.*;
 
 /**
  * Клас реалізації клієнтської сесії
  */
 public class ClientSession {
-//    private static final Logger logger = LoggerFactory.getLogger(ClientSession.class);
+//    private static final Logger logger = LoggerFactory.getLogger(org.dobrijzmej.smpp.ClientSession.class);
     private String uuid = UUID.randomUUID().toString();
     private static final Logger logger = Log.initLog(ClientSession.class, "sessions");
     private Socket clientChannel;

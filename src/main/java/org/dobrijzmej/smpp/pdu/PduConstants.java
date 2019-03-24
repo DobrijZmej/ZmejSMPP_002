@@ -1,4 +1,4 @@
-package pdu;
+package org.dobrijzmej.smpp.pdu;
 
 /**
  * Перелік констант для роботи з форматом PDU

@@ -1,8 +1,7 @@
-package pdu;
+package org.dobrijzmej.smpp.pdu;
 
-import log.Log;
+import org.dobrijzmej.smpp.log.Log;
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.nio.ByteBuffer;
 
