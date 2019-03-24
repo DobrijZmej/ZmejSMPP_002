@@ -5,7 +5,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class Params {
-    public Map<String, Map<String, Object>> general;
+    public Map<String, Object> general;
     public Map<String, User> users;
     public Map<String, Output> outputs;
 
@@ -15,11 +15,11 @@ public class Params {
         outputs = new LinkedHashMap<>();
     }
 
-    public Map<String, Map<String, Object>> getGeneral() {
+    public Map<String, Object> getGeneral() {
         return general;
     }
 
-    public void setGeneral(Map<String, Map<String, Object>> general) {
+    public void setGeneral(Map<String, Object> general) {
         this.general = general;
     }
 
