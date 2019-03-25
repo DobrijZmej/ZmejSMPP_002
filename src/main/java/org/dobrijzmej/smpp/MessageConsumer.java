@@ -24,7 +24,20 @@ import java.util.Map;
 import java.util.concurrent.BlockingQueue;
 
 /**
- * Клас для обробки повідомлень, поступаючих по мережі
+ * <p>Клас для обробки повідомлень, поступаючих по мережі</p>
+ *
+ * <p>Стежимо за чергою, в яку закидають повідомлення, та запускаємо обробники в залежності від типу відправки. Назараз існують такі варіанти відправки:
+ * <ul>
+ *     <li>REST - відправляє на вказане посилання у форматі JSON, який можна настроювати у вигляді маски:
+ *     <ul>
+ *         <li>url - посилання, на яке потрібно відправити запит</li>
+ *         <li>method - наразі може бути лише POST</li>
+ *         <li>mask - маска для текста, який можна відправити за посиланням</li>
+ *     </ul>
+ *     </li>
+ * </ul>
+ * </p>
+ *
  */
 public class MessageConsumer implements Runnable {
     private static final Logger logger = Log.initLog(MessageConsumer.class, "consumer");
@@ -56,6 +69,12 @@ public class MessageConsumer implements Runnable {
         logger.info("End process consumer");
     }
 
+    /**
+     * Обробка повідомлень, що надійшли, в залежності від каналу доставки
+     *
+     * @param output канал, по якому потрібно доставити повідомлення
+     * @param message повідомлення, що треба доставити
+     */
     private void processOutput(Map.Entry<String, Output> output, MessageQueue message) {
         logger.debug("Start send message to channel " + output.getValue());
         try {
