@@ -62,6 +62,8 @@ public class Configuration {
         HashMap<String, Object> general = new LinkedHashMap<>();
 //        general.put("port", 2775);
         this.params.general.put("Port", 2775);
+        this.params.general.put("KeyStoreFileName", "keystore.jks");
+        this.params.general.put("KeyStorePass", "123456");
 
         User user = new User("TAS24test", "Qq123456", "TAS24_test");
         this.params.users.put("TAS24Test", user);
@@ -87,8 +89,19 @@ public class Configuration {
     /**
      * @return
      */
-    public int readPort() {
+    public int getPort() {
         return Integer.parseInt(this.params.general.get("Port").toString());
+    }
+
+    /**
+     * @return
+     */
+    public String getKeyStoreFileName() {
+        return this.params.general.get("KeyStoreFileName").toString();
+    }
+
+    public String getKeyStorePass() {
+        return this.params.general.get("KeyStorePass").toString();
     }
 
     /**

@@ -27,7 +27,6 @@ public class PDU {
         String text = "Start read PDU from data";
         try {
             int offset = 0;
-            this.data = data;
             text = "Before read commandLength";
             this.commandLength = ByteBuffer.wrap(data, offset, 4).getInt();
             offset += 4;
@@ -109,10 +108,10 @@ public class PDU {
     public static String getStringData(byte[] data, int offset) {
         StringBuilder result = new StringBuilder();
         for (int i = offset; i < data.length; i++) {
-            result.append((char) data[i]);
             if (data[i] == 0) {
                 return result.toString();
             }
+            result.append((char) data[i]);
         }
         return result.toString();
     }

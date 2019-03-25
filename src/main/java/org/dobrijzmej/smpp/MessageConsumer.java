@@ -1,21 +1,25 @@
 package org.dobrijzmej.smpp;
 
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
+import org.apache.http.conn.ssl.TrustSelfSignedStrategy;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.ssl.SSLContexts;
+import org.apache.http.util.EntityUtils;
 import org.dobrijzmej.smpp.config.Configuration;
 import org.dobrijzmej.smpp.config.Output;
-import org.dobrijzmej.smpp.config.Params;
 import org.dobrijzmej.smpp.log.Log;
 import org.slf4j.Logger;
 
-import java.io.BufferedReader;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLConnection;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
+import javax.net.ssl.SSLContext;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.security.*;
+import java.security.cert.CertificateException;
 import java.util.Map;
 import java.util.concurrent.BlockingQueue;
 
@@ -53,41 +57,77 @@ public class MessageConsumer implements Runnable {
     }
 
     private void processOutput(Map.Entry<String, Output> output, MessageQueue message) {
-        logger.debug("Start send message to " + output.getValue());
+        logger.debug("Start send message to channel " + output.getValue());
         try {
             if ("POST".equals(output.getValue().getMethod().toUpperCase())) {
                 sendOnRest(output.getValue(), message);
             }
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (KeyStoreException | NoSuchAlgorithmException | CertificateException | KeyManagementException | IOException e) {
+            logger.error(e.getMessage(), e);
         }
     }
 
-    private void sendOnRest(Output output, MessageQueue message) throws IOException {
-        String bodyRequest = output.getMask();
-        bodyRequest = bodyRequest.replace("${phone}", message.getPhone());
-        bodyRequest = bodyRequest.replace("${text}", message.getMessage());
-        bodyRequest = bodyRequest.replace("${alias}", message.getAlias());
+    /**
+     * <p>Реалізація передачі повідомлення через HTTP REST.
+     * Адреса запиту приходить у параметрі output</p>
+     *
+     * Шаблони підстановки у масці:<ul>
+     * <li>${phone} - номер телефону</li>
+     * <li> ${text} - текст повідомлення</li>
+     * <li>${alias} - назва системи, з якої відправляється повідомлення</li>
+     * </ul>
+     *
+     * @param output структура, у якій є адреса відправлення, маска для формування повідомлення
+     * @param message структура, у якій є номер телефону, текст повідомлення, та назва системи, з якої прийшло повідомлення
+     * @throws IOException
+     * @throws KeyStoreException
+     * @throws NoSuchAlgorithmException
+     * @throws CertificateException
+     * @throws KeyManagementException
+     */
+    private void sendOnRest(Output output, MessageQueue message) throws IOException, KeyStoreException, NoSuchAlgorithmException, CertificateException, KeyManagementException {
+        // треба з маски зробити той текст, що будемо відправляти
+        String bodyRequest;
+        bodyRequest = output.getMask()
+                .replace("${phone}", message.getPhone())
+                .replace("${text}", message.getMessage())
+                .replace("${alias}", message.getAlias());
 
-        URL url = new URL(output.getUrl());
-        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-        conn.setRequestMethod("POST");
-        conn.setDoOutput(true);
-        conn.setDoInput(true);
-        conn.setUseCaches(false);
+        // підключаємо конфіг та читаємо налаштування сховища сертифікатів
+        Configuration config = new Configuration();
+        final String KEY_STORE_FILE_NAME = config.getKeyStoreFileName();
+        final String KEY_STORE_PASS = config.getKeyStorePass();
+
+        // створюємо сховище, та завантажуємо сертифікати
+        KeyStore key = KeyStore.getInstance("JKS");
+        key.load(Files.newInputStream(Paths.get(KEY_STORE_FILE_NAME)), KEY_STORE_PASS.toCharArray());
+
+        // перевантажуємо сертифікати до контексту, плюс довіряємо самопідписаним сертифікатам
+        SSLContext ssl = SSLContexts.custom().loadTrustMaterial(key, new TrustSelfSignedStrategy()).build();
+
+        // збираємо параметри безпеки в одну купу
+        SSLConnectionSocketFactory connection = new SSLConnectionSocketFactory(
+                ssl,
+                new String[] { "TLSv1" },
+                null,
+                SSLConnectionSocketFactory.BROWSER_COMPATIBLE_HOSTNAME_VERIFIER);
+
+        // створюємо підключення до серверу
+        HttpClient http = HttpClients.custom().setSSLSocketFactory(connection).build();
+
+        // наповнюємо запит даними
+        HttpPost post = new HttpPost(output.getUrl());
+        post.setEntity(new StringEntity(bodyRequest));
+        post.setHeader("Accept", "application/json");
+        post.setHeader("Content-type", "application/json");
+        // відправляємо на сервер
+        HttpResponse responce = http.execute(post);
+
+        // трохи логів
         logger.trace("Send body:");
         logger.trace(bodyRequest);
-        DataOutputStream write = new DataOutputStream(conn.getOutputStream());
-        write.write(bodyRequest.getBytes());
-        BufferedReader read = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-//        BufferedReader write = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-        StringBuilder responce = new StringBuilder();
-        String readLine;
-        while((readLine = read.readLine())!=null){
-            responce.append(readLine);
-        }
-        System.out.println(responce);
+        // записуємо результат
+        logger.trace(responce.getStatusLine().toString());
+        logger.trace(EntityUtils.toString(responce.getEntity()));
     }
 }

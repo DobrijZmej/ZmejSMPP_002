@@ -2,13 +2,11 @@ package org.dobrijzmej.smpp;
 
 import org.dobrijzmej.smpp.config.Configuration;
 import org.dobrijzmej.smpp.log.Log;
-import org.dobrijzmej.smpp.ClientSession;
 import org.slf4j.Logger;
 
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.nio.ByteBuffer;
 import java.nio.channels.InterruptedByTimeoutException;
 import java.util.concurrent.BlockingQueue;
 
@@ -24,7 +22,7 @@ public class MessageProducer implements Runnable {
 
     public MessageProducer(BlockingQueue<MessageQueue> queue) throws IOException {
         Configuration conf = new Configuration();
-        int port = conf.readPort();
+        int port = conf.getPort();
         server = new ServerSocket(port);
         logger.info("Server listener start on port " + port);
         this.queue = queue;
