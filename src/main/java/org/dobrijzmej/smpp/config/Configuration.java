@@ -105,24 +105,26 @@ public class Configuration {
     }
 
     /**
-     *
      * @param userCode
      * @return
      */
-    public User getUser(String userCode){
+    public User getUser(String userCode) {
         return params.users.get(userCode);
     }
 
     /**
-     *
      * @param outputCode
      * @return
      */
-    public Output getOutput(String outputCode){
+    public Output getOutput(String outputCode) {
         return params.outputs.get(outputCode);
     }
 
-    public Map<String, Output> getOutputs(){
+    public Map<String, Output> getOutputs() {
         return this.params.outputs;
+    }
+
+    public Map<String, User> getUsers() {
+        return this.params.users;
     }
 }

@@ -1,5 +1,7 @@
 package org.dobrijzmej.smpp;
 
+import org.dobrijzmej.smpp.config.Configuration;
+import org.dobrijzmej.smpp.config.User;
 import org.dobrijzmej.smpp.log.Log;
 import org.slf4j.Logger;
 import org.dobrijzmej.smpp.pdu.*;
@@ -7,6 +9,7 @@ import org.dobrijzmej.smpp.pdu.*;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.Socket;
+import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.BlockingQueue;
 
@@ -16,7 +19,7 @@ import static org.dobrijzmej.smpp.pdu.PduConstants.*;
  * Клас реалізації клієнтської сесії
  */
 public class ClientSession {
-//    private static final Logger logger = LoggerFactory.getLogger(org.dobrijzmej.smpp.ClientSession.class);
+    //    private static final Logger logger = LoggerFactory.getLogger(org.dobrijzmej.smpp.ClientSession.class);
     private String uuid = UUID.randomUUID().toString();
     private static final Logger logger = Log.initLog(ClientSession.class, "sessions");
     private Socket clientChannel;
@@ -39,7 +42,7 @@ public class ClientSession {
             logger.info("SessionID " + uuid + " | Start new session.");
             try {
                 byte[] buffer = readData();
-                if (buffer.length <= 0) {
+                if (buffer == null || buffer.length <= 0) {
                     return;
                 }
                 PDU pdu = new PDU(uuid, buffer);
@@ -89,8 +92,18 @@ public class ClientSession {
     private void processReceiver(byte[] buffer) throws IOException {
         PDUTransmitter trans = new PDUTransmitter(uuid, buffer);
         trans.init();
-        currentLogin = trans.getSystemId();
-        PDUTransmitterResp resp = new PDUReceieverResp(uuid, PduConstants.ESME_ROK, trans.getSequenceNumber(), "TascomBank");
+        Configuration config = new Configuration();
+        Map<String, User> users;
+        users = config.getUsers();
+        trans.authorize(users);
+        currentLogin = trans.getUser().getAlias();
+
+        int status = PduConstants.ESME_ROK;
+        if ("---".equals(trans.getUser().getUsername())) {
+            status = PduConstants.ESME_RINVPASWD;
+        }
+
+        PDUTransmitterResp resp = new PDUReceieverResp(uuid, status, trans.getSequenceNumber(), "TascomBank");
         writeStream.write(resp.getPdu());
     }
 
@@ -100,8 +113,16 @@ public class ClientSession {
     private void processTransmitter(byte[] buffer) throws IOException {
         PDUTransmitter trans = new PDUTransmitter(uuid, buffer);
         trans.init();
-        currentLogin = trans.getSystemId();
-        PDUTransmitterResp resp = new PDUTransmitterResp(uuid, PduConstants.ESME_ROK, trans.getSequenceNumber(), "TascomBank");
+        Configuration config = new Configuration();
+        Map<String, User> users;
+        users = config.getUsers();
+        trans.authorize(users);
+        currentLogin = trans.getUser().getAlias();
+        int status = PduConstants.ESME_ROK;
+        if ("---".equals(trans.getUser().getUsername())) {
+            status = PduConstants.ESME_RINVPASWD;
+        }
+        PDUTransmitterResp resp = new PDUTransmitterResp(uuid, status, trans.getSequenceNumber(), "TascomBank");
         writeStream.write(resp.getPdu());
     }
 
@@ -111,8 +132,16 @@ public class ClientSession {
     private void processTransciver(byte[] buffer) throws IOException {
         PDUTransmitter trans = new PDUTransmitter(uuid, buffer);
         trans.init();
-        currentLogin = trans.getSystemId();
-        PDUTranscieverResp resp = new PDUTranscieverResp(uuid, PduConstants.ESME_ROK, trans.getSequenceNumber(), "TascomBank");
+        Configuration config = new Configuration();
+        Map<String, User> users;
+        users = config.getUsers();
+        trans.authorize(users);
+        currentLogin = trans.getUser().getAlias();
+        int status = PduConstants.ESME_ROK;
+        if ("---".equals(trans.getUser().getUsername())) {
+            status = PduConstants.ESME_RINVPASWD;
+        }
+        PDUTranscieverResp resp = new PDUTranscieverResp(uuid, status, trans.getSequenceNumber(), "TascomBank");
         writeStream.write(resp.getPdu());
     }
 
@@ -132,7 +161,7 @@ public class ClientSession {
     private void processSubmitSm(byte[] buffer) throws IOException, InterruptedException {
         PDUSubmitSm message = new PDUSubmitSm(uuid, buffer);
         message.init();
-        logger.debug("Put into queue message "+message.getShortMessage());
+        logger.debug("Put into queue message " + message.getShortMessage());
         queue.put(new MessageQueue(message.getDestinationAddr(), message.getShortMessage(), currentLogin));
         PDUSubmitSmResp resp = new PDUSubmitSmResp(uuid, ESME_ROK, message.getSequenceNumber());
         writeStream.write(resp.getPdu());
