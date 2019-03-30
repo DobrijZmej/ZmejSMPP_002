@@ -35,14 +35,14 @@ public class MessageProducer implements Runnable {
     public void run() {
 
         do try {
-            // підключаємось до сокету
-            fromclient = this.server.accept();
-            // стартуємо обмін даними
-            startSession(fromclient);
-            // закриваємо сесію
-            fromclient.close();
             // Очікуємо наступного підключення
-            logger.info("Waiting data");
+            logger.info("Waiting next client");
+            // підключаємось до сокету
+            Socket session = this.server.accept();;
+            // стартуємо обмін даними
+            ClientSession sessionThread = new ClientSession(session, this.queue);
+            new Thread(sessionThread).start();
+
             if (Thread.currentThread().isInterrupted()) {
                 logger.info("Stream disconnection detected. Complete the work cycle.");
                 break;
@@ -57,17 +57,6 @@ public class MessageProducer implements Runnable {
         }
         while (true);
 
-    }
-
-    /**
-     * Очікування даних від клієнта з черги
-     *
-     * @param fromClient - посилання на сесію з сокетом
-     */
-    private void startSession(Socket fromClient) throws IOException, InterruptedException {
-
-        ClientSession session = new ClientSession(fromClient, this.queue);
-        session.process();
     }
 
 }

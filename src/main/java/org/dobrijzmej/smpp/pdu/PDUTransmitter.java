@@ -72,7 +72,7 @@ public class PDUTransmitter extends PDU {
      */
     public void authorize(Map<String, User> users) {
         this.user = new User("---", "", "");
-        for (Map.Entry<String, User> user : users.entrySet()) {
+            for (Map.Entry<String, User> user : users.entrySet()) {
             logger.trace(user.getValue().toString());
             if (checkLoginPass(user.getValue())) {
                 this.user = user.getValue();

@@ -18,7 +18,7 @@ import static org.dobrijzmej.smpp.pdu.PduConstants.*;
 /**
  * Клас реалізації клієнтської сесії
  */
-public class ClientSession {
+public class ClientSession implements Runnable {
     //    private static final Logger logger = LoggerFactory.getLogger(org.dobrijzmej.smpp.ClientSession.class);
     private String uuid = UUID.randomUUID().toString();
     private static final Logger logger = Log.initLog(ClientSession.class, "sessions");
@@ -36,10 +36,13 @@ public class ClientSession {
         this.queue = queue;
     }
 
-    public void process() throws InterruptedException {
+    @Override
+    public void run() {
+        String labelPrefix = Thread.currentThread().getName()+" | SessionID " + uuid + " | ";
+        //public void process() throws InterruptedException {
         boolean isProcessed = true;
         while (isProcessed) {
-            logger.info("SessionID " + uuid + " | Start new session.");
+            logger.info(labelPrefix+"Waiting next command.");
             try {
                 byte[] buffer = readData();
                 if (buffer == null || buffer.length <= 0) {
@@ -49,40 +52,52 @@ public class ClientSession {
                 pdu.init();
                 switch (pdu.getCommandId()) {
                     case (BIND_RECEIVER):
-                        logger.info("SessionID " + uuid + " | Incoming command_id is defined as RECEIVER");
+                        logger.info(labelPrefix + "Incoming command_id is defined as RECEIVER");
                         processReceiver(buffer);
                         break;
                     case (BIND_TRANSMITTER):
-                        logger.info("SessionID " + uuid + " | Incoming command_id is defined as TRANSMITTER");
+                        logger.info(labelPrefix + "Incoming command_id is defined as TRANSMITTER");
                         processTransmitter(buffer);
                         break;
                     case (BIND_TRANSCEIVER):
-                        logger.info("SessionID " + uuid + " | Incoming command_id is defined as TRANSCEIVER");
+                        logger.info(labelPrefix + "Incoming command_id is defined as TRANSCEIVER");
                         processTransciver(buffer);
                         break;
                     case (ENQUIRE_LINK):
-                        logger.info("SessionID " + uuid + " | Incoming command_id is defined as ENQUIRE_LINK");
+                        logger.info(labelPrefix + "Incoming command_id is defined as ENQUIRE_LINK");
                         processEnquire(buffer, pdu);
                         break;
                     case (SUBMIT_SM):
-                        logger.info("SessionID " + uuid + " | Incoming command_id is defined as SUBMIT_SM");
+                        logger.info(labelPrefix + "Incoming command_id is defined as SUBMIT_SM");
                         processSubmitSm(buffer);
                         break;
                     case (UNBIND):
-                        logger.info("SessionID " + uuid + " | Incoming command_id is defined as UNBIND");
+                        logger.info(labelPrefix + "Incoming command_id is defined as UNBIND");
                         processUnbind(buffer, pdu);
-                        logger.info("SessionID " + uuid + " | This command is the final session. I close the connection with the client.");
+                        logger.info(labelPrefix + "This command is the final session. I close the connection with the client.");
                         isProcessed = false;
                         break;
                     default:
-                        logger.error("SessionID " + uuid + " | Command is not defined. Can not continue the session, I interrupt contact with the client. command_id=" + pdu.getCommandId());
+                        logger.error(labelPrefix + "Command is not defined. Can not continue the session, I interrupt contact with the client. command_id=" + pdu.getCommandId());
                         isProcessed = false;
                 }
             } catch (IOException | RuntimeException e) {
                 logger.error("EXCEPTION", e);
                 isProcessed = false;
+            } catch (InterruptedException e) {
+                logger.error(labelPrefix + "Stream exception disconnection detected. Complete the work cycle.", e);
+                try {
+                    clientChannel.close();
+                } catch (IOException ex) {
+                    logger.error(labelPrefix + "EXCEPTION", ex);
+                }
+                return;
             }
-
+        }
+        try {
+            clientChannel.close();
+        } catch (IOException e) {
+            logger.error(labelPrefix + "EXCEPTION", e);
         }
     }
 
