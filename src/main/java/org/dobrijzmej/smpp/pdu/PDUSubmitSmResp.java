@@ -12,12 +12,14 @@ public class PDUSubmitSmResp {
     private String uuid;
     private int commandStatus;
     private int sequenceNumber;
+    private String labelPrefix;
 
-    public PDUSubmitSmResp(String uuid, int commandStatus, int sequenceNumber) {
+    public PDUSubmitSmResp(String uuid, int commandStatus, int sequenceNumber, String labelPrefix) {
 
         this.uuid = uuid;
         this.commandStatus = commandStatus;
         this.sequenceNumber = sequenceNumber;
+        this.labelPrefix = labelPrefix;
 //        System.out.println(":"+sequenceNumber+"/"+this.sequenceNumber);
     }
 
@@ -34,9 +36,9 @@ public class PDUSubmitSmResp {
         out.write(PDU.makeByteArrayFromInt(0, 1));
         byte[] res = out.toByteArray();
 
-        logger.trace("SessionId " + uuid + " | Prepare response:");
-        logger.trace("SessionId " + uuid + " | " + PDU.PDUtoString(res, 16));
-        logger.trace("SessionId " + uuid + " | " + PDU.PDUtoString(res, 10));
+        logger.trace(labelPrefix + "Prepare response:");
+        logger.trace(labelPrefix + PDU.PDUtoString(res, 16));
+        logger.trace(labelPrefix + PDU.PDUtoString(res, 10));
 
         return res;
     }

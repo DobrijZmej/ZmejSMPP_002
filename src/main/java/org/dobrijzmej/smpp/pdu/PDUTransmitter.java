@@ -15,7 +15,7 @@ public class PDUTransmitter extends PDU {
     private static final Logger logger = Log.initLog(PDUTransmitter.class, "sessions");
     private byte[] data;
 
-    private String uuid;
+    private String labelPrefix;
     private int commandLength;
     private int commandId;
     private int commandStatus;
@@ -30,10 +30,10 @@ public class PDUTransmitter extends PDU {
 
     private User user;
 
-    public PDUTransmitter(String uuid, byte[] data) {
-        super(uuid, data);
+    public PDUTransmitter(String labelPrefix, byte[] data) {
+        super(labelPrefix, data);
         this.data = data;
-        this.uuid = uuid;
+        this.labelPrefix = labelPrefix;
     }
 
     public void init() {
@@ -52,9 +52,9 @@ public class PDUTransmitter extends PDU {
         offset += password.length() + 1;
         this.systemTun = PDU.getStringData(data, offset);
 //        System.arraycopy(data, 0, this.commandLength, 0, 4);
-        logger.info("SessionID " + uuid + " | systemId:" + systemId);
-        logger.debug("SessionId " + uuid + " | password:" + password);
-        logger.debug("SessionId " + uuid + " | systemTun:" + systemTun);
+        logger.info(labelPrefix + "systemId:" + systemId);
+        logger.debug(labelPrefix + "password:" + password);
+        logger.debug(labelPrefix + "systemTun:" + systemTun);
 
     }
 
@@ -68,20 +68,21 @@ public class PDUTransmitter extends PDU {
 
     /**
      * Спроба авторизації користувача, що надійшов в атрібутах system_id та password
+     *
      * @param users список користувачів
      */
     public void authorize(Map<String, User> users) {
         this.user = new User("---", "", "");
-            for (Map.Entry<String, User> user : users.entrySet()) {
-            logger.trace(user.getValue().toString());
+        for (Map.Entry<String, User> user : users.entrySet()) {
+            logger.trace(labelPrefix+user.getValue().toString());
             if (checkLoginPass(user.getValue())) {
                 this.user = user.getValue();
-                logger.info("Authorized user on param ["+user.getKey()+"]: login ["+this.user.getUsername()+"], alias ["+this.user.getAlias()+"]");
+                logger.info(labelPrefix+"Authorized user on param [" + user.getKey() + "]: login [" + this.user.getUsername() + "], alias [" + this.user.getAlias() + "]");
                 break;
             }
         }
-        if("---".equals(this.user.getUsername()) ){
-            logger.trace("Error authorize user with param: login ["+this.systemId+"], password ["+this.password+"]");
+        if ("---".equals(this.user.getUsername())) {
+            logger.trace(labelPrefix+"Error authorize user with param: login [" + this.systemId + "], password [" + this.password + "]");
         }
     }
 

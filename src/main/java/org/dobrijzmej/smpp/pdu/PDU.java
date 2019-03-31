@@ -12,14 +12,14 @@ public class PDU {
     private static final Logger logger = Log.initLog(PDU.class, "sessions");
     private byte[] data;
 
-    private String uuid;
+    private String labelPrefix;
     private int commandLength;
     private int commandId;
     private int commandStatus;
     private int sequenceNumber;
 
-    public PDU(String uuid, byte[] data) {
-        this.uuid = uuid;
+    public PDU(String labelPrefix, byte[] data) {
+        this.labelPrefix = labelPrefix;
         this.data = data;
     }
 
@@ -39,7 +39,7 @@ public class PDU {
             text = "Before read sequenceNumber";
             this.sequenceNumber = ByteBuffer.wrap(data, offset, 4).getInt();
         } catch (RuntimeException e) {
-            logger.error("SessionId " + uuid + " | " + text, e);
+            logger.error(labelPrefix + text, e);
             throw e;
         }
     }
@@ -68,13 +68,22 @@ public class PDU {
      * @return - повертається одна чи інша послідовність, у залежності від переданого типу
      */
     public static String PDUtoString(byte[] data, int type) {
+
         StringBuilder result = new StringBuilder();
-        for (int b : data) {
-            if (type == 16) {
-                result.append(b < 10 ? "0" + Integer.toString(b, 16) : Integer.toString(b, 16));
-            } else {
-                result.append(b).append(" ");
+        if (type == 16) {
+            char[] hexArray = "0123456789ABCDEF".toCharArray();
+            for (int j = 0; j < data.length; j++) {
+                int v = data[j] & 0xFF;
+                result.append(hexArray[v >>> 4])
+                        .append(hexArray[v & 0x0F])
+                        .append(" ");
             }
+            return result.toString();
+        }
+
+        for (int b : data) {
+            result.append(b)
+                    .append(" ");
         }
         return result.toString();
     }

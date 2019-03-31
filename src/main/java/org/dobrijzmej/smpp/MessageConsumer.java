@@ -7,6 +7,7 @@ import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
 import org.apache.http.conn.ssl.TrustSelfSignedStrategy;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClients;
+import org.apache.http.protocol.HTTP;
 import org.apache.http.ssl.SSLContexts;
 import org.apache.http.util.EntityUtils;
 import org.dobrijzmej.smpp.config.Configuration;
@@ -136,15 +137,15 @@ public class MessageConsumer implements Runnable {
 
         // наповнюємо запит даними
         HttpPost post = new HttpPost(output.getUrl());
-        post.setEntity(new StringEntity(bodyRequest));
+        post.setEntity(new StringEntity(bodyRequest, HTTP.UTF_8));
         post.setHeader("Accept", "application/json");
         post.setHeader("Content-type", "application/json");
         // відправляємо на сервер
         HttpResponse responce = http.execute(post);
 
         // трохи логів
-        logger.trace("Send body:");
-        logger.trace(bodyRequest);
+        logger.info("Send body to URL["+output.getUrl()+"]:");
+        logger.info(bodyRequest);
         // записуємо результат
         logger.trace(responce.getStatusLine().toString());
         logger.trace(EntityUtils.toString(responce.getEntity()));

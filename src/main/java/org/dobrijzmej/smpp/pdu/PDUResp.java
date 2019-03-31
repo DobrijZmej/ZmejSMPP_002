@@ -7,19 +7,21 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 public class PDUResp {
-    private static final Logger logger = Log.initLog(PDU.class, "sessions");
+    private static final Logger logger = Log.initLog(PDUResp.class, "sessions");
 
     private String uuid;
     private int commandId;
     private int commandStatus;
     private int sequenceNumber;
+    private String labelPrefix;
 
-    public PDUResp(String uuid, int commandId, int commandStatus, int sequenceNumber) {
+    public PDUResp(String uuid, int commandId, int commandStatus, int sequenceNumber, String labelPrefix) {
 
         this.uuid = uuid;
         this.commandId = commandId;
         this.commandStatus = commandStatus;
         this.sequenceNumber = sequenceNumber;
+        this.labelPrefix = labelPrefix;
     }
 
     public byte[] getPdu() throws IOException {
@@ -33,9 +35,9 @@ public class PDUResp {
         out.write(PDU.makeByteArrayFromInt(sequenceNumber, 4));
         byte[] res = out.toByteArray();
 
-        logger.trace("SessionId " + uuid + " | Prepare response:");
-        logger.trace("SessionId " + uuid + " | " + PDU.PDUtoString(res, 16));
-        logger.trace("SessionId " + uuid + " | " + PDU.PDUtoString(res, 10));
+        logger.trace(labelPrefix + "Prepare response:");
+        logger.trace(labelPrefix + PDU.PDUtoString(res, 16));
+        logger.trace(labelPrefix + PDU.PDUtoString(res, 10));
 
         return res;
     }

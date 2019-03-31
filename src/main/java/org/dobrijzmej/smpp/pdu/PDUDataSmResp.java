@@ -6,44 +6,41 @@ import org.slf4j.Logger;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
-public class PDUTransmitterResp {
+public class PDUDataSmResp {
     private static final Logger logger = Log.initLog(PDU.class, "sessions");
 
     private String uuid;
-    protected int commandId;
     private int commandStatus;
     private int sequenceNumber;
-    private String systemId;
-    private String labelPrefix;
 
-    public PDUTransmitterResp(String uuid, int commandStatus, int sequenceNumber, String systemId, String labelPrefix) {
+    public PDUDataSmResp(String uuid, int commandStatus, int sequenceNumber) {
 
         this.uuid = uuid;
         this.commandStatus = commandStatus;
         this.sequenceNumber = sequenceNumber;
-        this.systemId = systemId;
-        this.commandId = PduConstants.BIND_TRANSMITTER_RESP;
-        this.labelPrefix = labelPrefix;
+//        System.out.println(":"+sequenceNumber+"/"+this.sequenceNumber);
     }
-
 
     public byte[] getPdu() throws IOException {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         out.reset();
-        int bytes = 4 + 4 + 4 + 4 + systemId.length() + 1;
+        int bytes = 4 + 4 + 4 + 4 + uuid.length() + 1;
 
         out.write(PDU.makeByteArrayFromInt(bytes, 4));
-        out.write(PDU.makeByteArrayFromInt(commandId, 4));
+        out.write(PDU.makeByteArrayFromInt(PduConstants.DATA_SM_RESP, 4));
         out.write(PDU.makeByteArrayFromInt(commandStatus, 4));
         out.write(PDU.makeByteArrayFromInt(sequenceNumber, 4));
-        out.write(systemId.getBytes());
+        byte[] data_message = uuid.getBytes();
+        out.write(data_message);
+//        out.write(uuid.getBytes());
         out.write(PDU.makeByteArrayFromInt(0, 1));
         byte[] res = out.toByteArray();
 
-        logger.trace(labelPrefix + "Prepare response:");
-        logger.trace(labelPrefix + PDU.PDUtoString(res, 16));
-        logger.trace(labelPrefix + PDU.PDUtoString(res, 10));
+        logger.trace("SessionId " + uuid + " | Prepare response:");
+        logger.trace("SessionId " + uuid + " | " + PDU.PDUtoString(res, 16));
+        logger.trace("SessionId " + uuid + " | " + PDU.PDUtoString(res, 10));
 
         return res;
     }
+
 }
