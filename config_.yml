@@ -1,0 +1,31 @@
+general:
+  Port: 2775
+  KeyStoreFileName: keystore.jks
+  KeyStorePass: 'Qq123456'
+outputs:
+  REST_ESB:
+    mask: '{"phoneNumber": "${phone}", "messageText": "${text}", "senderCode": "${alias}"}'
+    method: POST
+    url: https://api-app.tascombank.ua/gsm/messages
+users:
+  TAS24:
+    username: tas24admtest
+    password: tas24tst
+    alias: TAS24
+  TAS2U:
+    username: tas2uadm
+    password: tas2u123
+    alias: TAS2U
+  TAS2U_test:
+    username: tas2u_test
+    password: Qq123456
+    alias: TAS2U_TEST
+  IFOBS:
+    username: ifobsadm
+    password: ifobs123
+    alias: IFOBS
+  BIFIT:
+    username: bifitadmtest
+    password: bifittest
+    alias: BIFIT
+

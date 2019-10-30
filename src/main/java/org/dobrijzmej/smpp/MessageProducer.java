@@ -1,8 +1,10 @@
 package org.dobrijzmej.smpp;
 
+//import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
 import org.dobrijzmej.smpp.config.Configuration;
 import org.dobrijzmej.smpp.log.Log;
-import org.slf4j.Logger;
+//import org.slf4j.Logger;
 
 import java.io.*;
 import java.net.ServerSocket;

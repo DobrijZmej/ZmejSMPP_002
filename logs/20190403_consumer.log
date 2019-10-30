@@ -1,0 +1,8 @@
+2019-04-03 09:43:45,560 INFO  ClientSession:39 - Waiting next client
+2019-04-03 09:43:45,560 INFO  MessageConsumer:54 - Start process consumer
+2019-04-03 09:44:17,911 INFO  ClientSession:39 - Waiting next client
+2019-04-03 09:44:17,911 INFO  MessageConsumer:54 - Start process consumer
+2019-04-03 09:48:12,393 INFO  ClientSession:39 - Waiting next client
+2019-04-03 09:48:12,393 INFO  MessageConsumer:54 - Start process consumer
+2019-04-03 09:55:26,410 INFO  ClientSession:39 - Waiting next client
+2019-04-03 09:55:26,411 INFO  MessageConsumer:54 - Start process consumer

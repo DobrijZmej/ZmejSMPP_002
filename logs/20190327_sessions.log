@@ -1,0 +1,1098 @@
+2019-03-27 08:29:12,990 INFO  ClientSession:42 - SessionID a0836ddb-db68-4e22-aaf3-18e240df0d75 | Start new session.
+2019-03-27 08:29:12,991 DEBUG ClientSession:181 - SessionID a0836ddb-db68-4e22-aaf3-18e240df0d75 | Read [36] bytes.
+2019-03-27 08:29:12,998 TRACE ClientSession:182 - SessionID a0836ddb-db68-4e22-aaf3-18e240df0d75 | 000000240000000200000000000000015441533255005171313200534d50500034000000
+2019-03-27 08:29:12,999 TRACE ClientSession:183 - SessionID a0836ddb-db68-4e22-aaf3-18e240df0d75 | 0 0 0 36 0 0 0 2 0 0 0 0 0 0 0 1 84 65 83 50 85 0 81 113 49 50 0 83 77 80 80 0 52 0 0 0 
+2019-03-27 08:29:13,000 INFO  ClientSession:56 - SessionID a0836ddb-db68-4e22-aaf3-18e240df0d75 | Incoming command_id is defined as TRANSMITTER
+2019-03-27 08:29:13,004 INFO  PDU:55 - SessionID a0836ddb-db68-4e22-aaf3-18e240df0d75 | systemId:TAS2U
+2019-03-27 08:29:13,005 DEBUG PDU:56 - SessionId a0836ddb-db68-4e22-aaf3-18e240df0d75 | password:Qq12
+2019-03-27 08:29:13,005 DEBUG PDU:57 - SessionId a0836ddb-db68-4e22-aaf3-18e240df0d75 | systemTun:SMPP
+2019-03-27 08:29:13,012 TRACE PDU:82 - Error authorize user with param: login [TAS2U], password [Qq12]
+2019-03-27 08:29:13,015 TRACE PDU:41 - SessionId a0836ddb-db68-4e22-aaf3-18e240df0d75 | Prepare response:
+2019-03-27 08:29:13,016 TRACE PDU:42 - SessionId a0836ddb-db68-4e22-aaf3-18e240df0d75 | 0000001b0-800000020000000000000001546173636f6d42616e6b00
+2019-03-27 08:29:13,016 TRACE PDU:43 - SessionId a0836ddb-db68-4e22-aaf3-18e240df0d75 | 0 0 0 27 -128 0 0 2 0 0 0 0 0 0 0 1 84 97 115 99 111 109 66 97 110 107 0 
+2019-03-27 08:29:13,017 INFO  ClientSession:42 - SessionID a0836ddb-db68-4e22-aaf3-18e240df0d75 | Start new session.
+2019-03-27 08:29:13,053 DEBUG ClientSession:181 - SessionID a0836ddb-db68-4e22-aaf3-18e240df0d75 | Read [16] bytes.
+2019-03-27 08:29:13,056 TRACE ClientSession:182 - SessionID a0836ddb-db68-4e22-aaf3-18e240df0d75 | 00000010000000150000000000000002
+2019-03-27 08:29:13,056 TRACE ClientSession:183 - SessionID a0836ddb-db68-4e22-aaf3-18e240df0d75 | 0 0 0 16 0 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 08:29:13,056 INFO  ClientSession:64 - SessionID a0836ddb-db68-4e22-aaf3-18e240df0d75 | Incoming command_id is defined as ENQUIRE_LINK
+2019-03-27 08:29:13,060 TRACE PDU:36 - SessionId a0836ddb-db68-4e22-aaf3-18e240df0d75 | Prepare response:
+2019-03-27 08:29:13,061 TRACE PDU:37 - SessionId a0836ddb-db68-4e22-aaf3-18e240df0d75 | 000000100-800000150000000000000002
+2019-03-27 08:29:13,061 TRACE PDU:38 - SessionId a0836ddb-db68-4e22-aaf3-18e240df0d75 | 0 0 0 16 -128 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 08:29:13,061 INFO  ClientSession:42 - SessionID a0836ddb-db68-4e22-aaf3-18e240df0d75 | Start new session.
+2019-03-27 08:29:13,062 DEBUG ClientSession:181 - SessionID a0836ddb-db68-4e22-aaf3-18e240df0d75 | Read [68] bytes.
+2019-03-27 08:29:13,062 TRACE ClientSession:182 - SessionID a0836ddb-db68-4e22-aaf3-18e240df0d75 | 00000044000000040000000000000003000001746173636f6d62616e6b00010133383035303437313830363000000000000000002300d736f6d652074650-2f0-760-2f0-6f0-300-7c
+2019-03-27 08:29:13,062 TRACE ClientSession:183 - SessionID a0836ddb-db68-4e22-aaf3-18e240df0d75 | 0 0 0 68 0 0 0 4 0 0 0 0 0 0 0 3 0 0 1 116 97 115 99 111 109 98 97 110 107 0 1 1 51 56 48 53 48 52 55 49 56 48 54 48 0 0 0 0 0 0 0 0 35 0 13 115 111 109 101 32 116 101 -47 -118 -47 -111 -48 -124 
+2019-03-27 08:29:13,063 INFO  ClientSession:68 - SessionID a0836ddb-db68-4e22-aaf3-18e240df0d75 | Incoming command_id is defined as SUBMIT_SM
+2019-03-27 08:29:13,067 TRACE PDU:99 - SessionId a0836ddb-db68-4e22-aaf3-18e240df0d75 | sequenceNumber:3
+2019-03-27 08:29:13,067 TRACE PDU:100 - SessionId a0836ddb-db68-4e22-aaf3-18e240df0d75 | serviceType:
+2019-03-27 08:29:13,067 TRACE PDU:101 - SessionId a0836ddb-db68-4e22-aaf3-18e240df0d75 | sourceAddr:tascombank
+2019-03-27 08:29:13,067 INFO  PDU:102 - SessionId a0836ddb-db68-4e22-aaf3-18e240df0d75 | destinationAddr:380504718060
+2019-03-27 08:29:13,068 TRACE PDU:103 - SessionId a0836ddb-db68-4e22-aaf3-18e240df0d75 | dataCoding:35
+2019-03-27 08:29:13,068 INFO  PDU:104 - SessionId a0836ddb-db68-4e22-aaf3-18e240df0d75 | shortMessage:some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 08:29:13,068 DEBUG ClientSession:150 - Put into queue message some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 08:29:13,070 DEBUG MessageConsumer:57 - Getting next message Message on alias [] for phone [380504718060]: [some te￑ﾊ￑ﾑ￐ﾄ]
+2019-03-27 08:29:13,076 TRACE PDU:37 - SessionId a0836ddb-db68-4e22-aaf3-18e240df0d75 | Prepare response:
+2019-03-27 08:29:13,077 TRACE PDU:38 - SessionId a0836ddb-db68-4e22-aaf3-18e240df0d75 | 000000350-80000004000000000000000361303833366464622d646236382d346532322d616166332d31386532343064663064373500
+2019-03-27 08:29:13,077 TRACE PDU:39 - SessionId a0836ddb-db68-4e22-aaf3-18e240df0d75 | 0 0 0 53 -128 0 0 4 0 0 0 0 0 0 0 3 97 48 56 51 54 100 100 98 45 100 98 54 56 45 52 101 50 50 45 97 97 102 51 45 49 56 101 50 52 48 100 102 48 100 55 53 0 
+2019-03-27 08:29:13,077 DEBUG MessageConsumer:79 - Start send message to channel Recipient on method [POST] to URL [https://httpbin.org/post] with mask [{"phone": "${phone}", "message": "${text}", "senderCode": "${alias}"}].
+2019-03-27 08:29:13,078 INFO  ClientSession:42 - SessionID a0836ddb-db68-4e22-aaf3-18e240df0d75 | Start new session.
+2019-03-27 08:29:13,086 DEBUG ClientSession:181 - SessionID a0836ddb-db68-4e22-aaf3-18e240df0d75 | Read [16] bytes.
+2019-03-27 08:29:13,086 TRACE ClientSession:182 - SessionID a0836ddb-db68-4e22-aaf3-18e240df0d75 | 00000010000000060000000000000004
+2019-03-27 08:29:13,087 TRACE ClientSession:183 - SessionID a0836ddb-db68-4e22-aaf3-18e240df0d75 | 0 0 0 16 0 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 08:29:13,087 INFO  ClientSession:72 - SessionID a0836ddb-db68-4e22-aaf3-18e240df0d75 | Incoming command_id is defined as UNBIND
+2019-03-27 08:29:13,087 TRACE PDU:36 - SessionId a0836ddb-db68-4e22-aaf3-18e240df0d75 | Prepare response:
+2019-03-27 08:29:13,087 TRACE PDU:37 - SessionId a0836ddb-db68-4e22-aaf3-18e240df0d75 | 000000100-800000060000000000000004
+2019-03-27 08:29:13,088 TRACE PDU:38 - SessionId a0836ddb-db68-4e22-aaf3-18e240df0d75 | 0 0 0 16 -128 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 08:29:13,088 INFO  ClientSession:74 - SessionID a0836ddb-db68-4e22-aaf3-18e240df0d75 | This command is the final session. I close the connection with the client.
+2019-03-27 08:29:13,090 INFO  ClientSession:45 - Waiting data
+2019-03-27 08:29:14,760 TRACE MessageConsumer:146 - Send body:
+2019-03-27 08:29:14,761 TRACE MessageConsumer:147 - {"phone": "380504718060", "message": "some te￑ﾊ￑ﾑ￐ﾄ", "senderCode": ""}
+2019-03-27 08:29:14,762 TRACE MessageConsumer:149 - HTTP/1.1 200 OK
+2019-03-27 08:29:14,775 TRACE MessageConsumer:150 - {
+  "args": {}, 
+  "data": "{\"phone\": \"380504718060\", \"message\": \"some te??????\", \"senderCode\": \"\"}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "application/json", 
+    "Accept-Encoding": "gzip,deflate", 
+    "Content-Length": "71", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Apache-HttpClient/4.5.7 (Java/11.0.2)"
+  }, 
+  "json": {
+    "message": "some te??????", 
+    "phone": "380504718060", 
+    "senderCode": ""
+  }, 
+  "origin": "185.31.84.2, 185.31.84.2", 
+  "url": "https://httpbin.org/post"
+}
+
+2019-03-27 08:30:18,961 INFO  ClientSession:42 - SessionID d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | Start new session.
+2019-03-27 08:30:18,961 DEBUG ClientSession:181 - SessionID d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | Read [36] bytes.
+2019-03-27 08:30:18,962 TRACE ClientSession:182 - SessionID d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | 000000240000000200000000000000015441533255005171313200534d50500034000000
+2019-03-27 08:30:18,962 TRACE ClientSession:183 - SessionID d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | 0 0 0 36 0 0 0 2 0 0 0 0 0 0 0 1 84 65 83 50 85 0 81 113 49 50 0 83 77 80 80 0 52 0 0 0 
+2019-03-27 08:30:18,962 INFO  ClientSession:56 - SessionID d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | Incoming command_id is defined as TRANSMITTER
+2019-03-27 08:30:18,970 INFO  PDU:55 - SessionID d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | systemId:TAS2U
+2019-03-27 08:30:18,970 DEBUG PDU:56 - SessionId d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | password:Qq12
+2019-03-27 08:30:18,970 DEBUG PDU:57 - SessionId d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | systemTun:SMPP
+2019-03-27 08:30:18,974 TRACE PDU:82 - Error authorize user with param: login [TAS2U], password [Qq12]
+2019-03-27 08:30:18,974 TRACE PDU:41 - SessionId d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | Prepare response:
+2019-03-27 08:30:18,974 TRACE PDU:42 - SessionId d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | 0000001b0-800000020000000000000001546173636f6d42616e6b00
+2019-03-27 08:30:18,975 TRACE PDU:43 - SessionId d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | 0 0 0 27 -128 0 0 2 0 0 0 0 0 0 0 1 84 97 115 99 111 109 66 97 110 107 0 
+2019-03-27 08:30:18,975 INFO  ClientSession:42 - SessionID d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | Start new session.
+2019-03-27 08:30:18,993 DEBUG ClientSession:181 - SessionID d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | Read [16] bytes.
+2019-03-27 08:30:18,993 TRACE ClientSession:182 - SessionID d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | 00000010000000150000000000000002
+2019-03-27 08:30:18,993 TRACE ClientSession:183 - SessionID d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | 0 0 0 16 0 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 08:30:18,994 INFO  ClientSession:64 - SessionID d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | Incoming command_id is defined as ENQUIRE_LINK
+2019-03-27 08:30:18,994 TRACE PDU:36 - SessionId d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | Prepare response:
+2019-03-27 08:30:18,994 TRACE PDU:37 - SessionId d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | 000000100-800000150000000000000002
+2019-03-27 08:30:18,994 TRACE PDU:38 - SessionId d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | 0 0 0 16 -128 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 08:30:18,994 INFO  ClientSession:42 - SessionID d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | Start new session.
+2019-03-27 08:30:18,995 DEBUG ClientSession:181 - SessionID d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | Read [68] bytes.
+2019-03-27 08:30:18,995 TRACE ClientSession:182 - SessionID d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | 00000044000000040000000000000003000001746173636f6d62616e6b00010133383035303437313830363000000000000000002300d736f6d652074650-2f0-760-2f0-6f0-300-7c
+2019-03-27 08:30:18,995 TRACE ClientSession:183 - SessionID d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | 0 0 0 68 0 0 0 4 0 0 0 0 0 0 0 3 0 0 1 116 97 115 99 111 109 98 97 110 107 0 1 1 51 56 48 53 48 52 55 49 56 48 54 48 0 0 0 0 0 0 0 0 35 0 13 115 111 109 101 32 116 101 -47 -118 -47 -111 -48 -124 
+2019-03-27 08:30:18,995 INFO  ClientSession:68 - SessionID d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | Incoming command_id is defined as SUBMIT_SM
+2019-03-27 08:30:18,996 TRACE PDU:99 - SessionId d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | sequenceNumber:3
+2019-03-27 08:30:18,996 TRACE PDU:100 - SessionId d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | serviceType:
+2019-03-27 08:30:18,996 TRACE PDU:101 - SessionId d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | sourceAddr:tascombank
+2019-03-27 08:30:19,003 INFO  PDU:102 - SessionId d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | destinationAddr:380504718060
+2019-03-27 08:30:19,004 TRACE PDU:103 - SessionId d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | dataCoding:35
+2019-03-27 08:30:19,004 INFO  PDU:104 - SessionId d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | shortMessage:some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 08:30:19,005 DEBUG ClientSession:150 - Put into queue message some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 08:30:19,005 TRACE PDU:37 - SessionId d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | Prepare response:
+2019-03-27 08:30:19,006 TRACE PDU:38 - SessionId d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | 000000350-80000004000000000000000364363337663561322d306435662d346366612d613830622d39633338393966393464373700
+2019-03-27 08:30:19,006 DEBUG MessageConsumer:57 - Getting next message Message on alias [] for phone [380504718060]: [some te￑ﾊ￑ﾑ￐ﾄ]
+2019-03-27 08:30:19,006 TRACE PDU:39 - SessionId d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | 0 0 0 53 -128 0 0 4 0 0 0 0 0 0 0 3 100 54 51 55 102 53 97 50 45 48 100 53 102 45 52 99 102 97 45 97 56 48 98 45 57 99 51 56 57 57 102 57 52 100 55 55 0 
+2019-03-27 08:30:19,007 INFO  ClientSession:42 - SessionID d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | Start new session.
+2019-03-27 08:30:19,010 DEBUG MessageConsumer:79 - Start send message to channel Recipient on method [POST] to URL [https://httpbin.org/post] with mask [{"phone": "${phone}", "message": "${text}", "senderCode": "${alias}"}].
+2019-03-27 08:30:19,015 DEBUG ClientSession:181 - SessionID d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | Read [16] bytes.
+2019-03-27 08:30:19,016 TRACE ClientSession:182 - SessionID d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | 00000010000000060000000000000004
+2019-03-27 08:30:19,016 TRACE ClientSession:183 - SessionID d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | 0 0 0 16 0 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 08:30:19,016 INFO  ClientSession:72 - SessionID d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | Incoming command_id is defined as UNBIND
+2019-03-27 08:30:19,017 TRACE PDU:36 - SessionId d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | Prepare response:
+2019-03-27 08:30:19,017 TRACE PDU:37 - SessionId d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | 000000100-800000060000000000000004
+2019-03-27 08:30:19,018 TRACE PDU:38 - SessionId d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | 0 0 0 16 -128 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 08:30:19,018 INFO  ClientSession:74 - SessionID d637f5a2-0d5f-4cfa-a80b-9c3899f94d77 | This command is the final session. I close the connection with the client.
+2019-03-27 08:30:19,018 INFO  ClientSession:45 - Waiting data
+2019-03-27 08:30:20,066 TRACE MessageConsumer:146 - Send body:
+2019-03-27 08:30:20,066 TRACE MessageConsumer:147 - {"phone": "380504718060", "message": "some te￑ﾊ￑ﾑ￐ﾄ", "senderCode": ""}
+2019-03-27 08:30:20,067 TRACE MessageConsumer:149 - HTTP/1.1 200 OK
+2019-03-27 08:30:20,067 TRACE MessageConsumer:150 - {
+  "args": {}, 
+  "data": "{\"phone\": \"380504718060\", \"message\": \"some te??????\", \"senderCode\": \"\"}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "application/json", 
+    "Accept-Encoding": "gzip,deflate", 
+    "Content-Length": "71", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Apache-HttpClient/4.5.7 (Java/11.0.2)"
+  }, 
+  "json": {
+    "message": "some te??????", 
+    "phone": "380504718060", 
+    "senderCode": ""
+  }, 
+  "origin": "185.31.84.2, 185.31.84.2", 
+  "url": "https://httpbin.org/post"
+}
+
+2019-03-27 08:31:03,911 INFO  ClientSession:42 - SessionID 78fd0e88-c00d-41eb-996c-f58cae572a87 | Start new session.
+2019-03-27 08:31:03,912 DEBUG ClientSession:181 - SessionID 78fd0e88-c00d-41eb-996c-f58cae572a87 | Read [36] bytes.
+2019-03-27 08:31:03,917 TRACE ClientSession:182 - SessionID 78fd0e88-c00d-41eb-996c-f58cae572a87 | 000000240000000200000000000000015441533255005171313200534d50500034000000
+2019-03-27 08:31:03,918 TRACE ClientSession:183 - SessionID 78fd0e88-c00d-41eb-996c-f58cae572a87 | 0 0 0 36 0 0 0 2 0 0 0 0 0 0 0 1 84 65 83 50 85 0 81 113 49 50 0 83 77 80 80 0 52 0 0 0 
+2019-03-27 08:31:03,918 INFO  ClientSession:56 - SessionID 78fd0e88-c00d-41eb-996c-f58cae572a87 | Incoming command_id is defined as TRANSMITTER
+2019-03-27 08:31:03,922 INFO  PDUTransmitter:55 - SessionID 78fd0e88-c00d-41eb-996c-f58cae572a87 | systemId:TAS2U
+2019-03-27 08:31:03,922 DEBUG PDUTransmitter:56 - SessionId 78fd0e88-c00d-41eb-996c-f58cae572a87 | password:Qq12
+2019-03-27 08:31:03,922 DEBUG PDUTransmitter:57 - SessionId 78fd0e88-c00d-41eb-996c-f58cae572a87 | systemTun:SMPP
+2019-03-27 08:31:03,930 TRACE PDUTransmitter:82 - Error authorize user with param: login [TAS2U], password [Qq12]
+2019-03-27 08:31:03,933 TRACE PDU:41 - SessionId 78fd0e88-c00d-41eb-996c-f58cae572a87 | Prepare response:
+2019-03-27 08:31:03,934 TRACE PDU:42 - SessionId 78fd0e88-c00d-41eb-996c-f58cae572a87 | 0000001b0-800000020000000000000001546173636f6d42616e6b00
+2019-03-27 08:31:03,934 TRACE PDU:43 - SessionId 78fd0e88-c00d-41eb-996c-f58cae572a87 | 0 0 0 27 -128 0 0 2 0 0 0 0 0 0 0 1 84 97 115 99 111 109 66 97 110 107 0 
+2019-03-27 08:31:03,935 INFO  ClientSession:42 - SessionID 78fd0e88-c00d-41eb-996c-f58cae572a87 | Start new session.
+2019-03-27 08:31:03,950 DEBUG ClientSession:181 - SessionID 78fd0e88-c00d-41eb-996c-f58cae572a87 | Read [16] bytes.
+2019-03-27 08:31:03,952 TRACE ClientSession:182 - SessionID 78fd0e88-c00d-41eb-996c-f58cae572a87 | 00000010000000150000000000000002
+2019-03-27 08:31:03,953 TRACE ClientSession:183 - SessionID 78fd0e88-c00d-41eb-996c-f58cae572a87 | 0 0 0 16 0 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 08:31:03,954 INFO  ClientSession:64 - SessionID 78fd0e88-c00d-41eb-996c-f58cae572a87 | Incoming command_id is defined as ENQUIRE_LINK
+2019-03-27 08:31:03,958 TRACE PDU:36 - SessionId 78fd0e88-c00d-41eb-996c-f58cae572a87 | Prepare response:
+2019-03-27 08:31:03,958 TRACE PDU:37 - SessionId 78fd0e88-c00d-41eb-996c-f58cae572a87 | 000000100-800000150000000000000002
+2019-03-27 08:31:03,958 TRACE PDU:38 - SessionId 78fd0e88-c00d-41eb-996c-f58cae572a87 | 0 0 0 16 -128 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 08:31:03,959 INFO  ClientSession:42 - SessionID 78fd0e88-c00d-41eb-996c-f58cae572a87 | Start new session.
+2019-03-27 08:31:03,959 DEBUG ClientSession:181 - SessionID 78fd0e88-c00d-41eb-996c-f58cae572a87 | Read [68] bytes.
+2019-03-27 08:31:03,960 TRACE ClientSession:182 - SessionID 78fd0e88-c00d-41eb-996c-f58cae572a87 | 00000044000000040000000000000003000001746173636f6d62616e6b00010133383035303437313830363000000000000000002300d736f6d652074650-2f0-760-2f0-6f0-300-7c
+2019-03-27 08:31:03,960 TRACE ClientSession:183 - SessionID 78fd0e88-c00d-41eb-996c-f58cae572a87 | 0 0 0 68 0 0 0 4 0 0 0 0 0 0 0 3 0 0 1 116 97 115 99 111 109 98 97 110 107 0 1 1 51 56 48 53 48 52 55 49 56 48 54 48 0 0 0 0 0 0 0 0 35 0 13 115 111 109 101 32 116 101 -47 -118 -47 -111 -48 -124 
+2019-03-27 08:31:03,961 INFO  ClientSession:68 - SessionID 78fd0e88-c00d-41eb-996c-f58cae572a87 | Incoming command_id is defined as SUBMIT_SM
+2019-03-27 08:31:03,965 TRACE PDU:99 - SessionId 78fd0e88-c00d-41eb-996c-f58cae572a87 | sequenceNumber:3
+2019-03-27 08:31:03,966 TRACE PDU:100 - SessionId 78fd0e88-c00d-41eb-996c-f58cae572a87 | serviceType:
+2019-03-27 08:31:03,966 TRACE PDU:101 - SessionId 78fd0e88-c00d-41eb-996c-f58cae572a87 | sourceAddr:tascombank
+2019-03-27 08:31:03,967 INFO  PDU:102 - SessionId 78fd0e88-c00d-41eb-996c-f58cae572a87 | destinationAddr:380504718060
+2019-03-27 08:31:03,967 TRACE PDU:103 - SessionId 78fd0e88-c00d-41eb-996c-f58cae572a87 | dataCoding:35
+2019-03-27 08:31:03,967 INFO  PDU:104 - SessionId 78fd0e88-c00d-41eb-996c-f58cae572a87 | shortMessage:some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 08:31:03,968 DEBUG ClientSession:150 - Put into queue message some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 08:31:03,970 DEBUG MessageConsumer:57 - Getting next message Message on alias [] for phone [380504718060]: [some te￑ﾊ￑ﾑ￐ﾄ]
+2019-03-27 08:31:03,977 DEBUG MessageConsumer:79 - Start send message to channel Recipient on method [POST] to URL [https://httpbin.org/post] with mask [{"phone": "${phone}", "message": "${text}", "senderCode": "${alias}"}].
+2019-03-27 08:31:03,978 TRACE PDU:37 - SessionId 78fd0e88-c00d-41eb-996c-f58cae572a87 | Prepare response:
+2019-03-27 08:31:03,980 TRACE PDU:38 - SessionId 78fd0e88-c00d-41eb-996c-f58cae572a87 | 000000350-80000004000000000000000337386664306538382d633030642d343165622d393936632d66353863616535373261383700
+2019-03-27 08:31:03,980 TRACE PDU:39 - SessionId 78fd0e88-c00d-41eb-996c-f58cae572a87 | 0 0 0 53 -128 0 0 4 0 0 0 0 0 0 0 3 55 56 102 100 48 101 56 56 45 99 48 48 100 45 52 49 101 98 45 57 57 54 99 45 102 53 56 99 97 101 53 55 50 97 56 55 0 
+2019-03-27 08:31:03,981 INFO  ClientSession:42 - SessionID 78fd0e88-c00d-41eb-996c-f58cae572a87 | Start new session.
+2019-03-27 08:31:03,989 DEBUG ClientSession:181 - SessionID 78fd0e88-c00d-41eb-996c-f58cae572a87 | Read [16] bytes.
+2019-03-27 08:31:03,989 TRACE ClientSession:182 - SessionID 78fd0e88-c00d-41eb-996c-f58cae572a87 | 00000010000000060000000000000004
+2019-03-27 08:31:03,990 TRACE ClientSession:183 - SessionID 78fd0e88-c00d-41eb-996c-f58cae572a87 | 0 0 0 16 0 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 08:31:03,990 INFO  ClientSession:72 - SessionID 78fd0e88-c00d-41eb-996c-f58cae572a87 | Incoming command_id is defined as UNBIND
+2019-03-27 08:31:03,991 TRACE PDU:36 - SessionId 78fd0e88-c00d-41eb-996c-f58cae572a87 | Prepare response:
+2019-03-27 08:31:03,991 TRACE PDU:37 - SessionId 78fd0e88-c00d-41eb-996c-f58cae572a87 | 000000100-800000060000000000000004
+2019-03-27 08:31:03,991 TRACE PDU:38 - SessionId 78fd0e88-c00d-41eb-996c-f58cae572a87 | 0 0 0 16 -128 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 08:31:03,992 INFO  ClientSession:74 - SessionID 78fd0e88-c00d-41eb-996c-f58cae572a87 | This command is the final session. I close the connection with the client.
+2019-03-27 08:31:03,992 INFO  ClientSession:45 - Waiting data
+2019-03-27 08:31:05,443 TRACE MessageConsumer:146 - Send body:
+2019-03-27 08:31:05,444 TRACE MessageConsumer:147 - {"phone": "380504718060", "message": "some te￑ﾊ￑ﾑ￐ﾄ", "senderCode": ""}
+2019-03-27 08:31:05,444 TRACE MessageConsumer:149 - HTTP/1.1 200 OK
+2019-03-27 08:31:05,448 TRACE MessageConsumer:150 - {
+  "args": {}, 
+  "data": "{\"phone\": \"380504718060\", \"message\": \"some te??????\", \"senderCode\": \"\"}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "application/json", 
+    "Accept-Encoding": "gzip,deflate", 
+    "Content-Length": "71", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Apache-HttpClient/4.5.7 (Java/11.0.2)"
+  }, 
+  "json": {
+    "message": "some te??????", 
+    "phone": "380504718060", 
+    "senderCode": ""
+  }, 
+  "origin": "185.31.84.2, 185.31.84.2", 
+  "url": "https://httpbin.org/post"
+}
+
+2019-03-27 08:31:57,720 INFO  ClientSession:42 - SessionID 6ce0a48f-243a-4024-993b-04311aef0eb6 | Start new session.
+2019-03-27 08:31:57,721 DEBUG ClientSession:181 - SessionID 6ce0a48f-243a-4024-993b-04311aef0eb6 | Read [36] bytes.
+2019-03-27 08:31:57,728 TRACE ClientSession:182 - SessionID 6ce0a48f-243a-4024-993b-04311aef0eb6 | 000000240000000200000000000000015441533255005171313200534d50500034000000
+2019-03-27 08:31:57,728 TRACE ClientSession:183 - SessionID 6ce0a48f-243a-4024-993b-04311aef0eb6 | 0 0 0 36 0 0 0 2 0 0 0 0 0 0 0 1 84 65 83 50 85 0 81 113 49 50 0 83 77 80 80 0 52 0 0 0 
+2019-03-27 08:31:57,729 INFO  ClientSession:56 - SessionID 6ce0a48f-243a-4024-993b-04311aef0eb6 | Incoming command_id is defined as TRANSMITTER
+2019-03-27 08:31:57,733 INFO  PDUTransmitter:55 - SessionID 6ce0a48f-243a-4024-993b-04311aef0eb6 | systemId:TAS2U
+2019-03-27 08:31:57,734 DEBUG PDUTransmitter:56 - SessionId 6ce0a48f-243a-4024-993b-04311aef0eb6 | password:Qq12
+2019-03-27 08:31:57,734 DEBUG PDUTransmitter:57 - SessionId 6ce0a48f-243a-4024-993b-04311aef0eb6 | systemTun:SMPP
+2019-03-27 08:31:57,741 TRACE PDUTransmitter:87 - Check auth on: org.dobrijzmej.smpp.config.User@69a93959
+2019-03-27 08:31:57,742 TRACE PDUTransmitter:87 - Check auth on: org.dobrijzmej.smpp.config.User@66130ca3
+2019-03-27 08:31:57,742 TRACE PDUTransmitter:82 - Error authorize user with param: login [TAS2U], password [Qq12]
+2019-03-27 08:31:57,746 TRACE PDU:41 - SessionId 6ce0a48f-243a-4024-993b-04311aef0eb6 | Prepare response:
+2019-03-27 08:31:57,746 TRACE PDU:42 - SessionId 6ce0a48f-243a-4024-993b-04311aef0eb6 | 0000001b0-800000020000000000000001546173636f6d42616e6b00
+2019-03-27 08:31:57,746 TRACE PDU:43 - SessionId 6ce0a48f-243a-4024-993b-04311aef0eb6 | 0 0 0 27 -128 0 0 2 0 0 0 0 0 0 0 1 84 97 115 99 111 109 66 97 110 107 0 
+2019-03-27 08:31:57,749 INFO  ClientSession:42 - SessionID 6ce0a48f-243a-4024-993b-04311aef0eb6 | Start new session.
+2019-03-27 08:31:57,761 DEBUG ClientSession:181 - SessionID 6ce0a48f-243a-4024-993b-04311aef0eb6 | Read [16] bytes.
+2019-03-27 08:31:57,761 TRACE ClientSession:182 - SessionID 6ce0a48f-243a-4024-993b-04311aef0eb6 | 00000010000000150000000000000002
+2019-03-27 08:31:57,762 TRACE ClientSession:183 - SessionID 6ce0a48f-243a-4024-993b-04311aef0eb6 | 0 0 0 16 0 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 08:31:57,762 INFO  ClientSession:64 - SessionID 6ce0a48f-243a-4024-993b-04311aef0eb6 | Incoming command_id is defined as ENQUIRE_LINK
+2019-03-27 08:31:57,765 TRACE PDU:36 - SessionId 6ce0a48f-243a-4024-993b-04311aef0eb6 | Prepare response:
+2019-03-27 08:31:57,766 TRACE PDU:37 - SessionId 6ce0a48f-243a-4024-993b-04311aef0eb6 | 000000100-800000150000000000000002
+2019-03-27 08:31:57,766 TRACE PDU:38 - SessionId 6ce0a48f-243a-4024-993b-04311aef0eb6 | 0 0 0 16 -128 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 08:31:57,767 INFO  ClientSession:42 - SessionID 6ce0a48f-243a-4024-993b-04311aef0eb6 | Start new session.
+2019-03-27 08:31:57,767 DEBUG ClientSession:181 - SessionID 6ce0a48f-243a-4024-993b-04311aef0eb6 | Read [68] bytes.
+2019-03-27 08:31:57,767 TRACE ClientSession:182 - SessionID 6ce0a48f-243a-4024-993b-04311aef0eb6 | 00000044000000040000000000000003000001746173636f6d62616e6b00010133383035303437313830363000000000000000002300d736f6d652074650-2f0-760-2f0-6f0-300-7c
+2019-03-27 08:31:57,768 TRACE ClientSession:183 - SessionID 6ce0a48f-243a-4024-993b-04311aef0eb6 | 0 0 0 68 0 0 0 4 0 0 0 0 0 0 0 3 0 0 1 116 97 115 99 111 109 98 97 110 107 0 1 1 51 56 48 53 48 52 55 49 56 48 54 48 0 0 0 0 0 0 0 0 35 0 13 115 111 109 101 32 116 101 -47 -118 -47 -111 -48 -124 
+2019-03-27 08:31:57,768 INFO  ClientSession:68 - SessionID 6ce0a48f-243a-4024-993b-04311aef0eb6 | Incoming command_id is defined as SUBMIT_SM
+2019-03-27 08:31:57,772 TRACE PDU:99 - SessionId 6ce0a48f-243a-4024-993b-04311aef0eb6 | sequenceNumber:3
+2019-03-27 08:31:57,772 TRACE PDU:100 - SessionId 6ce0a48f-243a-4024-993b-04311aef0eb6 | serviceType:
+2019-03-27 08:31:57,772 TRACE PDU:101 - SessionId 6ce0a48f-243a-4024-993b-04311aef0eb6 | sourceAddr:tascombank
+2019-03-27 08:31:57,772 INFO  PDU:102 - SessionId 6ce0a48f-243a-4024-993b-04311aef0eb6 | destinationAddr:380504718060
+2019-03-27 08:31:57,773 TRACE PDU:103 - SessionId 6ce0a48f-243a-4024-993b-04311aef0eb6 | dataCoding:35
+2019-03-27 08:31:57,773 INFO  PDU:104 - SessionId 6ce0a48f-243a-4024-993b-04311aef0eb6 | shortMessage:some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 08:31:57,773 DEBUG ClientSession:150 - Put into queue message some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 08:31:57,775 DEBUG MessageConsumer:57 - Getting next message Message on alias [] for phone [380504718060]: [some te￑ﾊ￑ﾑ￐ﾄ]
+2019-03-27 08:31:57,779 TRACE PDU:37 - SessionId 6ce0a48f-243a-4024-993b-04311aef0eb6 | Prepare response:
+2019-03-27 08:31:57,780 TRACE PDU:38 - SessionId 6ce0a48f-243a-4024-993b-04311aef0eb6 | 000000350-80000004000000000000000336636530613438662d323433612d343032342d393933622d30343331316165663065623600
+2019-03-27 08:31:57,781 TRACE PDU:39 - SessionId 6ce0a48f-243a-4024-993b-04311aef0eb6 | 0 0 0 53 -128 0 0 4 0 0 0 0 0 0 0 3 54 99 101 48 97 52 56 102 45 50 52 51 97 45 52 48 50 52 45 57 57 51 98 45 48 52 51 49 49 97 101 102 48 101 98 54 0 
+2019-03-27 08:31:57,781 INFO  ClientSession:42 - SessionID 6ce0a48f-243a-4024-993b-04311aef0eb6 | Start new session.
+2019-03-27 08:31:57,783 DEBUG MessageConsumer:79 - Start send message to channel Recipient on method [POST] to URL [https://httpbin.org/post] with mask [{"phone": "${phone}", "message": "${text}", "senderCode": "${alias}"}].
+2019-03-27 08:31:57,789 DEBUG ClientSession:181 - SessionID 6ce0a48f-243a-4024-993b-04311aef0eb6 | Read [16] bytes.
+2019-03-27 08:31:57,789 TRACE ClientSession:182 - SessionID 6ce0a48f-243a-4024-993b-04311aef0eb6 | 00000010000000060000000000000004
+2019-03-27 08:31:57,789 TRACE ClientSession:183 - SessionID 6ce0a48f-243a-4024-993b-04311aef0eb6 | 0 0 0 16 0 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 08:31:57,790 INFO  ClientSession:72 - SessionID 6ce0a48f-243a-4024-993b-04311aef0eb6 | Incoming command_id is defined as UNBIND
+2019-03-27 08:31:57,790 TRACE PDU:36 - SessionId 6ce0a48f-243a-4024-993b-04311aef0eb6 | Prepare response:
+2019-03-27 08:31:57,790 TRACE PDU:37 - SessionId 6ce0a48f-243a-4024-993b-04311aef0eb6 | 000000100-800000060000000000000004
+2019-03-27 08:31:57,791 TRACE PDU:38 - SessionId 6ce0a48f-243a-4024-993b-04311aef0eb6 | 0 0 0 16 -128 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 08:31:57,791 INFO  ClientSession:74 - SessionID 6ce0a48f-243a-4024-993b-04311aef0eb6 | This command is the final session. I close the connection with the client.
+2019-03-27 08:31:57,792 INFO  ClientSession:45 - Waiting data
+2019-03-27 08:31:59,145 TRACE MessageConsumer:146 - Send body:
+2019-03-27 08:31:59,145 TRACE MessageConsumer:147 - {"phone": "380504718060", "message": "some te￑ﾊ￑ﾑ￐ﾄ", "senderCode": ""}
+2019-03-27 08:31:59,146 TRACE MessageConsumer:149 - HTTP/1.1 200 OK
+2019-03-27 08:31:59,148 TRACE MessageConsumer:150 - {
+  "args": {}, 
+  "data": "{\"phone\": \"380504718060\", \"message\": \"some te??????\", \"senderCode\": \"\"}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "application/json", 
+    "Accept-Encoding": "gzip,deflate", 
+    "Content-Length": "71", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Apache-HttpClient/4.5.7 (Java/11.0.2)"
+  }, 
+  "json": {
+    "message": "some te??????", 
+    "phone": "380504718060", 
+    "senderCode": ""
+  }, 
+  "origin": "185.31.84.2, 185.31.84.2", 
+  "url": "https://httpbin.org/post"
+}
+
+2019-03-27 08:33:04,777 INFO  ClientSession:42 - SessionID 6d129b63-3866-476c-b12a-fb5b12e131c0 | Start new session.
+2019-03-27 08:33:04,777 DEBUG ClientSession:181 - SessionID 6d129b63-3866-476c-b12a-fb5b12e131c0 | Read [36] bytes.
+2019-03-27 08:33:04,784 TRACE ClientSession:182 - SessionID 6d129b63-3866-476c-b12a-fb5b12e131c0 | 000000240000000200000000000000015441533255005171313200534d50500034000000
+2019-03-27 08:33:04,785 TRACE ClientSession:183 - SessionID 6d129b63-3866-476c-b12a-fb5b12e131c0 | 0 0 0 36 0 0 0 2 0 0 0 0 0 0 0 1 84 65 83 50 85 0 81 113 49 50 0 83 77 80 80 0 52 0 0 0 
+2019-03-27 08:33:04,785 INFO  ClientSession:56 - SessionID 6d129b63-3866-476c-b12a-fb5b12e131c0 | Incoming command_id is defined as TRANSMITTER
+2019-03-27 08:33:04,789 INFO  PDUTransmitter:55 - SessionID 6d129b63-3866-476c-b12a-fb5b12e131c0 | systemId:TAS2U
+2019-03-27 08:33:04,789 DEBUG PDUTransmitter:56 - SessionId 6d129b63-3866-476c-b12a-fb5b12e131c0 | password:Qq12
+2019-03-27 08:33:04,790 DEBUG PDUTransmitter:57 - SessionId 6d129b63-3866-476c-b12a-fb5b12e131c0 | systemTun:SMPP
+2019-03-27 08:33:04,799 TRACE PDUTransmitter:87 - Check auth on: User: username 'TAS24test', password 'Qq123456', alias 'TAS24_test'
+2019-03-27 08:33:04,800 TRACE PDUTransmitter:87 - Check auth on: User: username 'TAS24test2', password 'Qq12', alias 'TAS2U'
+2019-03-27 08:33:04,800 TRACE PDUTransmitter:82 - Error authorize user with param: login [TAS2U], password [Qq12]
+2019-03-27 08:33:04,804 TRACE PDU:41 - SessionId 6d129b63-3866-476c-b12a-fb5b12e131c0 | Prepare response:
+2019-03-27 08:33:04,804 TRACE PDU:42 - SessionId 6d129b63-3866-476c-b12a-fb5b12e131c0 | 0000001b0-800000020000000000000001546173636f6d42616e6b00
+2019-03-27 08:33:04,805 TRACE PDU:43 - SessionId 6d129b63-3866-476c-b12a-fb5b12e131c0 | 0 0 0 27 -128 0 0 2 0 0 0 0 0 0 0 1 84 97 115 99 111 109 66 97 110 107 0 
+2019-03-27 08:33:04,807 INFO  ClientSession:42 - SessionID 6d129b63-3866-476c-b12a-fb5b12e131c0 | Start new session.
+2019-03-27 08:33:04,839 DEBUG ClientSession:181 - SessionID 6d129b63-3866-476c-b12a-fb5b12e131c0 | Read [16] bytes.
+2019-03-27 08:33:04,841 TRACE ClientSession:182 - SessionID 6d129b63-3866-476c-b12a-fb5b12e131c0 | 00000010000000150000000000000002
+2019-03-27 08:33:04,841 TRACE ClientSession:183 - SessionID 6d129b63-3866-476c-b12a-fb5b12e131c0 | 0 0 0 16 0 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 08:33:04,841 INFO  ClientSession:64 - SessionID 6d129b63-3866-476c-b12a-fb5b12e131c0 | Incoming command_id is defined as ENQUIRE_LINK
+2019-03-27 08:33:04,847 TRACE PDU:36 - SessionId 6d129b63-3866-476c-b12a-fb5b12e131c0 | Prepare response:
+2019-03-27 08:33:04,848 TRACE PDU:37 - SessionId 6d129b63-3866-476c-b12a-fb5b12e131c0 | 000000100-800000150000000000000002
+2019-03-27 08:33:04,848 TRACE PDU:38 - SessionId 6d129b63-3866-476c-b12a-fb5b12e131c0 | 0 0 0 16 -128 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 08:33:04,849 INFO  ClientSession:42 - SessionID 6d129b63-3866-476c-b12a-fb5b12e131c0 | Start new session.
+2019-03-27 08:33:04,849 DEBUG ClientSession:181 - SessionID 6d129b63-3866-476c-b12a-fb5b12e131c0 | Read [68] bytes.
+2019-03-27 08:33:04,850 TRACE ClientSession:182 - SessionID 6d129b63-3866-476c-b12a-fb5b12e131c0 | 00000044000000040000000000000003000001746173636f6d62616e6b00010133383035303437313830363000000000000000002300d736f6d652074650-2f0-760-2f0-6f0-300-7c
+2019-03-27 08:33:04,850 TRACE ClientSession:183 - SessionID 6d129b63-3866-476c-b12a-fb5b12e131c0 | 0 0 0 68 0 0 0 4 0 0 0 0 0 0 0 3 0 0 1 116 97 115 99 111 109 98 97 110 107 0 1 1 51 56 48 53 48 52 55 49 56 48 54 48 0 0 0 0 0 0 0 0 35 0 13 115 111 109 101 32 116 101 -47 -118 -47 -111 -48 -124 
+2019-03-27 08:33:04,851 INFO  ClientSession:68 - SessionID 6d129b63-3866-476c-b12a-fb5b12e131c0 | Incoming command_id is defined as SUBMIT_SM
+2019-03-27 08:33:04,855 TRACE PDU:99 - SessionId 6d129b63-3866-476c-b12a-fb5b12e131c0 | sequenceNumber:3
+2019-03-27 08:33:04,856 TRACE PDU:100 - SessionId 6d129b63-3866-476c-b12a-fb5b12e131c0 | serviceType:
+2019-03-27 08:33:04,856 TRACE PDU:101 - SessionId 6d129b63-3866-476c-b12a-fb5b12e131c0 | sourceAddr:tascombank
+2019-03-27 08:33:04,857 INFO  PDU:102 - SessionId 6d129b63-3866-476c-b12a-fb5b12e131c0 | destinationAddr:380504718060
+2019-03-27 08:33:04,857 TRACE PDU:103 - SessionId 6d129b63-3866-476c-b12a-fb5b12e131c0 | dataCoding:35
+2019-03-27 08:33:04,857 INFO  PDU:104 - SessionId 6d129b63-3866-476c-b12a-fb5b12e131c0 | shortMessage:some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 08:33:04,858 DEBUG ClientSession:150 - Put into queue message some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 08:33:04,861 DEBUG MessageConsumer:57 - Getting next message Message on alias [] for phone [380504718060]: [some te￑ﾊ￑ﾑ￐ﾄ]
+2019-03-27 08:33:04,866 TRACE PDU:37 - SessionId 6d129b63-3866-476c-b12a-fb5b12e131c0 | Prepare response:
+2019-03-27 08:33:04,867 TRACE PDU:38 - SessionId 6d129b63-3866-476c-b12a-fb5b12e131c0 | 000000350-80000004000000000000000336643132396236332d333836362d343736632d623132612d66623562313265313331633000
+2019-03-27 08:33:04,868 TRACE PDU:39 - SessionId 6d129b63-3866-476c-b12a-fb5b12e131c0 | 0 0 0 53 -128 0 0 4 0 0 0 0 0 0 0 3 54 100 49 50 57 98 54 51 45 51 56 54 54 45 52 55 54 99 45 98 49 50 97 45 102 98 53 98 49 50 101 49 51 49 99 48 0 
+2019-03-27 08:33:04,868 INFO  ClientSession:42 - SessionID 6d129b63-3866-476c-b12a-fb5b12e131c0 | Start new session.
+2019-03-27 08:33:04,869 DEBUG MessageConsumer:79 - Start send message to channel Recipient on method [POST] to URL [https://httpbin.org/post] with mask [{"phone": "${phone}", "message": "${text}", "senderCode": "${alias}"}].
+2019-03-27 08:33:04,879 DEBUG ClientSession:181 - SessionID 6d129b63-3866-476c-b12a-fb5b12e131c0 | Read [16] bytes.
+2019-03-27 08:33:04,880 TRACE ClientSession:182 - SessionID 6d129b63-3866-476c-b12a-fb5b12e131c0 | 00000010000000060000000000000004
+2019-03-27 08:33:04,880 TRACE ClientSession:183 - SessionID 6d129b63-3866-476c-b12a-fb5b12e131c0 | 0 0 0 16 0 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 08:33:04,881 INFO  ClientSession:72 - SessionID 6d129b63-3866-476c-b12a-fb5b12e131c0 | Incoming command_id is defined as UNBIND
+2019-03-27 08:33:04,881 TRACE PDU:36 - SessionId 6d129b63-3866-476c-b12a-fb5b12e131c0 | Prepare response:
+2019-03-27 08:33:04,882 TRACE PDU:37 - SessionId 6d129b63-3866-476c-b12a-fb5b12e131c0 | 000000100-800000060000000000000004
+2019-03-27 08:33:04,882 TRACE PDU:38 - SessionId 6d129b63-3866-476c-b12a-fb5b12e131c0 | 0 0 0 16 -128 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 08:33:04,882 INFO  ClientSession:74 - SessionID 6d129b63-3866-476c-b12a-fb5b12e131c0 | This command is the final session. I close the connection with the client.
+2019-03-27 08:33:04,883 INFO  ClientSession:45 - Waiting data
+2019-03-27 08:33:06,373 TRACE MessageConsumer:146 - Send body:
+2019-03-27 08:33:06,374 TRACE MessageConsumer:147 - {"phone": "380504718060", "message": "some te￑ﾊ￑ﾑ￐ﾄ", "senderCode": ""}
+2019-03-27 08:33:06,374 TRACE MessageConsumer:149 - HTTP/1.1 200 OK
+2019-03-27 08:33:06,377 TRACE MessageConsumer:150 - {
+  "args": {}, 
+  "data": "{\"phone\": \"380504718060\", \"message\": \"some te??????\", \"senderCode\": \"\"}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "application/json", 
+    "Accept-Encoding": "gzip,deflate", 
+    "Content-Length": "71", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Apache-HttpClient/4.5.7 (Java/11.0.2)"
+  }, 
+  "json": {
+    "message": "some te??????", 
+    "phone": "380504718060", 
+    "senderCode": ""
+  }, 
+  "origin": "185.31.84.2, 185.31.84.2", 
+  "url": "https://httpbin.org/post"
+}
+
+2019-03-27 08:33:36,380 INFO  ClientSession:42 - SessionID b8369356-49af-4e43-b780-1071fa4b40ee | Start new session.
+2019-03-27 08:33:36,380 DEBUG ClientSession:181 - SessionID b8369356-49af-4e43-b780-1071fa4b40ee | Read [36] bytes.
+2019-03-27 08:33:36,381 TRACE ClientSession:182 - SessionID b8369356-49af-4e43-b780-1071fa4b40ee | 000000240000000200000000000000015441533255005171313200534d50500034000000
+2019-03-27 08:33:36,381 TRACE ClientSession:183 - SessionID b8369356-49af-4e43-b780-1071fa4b40ee | 0 0 0 36 0 0 0 2 0 0 0 0 0 0 0 1 84 65 83 50 85 0 81 113 49 50 0 83 77 80 80 0 52 0 0 0 
+2019-03-27 08:33:36,381 INFO  ClientSession:56 - SessionID b8369356-49af-4e43-b780-1071fa4b40ee | Incoming command_id is defined as TRANSMITTER
+2019-03-27 08:33:36,382 INFO  PDUTransmitter:55 - SessionID b8369356-49af-4e43-b780-1071fa4b40ee | systemId:TAS2U
+2019-03-27 08:33:36,382 DEBUG PDUTransmitter:56 - SessionId b8369356-49af-4e43-b780-1071fa4b40ee | password:Qq12
+2019-03-27 08:33:36,382 DEBUG PDUTransmitter:57 - SessionId b8369356-49af-4e43-b780-1071fa4b40ee | systemTun:SMPP
+2019-03-27 08:33:36,385 TRACE PDUTransmitter:87 - Check auth on: User: username 'TAS24test', password 'Qq123456', alias 'TAS24_test'
+2019-03-27 08:33:36,386 TRACE PDUTransmitter:87 - Check auth on: User: username 'TAS2U', password 'Qq12', alias 'TAS2U_test'
+2019-03-27 08:33:36,386 INFO  PDUTransmitter:78 - Authorized user from param [TAS2U]: TAS2U=User: username 'TAS2U', password 'Qq12', alias 'TAS2U_test'
+2019-03-27 08:33:36,386 TRACE PDU:41 - SessionId b8369356-49af-4e43-b780-1071fa4b40ee | Prepare response:
+2019-03-27 08:33:36,386 TRACE PDU:42 - SessionId b8369356-49af-4e43-b780-1071fa4b40ee | 0000001b0-800000020000000000000001546173636f6d42616e6b00
+2019-03-27 08:33:36,387 TRACE PDU:43 - SessionId b8369356-49af-4e43-b780-1071fa4b40ee | 0 0 0 27 -128 0 0 2 0 0 0 0 0 0 0 1 84 97 115 99 111 109 66 97 110 107 0 
+2019-03-27 08:33:36,387 INFO  ClientSession:42 - SessionID b8369356-49af-4e43-b780-1071fa4b40ee | Start new session.
+2019-03-27 08:33:36,405 DEBUG ClientSession:181 - SessionID b8369356-49af-4e43-b780-1071fa4b40ee | Read [16] bytes.
+2019-03-27 08:33:36,405 TRACE ClientSession:182 - SessionID b8369356-49af-4e43-b780-1071fa4b40ee | 00000010000000150000000000000002
+2019-03-27 08:33:36,406 TRACE ClientSession:183 - SessionID b8369356-49af-4e43-b780-1071fa4b40ee | 0 0 0 16 0 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 08:33:36,406 INFO  ClientSession:64 - SessionID b8369356-49af-4e43-b780-1071fa4b40ee | Incoming command_id is defined as ENQUIRE_LINK
+2019-03-27 08:33:36,406 TRACE PDU:36 - SessionId b8369356-49af-4e43-b780-1071fa4b40ee | Prepare response:
+2019-03-27 08:33:36,407 TRACE PDU:37 - SessionId b8369356-49af-4e43-b780-1071fa4b40ee | 000000100-800000150000000000000002
+2019-03-27 08:33:36,407 TRACE PDU:38 - SessionId b8369356-49af-4e43-b780-1071fa4b40ee | 0 0 0 16 -128 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 08:33:36,407 INFO  ClientSession:42 - SessionID b8369356-49af-4e43-b780-1071fa4b40ee | Start new session.
+2019-03-27 08:33:36,407 DEBUG ClientSession:181 - SessionID b8369356-49af-4e43-b780-1071fa4b40ee | Read [68] bytes.
+2019-03-27 08:33:36,413 TRACE ClientSession:182 - SessionID b8369356-49af-4e43-b780-1071fa4b40ee | 00000044000000040000000000000003000001746173636f6d62616e6b00010133383035303437313830363000000000000000002300d736f6d652074650-2f0-760-2f0-6f0-300-7c
+2019-03-27 08:33:36,413 TRACE ClientSession:183 - SessionID b8369356-49af-4e43-b780-1071fa4b40ee | 0 0 0 68 0 0 0 4 0 0 0 0 0 0 0 3 0 0 1 116 97 115 99 111 109 98 97 110 107 0 1 1 51 56 48 53 48 52 55 49 56 48 54 48 0 0 0 0 0 0 0 0 35 0 13 115 111 109 101 32 116 101 -47 -118 -47 -111 -48 -124 
+2019-03-27 08:33:36,413 INFO  ClientSession:68 - SessionID b8369356-49af-4e43-b780-1071fa4b40ee | Incoming command_id is defined as SUBMIT_SM
+2019-03-27 08:33:36,414 TRACE PDU:99 - SessionId b8369356-49af-4e43-b780-1071fa4b40ee | sequenceNumber:3
+2019-03-27 08:33:36,414 TRACE PDU:100 - SessionId b8369356-49af-4e43-b780-1071fa4b40ee | serviceType:
+2019-03-27 08:33:36,414 TRACE PDU:101 - SessionId b8369356-49af-4e43-b780-1071fa4b40ee | sourceAddr:tascombank
+2019-03-27 08:33:36,414 INFO  PDU:102 - SessionId b8369356-49af-4e43-b780-1071fa4b40ee | destinationAddr:380504718060
+2019-03-27 08:33:36,414 TRACE PDU:103 - SessionId b8369356-49af-4e43-b780-1071fa4b40ee | dataCoding:35
+2019-03-27 08:33:36,415 INFO  PDU:104 - SessionId b8369356-49af-4e43-b780-1071fa4b40ee | shortMessage:some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 08:33:36,415 DEBUG ClientSession:150 - Put into queue message some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 08:33:36,415 TRACE PDU:37 - SessionId b8369356-49af-4e43-b780-1071fa4b40ee | Prepare response:
+2019-03-27 08:33:36,415 TRACE PDU:38 - SessionId b8369356-49af-4e43-b780-1071fa4b40ee | 000000350-80000004000000000000000362383336393335362d343961662d346534332d623738302d31303731666134623430656500
+2019-03-27 08:33:36,416 TRACE PDU:39 - SessionId b8369356-49af-4e43-b780-1071fa4b40ee | 0 0 0 53 -128 0 0 4 0 0 0 0 0 0 0 3 98 56 51 54 57 51 53 54 45 52 57 97 102 45 52 101 52 51 45 98 55 56 48 45 49 48 55 49 102 97 52 98 52 48 101 101 0 
+2019-03-27 08:33:36,415 DEBUG MessageConsumer:57 - Getting next message Message on alias [TAS2U_test] for phone [380504718060]: [some te￑ﾊ￑ﾑ￐ﾄ]
+2019-03-27 08:33:36,416 INFO  ClientSession:42 - SessionID b8369356-49af-4e43-b780-1071fa4b40ee | Start new session.
+2019-03-27 08:33:36,420 DEBUG MessageConsumer:79 - Start send message to channel Recipient on method [POST] to URL [https://httpbin.org/post] with mask [{"phone": "${phone}", "message": "${text}", "senderCode": "${alias}"}].
+2019-03-27 08:33:36,423 DEBUG ClientSession:181 - SessionID b8369356-49af-4e43-b780-1071fa4b40ee | Read [16] bytes.
+2019-03-27 08:33:36,423 TRACE ClientSession:182 - SessionID b8369356-49af-4e43-b780-1071fa4b40ee | 00000010000000060000000000000004
+2019-03-27 08:33:36,424 TRACE ClientSession:183 - SessionID b8369356-49af-4e43-b780-1071fa4b40ee | 0 0 0 16 0 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 08:33:36,424 INFO  ClientSession:72 - SessionID b8369356-49af-4e43-b780-1071fa4b40ee | Incoming command_id is defined as UNBIND
+2019-03-27 08:33:36,424 TRACE PDU:36 - SessionId b8369356-49af-4e43-b780-1071fa4b40ee | Prepare response:
+2019-03-27 08:33:36,425 TRACE PDU:37 - SessionId b8369356-49af-4e43-b780-1071fa4b40ee | 000000100-800000060000000000000004
+2019-03-27 08:33:36,425 TRACE PDU:38 - SessionId b8369356-49af-4e43-b780-1071fa4b40ee | 0 0 0 16 -128 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 08:33:36,425 INFO  ClientSession:74 - SessionID b8369356-49af-4e43-b780-1071fa4b40ee | This command is the final session. I close the connection with the client.
+2019-03-27 08:33:36,426 INFO  ClientSession:45 - Waiting data
+2019-03-27 08:33:37,170 TRACE MessageConsumer:146 - Send body:
+2019-03-27 08:33:37,170 TRACE MessageConsumer:147 - {"phone": "380504718060", "message": "some te￑ﾊ￑ﾑ￐ﾄ", "senderCode": "TAS2U_test"}
+2019-03-27 08:33:37,171 TRACE MessageConsumer:149 - HTTP/1.1 200 OK
+2019-03-27 08:33:37,171 TRACE MessageConsumer:150 - {
+  "args": {}, 
+  "data": "{\"phone\": \"380504718060\", \"message\": \"some te??????\", \"senderCode\": \"TAS2U_test\"}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "application/json", 
+    "Accept-Encoding": "gzip,deflate", 
+    "Content-Length": "81", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Apache-HttpClient/4.5.7 (Java/11.0.2)"
+  }, 
+  "json": {
+    "message": "some te??????", 
+    "phone": "380504718060", 
+    "senderCode": "TAS2U_test"
+  }, 
+  "origin": "185.31.84.2, 185.31.84.2", 
+  "url": "https://httpbin.org/post"
+}
+
+2019-03-27 08:35:23,794 INFO  ClientSession:42 - SessionID 09e706cb-3ca9-4c64-a594-da86fe52a62f | Start new session.
+2019-03-27 08:35:23,795 DEBUG ClientSession:181 - SessionID 09e706cb-3ca9-4c64-a594-da86fe52a62f | Read [36] bytes.
+2019-03-27 08:35:23,802 TRACE ClientSession:182 - SessionID 09e706cb-3ca9-4c64-a594-da86fe52a62f | 000000240000000200000000000000015441533255005171313200534d50500034000000
+2019-03-27 08:35:23,802 TRACE ClientSession:183 - SessionID 09e706cb-3ca9-4c64-a594-da86fe52a62f | 0 0 0 36 0 0 0 2 0 0 0 0 0 0 0 1 84 65 83 50 85 0 81 113 49 50 0 83 77 80 80 0 52 0 0 0 
+2019-03-27 08:35:23,803 INFO  ClientSession:56 - SessionID 09e706cb-3ca9-4c64-a594-da86fe52a62f | Incoming command_id is defined as TRANSMITTER
+2019-03-27 08:35:23,808 INFO  PDUTransmitter:55 - SessionID 09e706cb-3ca9-4c64-a594-da86fe52a62f | systemId:TAS2U
+2019-03-27 08:35:23,808 DEBUG PDUTransmitter:56 - SessionId 09e706cb-3ca9-4c64-a594-da86fe52a62f | password:Qq12
+2019-03-27 08:35:23,808 DEBUG PDUTransmitter:57 - SessionId 09e706cb-3ca9-4c64-a594-da86fe52a62f | systemTun:SMPP
+2019-03-27 08:35:23,816 INFO  PDUTransmitter:78 - Authorized user on param [TAS2U]: login [TAS2U, alias [TAS2U_test]
+2019-03-27 08:35:23,819 TRACE PDU:41 - SessionId 09e706cb-3ca9-4c64-a594-da86fe52a62f | Prepare response:
+2019-03-27 08:35:23,819 TRACE PDU:42 - SessionId 09e706cb-3ca9-4c64-a594-da86fe52a62f | 0000001b0-800000020000000000000001546173636f6d42616e6b00
+2019-03-27 08:35:23,819 TRACE PDU:43 - SessionId 09e706cb-3ca9-4c64-a594-da86fe52a62f | 0 0 0 27 -128 0 0 2 0 0 0 0 0 0 0 1 84 97 115 99 111 109 66 97 110 107 0 
+2019-03-27 08:35:23,820 INFO  ClientSession:42 - SessionID 09e706cb-3ca9-4c64-a594-da86fe52a62f | Start new session.
+2019-03-27 08:35:23,833 DEBUG ClientSession:181 - SessionID 09e706cb-3ca9-4c64-a594-da86fe52a62f | Read [16] bytes.
+2019-03-27 08:35:23,835 TRACE ClientSession:182 - SessionID 09e706cb-3ca9-4c64-a594-da86fe52a62f | 00000010000000150000000000000002
+2019-03-27 08:35:23,835 TRACE ClientSession:183 - SessionID 09e706cb-3ca9-4c64-a594-da86fe52a62f | 0 0 0 16 0 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 08:35:23,835 INFO  ClientSession:64 - SessionID 09e706cb-3ca9-4c64-a594-da86fe52a62f | Incoming command_id is defined as ENQUIRE_LINK
+2019-03-27 08:35:23,839 TRACE PDU:36 - SessionId 09e706cb-3ca9-4c64-a594-da86fe52a62f | Prepare response:
+2019-03-27 08:35:23,839 TRACE PDU:37 - SessionId 09e706cb-3ca9-4c64-a594-da86fe52a62f | 000000100-800000150000000000000002
+2019-03-27 08:35:23,839 TRACE PDU:38 - SessionId 09e706cb-3ca9-4c64-a594-da86fe52a62f | 0 0 0 16 -128 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 08:35:23,840 INFO  ClientSession:42 - SessionID 09e706cb-3ca9-4c64-a594-da86fe52a62f | Start new session.
+2019-03-27 08:35:23,840 DEBUG ClientSession:181 - SessionID 09e706cb-3ca9-4c64-a594-da86fe52a62f | Read [68] bytes.
+2019-03-27 08:35:23,841 TRACE ClientSession:182 - SessionID 09e706cb-3ca9-4c64-a594-da86fe52a62f | 00000044000000040000000000000003000001746173636f6d62616e6b00010133383035303437313830363000000000000000002300d736f6d652074650-2f0-760-2f0-6f0-300-7c
+2019-03-27 08:35:23,841 TRACE ClientSession:183 - SessionID 09e706cb-3ca9-4c64-a594-da86fe52a62f | 0 0 0 68 0 0 0 4 0 0 0 0 0 0 0 3 0 0 1 116 97 115 99 111 109 98 97 110 107 0 1 1 51 56 48 53 48 52 55 49 56 48 54 48 0 0 0 0 0 0 0 0 35 0 13 115 111 109 101 32 116 101 -47 -118 -47 -111 -48 -124 
+2019-03-27 08:35:23,842 INFO  ClientSession:68 - SessionID 09e706cb-3ca9-4c64-a594-da86fe52a62f | Incoming command_id is defined as SUBMIT_SM
+2019-03-27 08:35:23,845 TRACE PDU:99 - SessionId 09e706cb-3ca9-4c64-a594-da86fe52a62f | sequenceNumber:3
+2019-03-27 08:35:23,846 TRACE PDU:100 - SessionId 09e706cb-3ca9-4c64-a594-da86fe52a62f | serviceType:
+2019-03-27 08:35:23,846 TRACE PDU:101 - SessionId 09e706cb-3ca9-4c64-a594-da86fe52a62f | sourceAddr:tascombank
+2019-03-27 08:35:23,846 INFO  PDU:102 - SessionId 09e706cb-3ca9-4c64-a594-da86fe52a62f | destinationAddr:380504718060
+2019-03-27 08:35:23,846 TRACE PDU:103 - SessionId 09e706cb-3ca9-4c64-a594-da86fe52a62f | dataCoding:35
+2019-03-27 08:35:23,847 INFO  PDU:104 - SessionId 09e706cb-3ca9-4c64-a594-da86fe52a62f | shortMessage:some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 08:35:23,847 DEBUG ClientSession:150 - Put into queue message some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 08:35:23,849 DEBUG MessageConsumer:57 - Getting next message Message on alias [TAS2U_test] for phone [380504718060]: [some te￑ﾊ￑ﾑ￐ﾄ]
+2019-03-27 08:35:23,854 TRACE PDU:37 - SessionId 09e706cb-3ca9-4c64-a594-da86fe52a62f | Prepare response:
+2019-03-27 08:35:23,854 TRACE PDU:38 - SessionId 09e706cb-3ca9-4c64-a594-da86fe52a62f | 000000350-80000004000000000000000330396537303663622d336361392d346336342d613539342d64613836666535326136326600
+2019-03-27 08:35:23,855 TRACE PDU:39 - SessionId 09e706cb-3ca9-4c64-a594-da86fe52a62f | 0 0 0 53 -128 0 0 4 0 0 0 0 0 0 0 3 48 57 101 55 48 54 99 98 45 51 99 97 57 45 52 99 54 52 45 97 53 57 52 45 100 97 56 54 102 101 53 50 97 54 50 102 0 
+2019-03-27 08:35:23,855 INFO  ClientSession:42 - SessionID 09e706cb-3ca9-4c64-a594-da86fe52a62f | Start new session.
+2019-03-27 08:35:23,856 DEBUG MessageConsumer:79 - Start send message to channel Recipient on method [POST] to URL [https://httpbin.org/post] with mask [{"phone": "${phone}", "message": "${text}", "senderCode": "${alias}"}].
+2019-03-27 08:35:23,864 DEBUG ClientSession:181 - SessionID 09e706cb-3ca9-4c64-a594-da86fe52a62f | Read [16] bytes.
+2019-03-27 08:35:23,864 TRACE ClientSession:182 - SessionID 09e706cb-3ca9-4c64-a594-da86fe52a62f | 00000010000000060000000000000004
+2019-03-27 08:35:23,864 TRACE ClientSession:183 - SessionID 09e706cb-3ca9-4c64-a594-da86fe52a62f | 0 0 0 16 0 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 08:35:23,865 INFO  ClientSession:72 - SessionID 09e706cb-3ca9-4c64-a594-da86fe52a62f | Incoming command_id is defined as UNBIND
+2019-03-27 08:35:23,865 TRACE PDU:36 - SessionId 09e706cb-3ca9-4c64-a594-da86fe52a62f | Prepare response:
+2019-03-27 08:35:23,865 TRACE PDU:37 - SessionId 09e706cb-3ca9-4c64-a594-da86fe52a62f | 000000100-800000060000000000000004
+2019-03-27 08:35:23,866 TRACE PDU:38 - SessionId 09e706cb-3ca9-4c64-a594-da86fe52a62f | 0 0 0 16 -128 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 08:35:23,866 INFO  ClientSession:74 - SessionID 09e706cb-3ca9-4c64-a594-da86fe52a62f | This command is the final session. I close the connection with the client.
+2019-03-27 08:35:23,867 INFO  ClientSession:45 - Waiting data
+2019-03-27 08:35:25,052 TRACE MessageConsumer:146 - Send body:
+2019-03-27 08:35:25,052 TRACE MessageConsumer:147 - {"phone": "380504718060", "message": "some te￑ﾊ￑ﾑ￐ﾄ", "senderCode": "TAS2U_test"}
+2019-03-27 08:35:25,053 TRACE MessageConsumer:149 - HTTP/1.1 200 OK
+2019-03-27 08:35:25,056 TRACE MessageConsumer:150 - {
+  "args": {}, 
+  "data": "{\"phone\": \"380504718060\", \"message\": \"some te??????\", \"senderCode\": \"TAS2U_test\"}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "application/json", 
+    "Accept-Encoding": "gzip,deflate", 
+    "Content-Length": "81", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Apache-HttpClient/4.5.7 (Java/11.0.2)"
+  }, 
+  "json": {
+    "message": "some te??????", 
+    "phone": "380504718060", 
+    "senderCode": "TAS2U_test"
+  }, 
+  "origin": "185.31.84.2, 185.31.84.2", 
+  "url": "https://httpbin.org/post"
+}
+
+2019-03-27 08:51:43,085 INFO  ClientSession:42 - SessionID f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | Start new session.
+2019-03-27 08:51:43,086 DEBUG ClientSession:195 - SessionID f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | Read [36] bytes.
+2019-03-27 08:51:43,092 TRACE ClientSession:196 - SessionID f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | 000000240000000200000000000000015441533255005171313200534d50500034000000
+2019-03-27 08:51:43,092 TRACE ClientSession:197 - SessionID f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | 0 0 0 36 0 0 0 2 0 0 0 0 0 0 0 1 84 65 83 50 85 0 81 113 49 50 0 83 77 80 80 0 52 0 0 0 
+2019-03-27 08:51:43,093 INFO  ClientSession:56 - SessionID f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | Incoming command_id is defined as TRANSMITTER
+2019-03-27 08:51:43,097 INFO  PDUTransmitter:55 - SessionID f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | systemId:TAS2U
+2019-03-27 08:51:43,098 DEBUG PDUTransmitter:56 - SessionId f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | password:Qq12
+2019-03-27 08:51:43,098 DEBUG PDUTransmitter:57 - SessionId f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | systemTun:SMPP
+2019-03-27 08:51:43,107 INFO  PDUTransmitter:78 - Authorized user on param [TAS2U]: login [TAS2U], alias [TAS2U_test]
+2019-03-27 08:51:43,110 TRACE PDU:41 - SessionId f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | Prepare response:
+2019-03-27 08:51:43,111 TRACE PDU:42 - SessionId f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | 0000001b0-800000020000000000000001546173636f6d42616e6b00
+2019-03-27 08:51:43,111 TRACE PDU:43 - SessionId f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | 0 0 0 27 -128 0 0 2 0 0 0 0 0 0 0 1 84 97 115 99 111 109 66 97 110 107 0 
+2019-03-27 08:51:43,112 INFO  ClientSession:42 - SessionID f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | Start new session.
+2019-03-27 08:51:43,125 DEBUG ClientSession:195 - SessionID f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | Read [16] bytes.
+2019-03-27 08:51:43,127 TRACE ClientSession:196 - SessionID f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | 00000010000000150000000000000002
+2019-03-27 08:51:43,127 TRACE ClientSession:197 - SessionID f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | 0 0 0 16 0 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 08:51:43,127 INFO  ClientSession:64 - SessionID f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | Incoming command_id is defined as ENQUIRE_LINK
+2019-03-27 08:51:43,131 TRACE PDU:36 - SessionId f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | Prepare response:
+2019-03-27 08:51:43,132 TRACE PDU:37 - SessionId f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | 000000100-800000150000000000000002
+2019-03-27 08:51:43,132 TRACE PDU:38 - SessionId f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | 0 0 0 16 -128 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 08:51:43,133 INFO  ClientSession:42 - SessionID f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | Start new session.
+2019-03-27 08:51:43,133 DEBUG ClientSession:195 - SessionID f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | Read [68] bytes.
+2019-03-27 08:51:43,133 TRACE ClientSession:196 - SessionID f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | 00000044000000040000000000000003000001746173636f6d62616e6b00010133383035303437313830363000000000000000002300d736f6d652074650-2f0-760-2f0-6f0-300-7c
+2019-03-27 08:51:43,134 TRACE ClientSession:197 - SessionID f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | 0 0 0 68 0 0 0 4 0 0 0 0 0 0 0 3 0 0 1 116 97 115 99 111 109 98 97 110 107 0 1 1 51 56 48 53 48 52 55 49 56 48 54 48 0 0 0 0 0 0 0 0 35 0 13 115 111 109 101 32 116 101 -47 -118 -47 -111 -48 -124 
+2019-03-27 08:51:43,134 INFO  ClientSession:68 - SessionID f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | Incoming command_id is defined as SUBMIT_SM
+2019-03-27 08:51:43,137 TRACE PDU:99 - SessionId f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | sequenceNumber:3
+2019-03-27 08:51:43,138 TRACE PDU:100 - SessionId f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | serviceType:
+2019-03-27 08:51:43,138 TRACE PDU:101 - SessionId f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | sourceAddr:tascombank
+2019-03-27 08:51:43,138 INFO  PDU:102 - SessionId f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | destinationAddr:380504718060
+2019-03-27 08:51:43,139 TRACE PDU:103 - SessionId f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | dataCoding:35
+2019-03-27 08:51:43,139 INFO  PDU:104 - SessionId f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | shortMessage:some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 08:51:43,139 DEBUG ClientSession:164 - Put into queue message some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 08:51:43,141 DEBUG MessageConsumer:57 - Getting next message Message on alias [TAS2U_test] for phone [380504718060]: [some te￑ﾊ￑ﾑ￐ﾄ]
+2019-03-27 08:51:43,146 TRACE PDU:37 - SessionId f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | Prepare response:
+2019-03-27 08:51:43,146 TRACE PDU:38 - SessionId f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | 000000350-80000004000000000000000366376437633836332d636531642d346439392d623462332d63373266316439656238363100
+2019-03-27 08:51:43,146 TRACE PDU:39 - SessionId f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | 0 0 0 53 -128 0 0 4 0 0 0 0 0 0 0 3 102 55 100 55 99 56 54 51 45 99 101 49 100 45 52 100 57 57 45 98 52 98 51 45 99 55 50 102 49 100 57 101 98 56 54 49 0 
+2019-03-27 08:51:43,147 INFO  ClientSession:42 - SessionID f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | Start new session.
+2019-03-27 08:51:43,149 DEBUG MessageConsumer:79 - Start send message to channel Recipient on method [POST] to URL [https://httpbin.org/post] with mask [{"phone": "${phone}", "message": "${text}", "senderCode": "${alias}"}].
+2019-03-27 08:51:43,158 DEBUG ClientSession:195 - SessionID f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | Read [16] bytes.
+2019-03-27 08:51:43,158 TRACE ClientSession:196 - SessionID f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | 00000010000000060000000000000004
+2019-03-27 08:51:43,159 TRACE ClientSession:197 - SessionID f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | 0 0 0 16 0 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 08:51:43,159 INFO  ClientSession:72 - SessionID f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | Incoming command_id is defined as UNBIND
+2019-03-27 08:51:43,159 TRACE PDU:36 - SessionId f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | Prepare response:
+2019-03-27 08:51:43,159 TRACE PDU:37 - SessionId f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | 000000100-800000060000000000000004
+2019-03-27 08:51:43,160 TRACE PDU:38 - SessionId f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | 0 0 0 16 -128 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 08:51:43,160 INFO  ClientSession:74 - SessionID f7d7c863-ce1d-4d99-b4b3-c72f1d9eb861 | This command is the final session. I close the connection with the client.
+2019-03-27 08:51:43,161 INFO  ClientSession:45 - Waiting data
+2019-03-27 08:51:44,456 TRACE MessageConsumer:146 - Send body:
+2019-03-27 08:51:44,457 TRACE MessageConsumer:147 - {"phone": "380504718060", "message": "some te￑ﾊ￑ﾑ￐ﾄ", "senderCode": "TAS2U_test"}
+2019-03-27 08:51:44,457 TRACE MessageConsumer:149 - HTTP/1.1 200 OK
+2019-03-27 08:51:44,460 TRACE MessageConsumer:150 - {
+  "args": {}, 
+  "data": "{\"phone\": \"380504718060\", \"message\": \"some te??????\", \"senderCode\": \"TAS2U_test\"}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "application/json", 
+    "Accept-Encoding": "gzip,deflate", 
+    "Content-Length": "81", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Apache-HttpClient/4.5.7 (Java/11.0.2)"
+  }, 
+  "json": {
+    "message": "some te??????", 
+    "phone": "380504718060", 
+    "senderCode": "TAS2U_test"
+  }, 
+  "origin": "185.31.84.2, 185.31.84.2", 
+  "url": "https://httpbin.org/post"
+}
+
+2019-03-27 08:51:54,839 INFO  ClientSession:42 - SessionID 44f5f79d-4f9d-4767-89a7-c6f1aec451c2 | Start new session.
+2019-03-27 08:51:54,840 DEBUG ClientSession:195 - SessionID 44f5f79d-4f9d-4767-89a7-c6f1aec451c2 | Read [36] bytes.
+2019-03-27 08:51:54,850 TRACE ClientSession:196 - SessionID 44f5f79d-4f9d-4767-89a7-c6f1aec451c2 | 000000240000000200000000000000015441533255005171313200534d50500034000000
+2019-03-27 08:51:54,851 TRACE ClientSession:197 - SessionID 44f5f79d-4f9d-4767-89a7-c6f1aec451c2 | 0 0 0 36 0 0 0 2 0 0 0 0 0 0 0 1 84 65 83 50 85 0 81 113 49 50 0 83 77 80 80 0 52 0 0 0 
+2019-03-27 08:51:54,851 INFO  ClientSession:56 - SessionID 44f5f79d-4f9d-4767-89a7-c6f1aec451c2 | Incoming command_id is defined as TRANSMITTER
+2019-03-27 08:51:54,852 INFO  PDUTransmitter:55 - SessionID 44f5f79d-4f9d-4767-89a7-c6f1aec451c2 | systemId:TAS2U
+2019-03-27 08:51:54,852 DEBUG PDUTransmitter:56 - SessionId 44f5f79d-4f9d-4767-89a7-c6f1aec451c2 | password:Qq12
+2019-03-27 08:51:54,853 DEBUG PDUTransmitter:57 - SessionId 44f5f79d-4f9d-4767-89a7-c6f1aec451c2 | systemTun:SMPP
+2019-03-27 08:51:54,858 TRACE PDUTransmitter:82 - Error authorize user with param: login [TAS2U], password [Qq12]
+2019-03-27 08:51:54,858 TRACE PDU:41 - SessionId 44f5f79d-4f9d-4767-89a7-c6f1aec451c2 | Prepare response:
+2019-03-27 08:51:54,859 TRACE PDU:42 - SessionId 44f5f79d-4f9d-4767-89a7-c6f1aec451c2 | 0000001b0-80000002000000e00000001546173636f6d42616e6b00
+2019-03-27 08:51:54,860 TRACE PDU:43 - SessionId 44f5f79d-4f9d-4767-89a7-c6f1aec451c2 | 0 0 0 27 -128 0 0 2 0 0 0 14 0 0 0 1 84 97 115 99 111 109 66 97 110 107 0 
+2019-03-27 08:51:54,860 INFO  ClientSession:42 - SessionID 44f5f79d-4f9d-4767-89a7-c6f1aec451c2 | Start new session.
+2019-03-27 08:51:54,879 ERROR ClientSession:82 - EXCEPTION
+java.lang.NullPointerException
+	at org.dobrijzmej.smpp.ClientSession.process(ClientSession.java:45)
+	at org.dobrijzmej.smpp.MessageProducer.startSession(MessageProducer.java:70)
+	at org.dobrijzmej.smpp.MessageProducer.run(MessageProducer.java:41)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-03-27 08:51:54,883 INFO  ClientSession:45 - Waiting data
+2019-03-27 12:04:06,530 INFO  ClientSession:42 - SessionID e54ef8ef-788b-4323-9a59-a2a00cf79b3a | Start new session.
+2019-03-27 12:04:06,531 DEBUG ClientSession:195 - SessionID e54ef8ef-788b-4323-9a59-a2a00cf79b3a | Read [36] bytes.
+2019-03-27 12:04:06,538 TRACE ClientSession:196 - SessionID e54ef8ef-788b-4323-9a59-a2a00cf79b3a | 000000240000000200000000000000015441533255005171313200534d50500034000000
+2019-03-27 12:04:06,539 TRACE ClientSession:197 - SessionID e54ef8ef-788b-4323-9a59-a2a00cf79b3a | 0 0 0 36 0 0 0 2 0 0 0 0 0 0 0 1 84 65 83 50 85 0 81 113 49 50 0 83 77 80 80 0 52 0 0 0 
+2019-03-27 12:04:06,540 INFO  ClientSession:56 - SessionID e54ef8ef-788b-4323-9a59-a2a00cf79b3a | Incoming command_id is defined as TRANSMITTER
+2019-03-27 12:04:06,544 INFO  PDUTransmitter:55 - SessionID e54ef8ef-788b-4323-9a59-a2a00cf79b3a | systemId:TAS2U
+2019-03-27 12:04:06,544 DEBUG PDUTransmitter:56 - SessionId e54ef8ef-788b-4323-9a59-a2a00cf79b3a | password:Qq12
+2019-03-27 12:04:06,545 DEBUG PDUTransmitter:57 - SessionId e54ef8ef-788b-4323-9a59-a2a00cf79b3a | systemTun:SMPP
+2019-03-27 12:04:06,554 TRACE PDUTransmitter:76 - User: username 'tas24admtest', password 'tas24tst', alias 'TAS24'
+2019-03-27 12:04:06,554 TRACE PDUTransmitter:76 - User: username 'tas2uadm', password 'tas2u123', alias 'TAS2U'
+2019-03-27 12:04:06,555 TRACE PDUTransmitter:76 - User: username 'bifitadmtest', password 'bifittest', alias 'BIFIT'
+2019-03-27 12:04:06,555 TRACE PDUTransmitter:83 - Error authorize user with param: login [TAS2U], password [Qq12]
+2019-03-27 12:04:06,558 TRACE PDU:41 - SessionId e54ef8ef-788b-4323-9a59-a2a00cf79b3a | Prepare response:
+2019-03-27 12:04:06,558 TRACE PDU:42 - SessionId e54ef8ef-788b-4323-9a59-a2a00cf79b3a | 0000001b0-80000002000000e00000001546173636f6d42616e6b00
+2019-03-27 12:04:06,561 TRACE PDU:43 - SessionId e54ef8ef-788b-4323-9a59-a2a00cf79b3a | 0 0 0 27 -128 0 0 2 0 0 0 14 0 0 0 1 84 97 115 99 111 109 66 97 110 107 0 
+2019-03-27 12:04:06,562 INFO  ClientSession:42 - SessionID e54ef8ef-788b-4323-9a59-a2a00cf79b3a | Start new session.
+2019-03-27 12:04:06,571 ERROR ClientSession:82 - EXCEPTION
+java.lang.NullPointerException
+	at org.dobrijzmej.smpp.ClientSession.process(ClientSession.java:45)
+	at org.dobrijzmej.smpp.MessageProducer.startSession(MessageProducer.java:70)
+	at org.dobrijzmej.smpp.MessageProducer.run(MessageProducer.java:41)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-03-27 12:04:06,575 INFO  ClientSession:45 - Waiting data
+2019-03-27 12:07:42,292 INFO  ClientSession:42 - SessionID 6bb18a7f-5cdb-4dfd-a2c4-50d5047b15ee | Start new session.
+2019-03-27 12:07:42,293 DEBUG ClientSession:195 - SessionID 6bb18a7f-5cdb-4dfd-a2c4-50d5047b15ee | Read [36] bytes.
+2019-03-27 12:07:42,300 TRACE ClientSession:196 - SessionID 6bb18a7f-5cdb-4dfd-a2c4-50d5047b15ee | 000000240000000200000000000000015441533255005171313200534d50500034000000
+2019-03-27 12:07:42,301 TRACE ClientSession:197 - SessionID 6bb18a7f-5cdb-4dfd-a2c4-50d5047b15ee | 0 0 0 36 0 0 0 2 0 0 0 0 0 0 0 1 84 65 83 50 85 0 81 113 49 50 0 83 77 80 80 0 52 0 0 0 
+2019-03-27 12:07:42,301 INFO  ClientSession:56 - SessionID 6bb18a7f-5cdb-4dfd-a2c4-50d5047b15ee | Incoming command_id is defined as TRANSMITTER
+2019-03-27 12:07:42,305 INFO  PDUTransmitter:55 - SessionID 6bb18a7f-5cdb-4dfd-a2c4-50d5047b15ee | systemId:TAS2U
+2019-03-27 12:07:42,305 DEBUG PDUTransmitter:56 - SessionId 6bb18a7f-5cdb-4dfd-a2c4-50d5047b15ee | password:Qq12
+2019-03-27 12:07:42,306 DEBUG PDUTransmitter:57 - SessionId 6bb18a7f-5cdb-4dfd-a2c4-50d5047b15ee | systemTun:SMPP
+2019-03-27 12:07:42,314 TRACE PDUTransmitter:76 - User: username 'tas24admtest', password 'tas24tst', alias 'TAS24'
+2019-03-27 12:07:42,315 TRACE PDUTransmitter:76 - User: username 'tas2uadm', password 'tas2u123', alias 'TAS2U'
+2019-03-27 12:07:42,315 TRACE PDUTransmitter:76 - User: username 'bifitadmtest', password 'bifittest', alias 'BIFIT'
+2019-03-27 12:07:42,315 TRACE PDUTransmitter:83 - Error authorize user with param: login [TAS2U], password [Qq12]
+2019-03-27 12:07:42,319 TRACE PDU:41 - SessionId 6bb18a7f-5cdb-4dfd-a2c4-50d5047b15ee | Prepare response:
+2019-03-27 12:07:42,319 TRACE PDU:42 - SessionId 6bb18a7f-5cdb-4dfd-a2c4-50d5047b15ee | 0000001b0-80000002000000e00000001546173636f6d42616e6b00
+2019-03-27 12:07:42,321 TRACE PDU:43 - SessionId 6bb18a7f-5cdb-4dfd-a2c4-50d5047b15ee | 0 0 0 27 -128 0 0 2 0 0 0 14 0 0 0 1 84 97 115 99 111 109 66 97 110 107 0 
+2019-03-27 12:07:42,321 INFO  ClientSession:42 - SessionID 6bb18a7f-5cdb-4dfd-a2c4-50d5047b15ee | Start new session.
+2019-03-27 12:07:42,330 INFO  ClientSession:45 - Waiting data
+2019-03-27 22:19:33,285 INFO  ClientSession:48 - Waiting data
+2019-03-27 22:19:33,286 INFO  ClientSession:44 - SessionID 92abc92e-d8cc-481f-80a2-c42e3bf1b9a4 | Start new session.
+2019-03-27 22:19:33,353 DEBUG ClientSession:209 - SessionID 92abc92e-d8cc-481f-80a2-c42e3bf1b9a4 | Read [36] bytes.
+2019-03-27 22:19:33,362 TRACE ClientSession:210 - SessionID 92abc92e-d8cc-481f-80a2-c42e3bf1b9a4 | 000000240000000200000000000000015441533255005171313200534d50500034000000
+2019-03-27 22:19:33,363 TRACE ClientSession:211 - SessionID 92abc92e-d8cc-481f-80a2-c42e3bf1b9a4 | 0 0 0 36 0 0 0 2 0 0 0 0 0 0 0 1 84 65 83 50 85 0 81 113 49 50 0 83 77 80 80 0 52 0 0 0 
+2019-03-27 22:19:33,364 INFO  ClientSession:58 - SessionID 92abc92e-d8cc-481f-80a2-c42e3bf1b9a4 | Incoming command_id is defined as TRANSMITTER
+2019-03-27 22:19:33,368 INFO  PDUTransmitter:55 - SessionID 92abc92e-d8cc-481f-80a2-c42e3bf1b9a4 | systemId:TAS2U
+2019-03-27 22:19:33,369 DEBUG PDUTransmitter:56 - SessionId 92abc92e-d8cc-481f-80a2-c42e3bf1b9a4 | password:Qq12
+2019-03-27 22:19:33,370 DEBUG PDUTransmitter:57 - SessionId 92abc92e-d8cc-481f-80a2-c42e3bf1b9a4 | systemTun:SMPP
+2019-03-27 22:19:33,384 TRACE PDUTransmitter:76 - User: username 'tas24admtest', password 'tas24tst', alias 'TAS24'
+2019-03-27 22:19:33,385 TRACE PDUTransmitter:76 - User: username 'tas2uadm', password 'tas2u123', alias 'TAS2U'
+2019-03-27 22:19:33,385 TRACE PDUTransmitter:76 - User: username 'bifitadmtest', password 'bifittest', alias 'BIFIT'
+2019-03-27 22:19:33,386 TRACE PDUTransmitter:84 - Error authorize user with param: login [TAS2U], password [Qq12]
+2019-03-27 22:19:33,391 TRACE PDU:41 - SessionId 92abc92e-d8cc-481f-80a2-c42e3bf1b9a4 | Prepare response:
+2019-03-27 22:19:33,395 TRACE PDU:42 - SessionId 92abc92e-d8cc-481f-80a2-c42e3bf1b9a4 | 0000001b0-80000002000000e00000001546173636f6d42616e6b00
+2019-03-27 22:19:33,395 TRACE PDU:43 - SessionId 92abc92e-d8cc-481f-80a2-c42e3bf1b9a4 | 0 0 0 27 -128 0 0 2 0 0 0 14 0 0 0 1 84 97 115 99 111 109 66 97 110 107 0 
+2019-03-27 22:19:33,397 INFO  ClientSession:44 - SessionID 92abc92e-d8cc-481f-80a2-c42e3bf1b9a4 | Start new session.
+2019-03-27 22:19:33,399 ERROR ClientSession:214 - Socket is closed
+java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.getInputStream(Socket.java:905)
+	at org.dobrijzmej.smpp.ClientSession.readData(ClientSession.java:205)
+	at org.dobrijzmej.smpp.ClientSession.run(ClientSession.java:46)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-03-27 22:19:33,403 ERROR ClientSession:84 - EXCEPTION
+java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.getInputStream(Socket.java:905)
+	at org.dobrijzmej.smpp.ClientSession.readData(ClientSession.java:205)
+	at org.dobrijzmej.smpp.ClientSession.run(ClientSession.java:46)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-03-27 22:22:12,642 INFO  ClientSession:48 - Waiting data
+2019-03-27 22:22:12,643 INFO  ClientSession THREAD:Thread-0:44 - SessionID 4c393e37-4e9a-41b8-9e9c-aca29694383c | Start new session.
+2019-03-27 22:22:12,645 DEBUG ClientSession THREAD:Thread-0:209 - SessionID 4c393e37-4e9a-41b8-9e9c-aca29694383c | Read [36] bytes.
+2019-03-27 22:22:12,652 TRACE ClientSession THREAD:Thread-0:210 - SessionID 4c393e37-4e9a-41b8-9e9c-aca29694383c | 000000240000000200000000000000015441533255005171313200534d50500034000000
+2019-03-27 22:22:12,653 TRACE ClientSession THREAD:Thread-0:211 - SessionID 4c393e37-4e9a-41b8-9e9c-aca29694383c | 0 0 0 36 0 0 0 2 0 0 0 0 0 0 0 1 84 65 83 50 85 0 81 113 49 50 0 83 77 80 80 0 52 0 0 0 
+2019-03-27 22:22:12,654 INFO  ClientSession THREAD:Thread-0:58 - SessionID 4c393e37-4e9a-41b8-9e9c-aca29694383c | Incoming command_id is defined as TRANSMITTER
+2019-03-27 22:22:12,657 INFO  PDUTransmitter:55 - SessionID 4c393e37-4e9a-41b8-9e9c-aca29694383c | systemId:TAS2U
+2019-03-27 22:22:12,658 DEBUG PDUTransmitter:56 - SessionId 4c393e37-4e9a-41b8-9e9c-aca29694383c | password:Qq12
+2019-03-27 22:22:12,659 DEBUG PDUTransmitter:57 - SessionId 4c393e37-4e9a-41b8-9e9c-aca29694383c | systemTun:SMPP
+2019-03-27 22:22:12,668 TRACE PDUTransmitter:76 - User: username 'tas24admtest', password 'tas24tst', alias 'TAS24'
+2019-03-27 22:22:12,668 TRACE PDUTransmitter:76 - User: username 'tas2uadm', password 'tas2u123', alias 'TAS2U'
+2019-03-27 22:22:12,669 TRACE PDUTransmitter:76 - User: username 'bifitadmtest', password 'bifittest', alias 'BIFIT'
+2019-03-27 22:22:12,669 TRACE PDUTransmitter:84 - Error authorize user with param: login [TAS2U], password [Qq12]
+2019-03-27 22:22:12,672 TRACE PDU:41 - SessionId 4c393e37-4e9a-41b8-9e9c-aca29694383c | Prepare response:
+2019-03-27 22:22:12,675 TRACE PDU:42 - SessionId 4c393e37-4e9a-41b8-9e9c-aca29694383c | 0000001b0-80000002000000e00000001546173636f6d42616e6b00
+2019-03-27 22:22:12,675 TRACE PDU:43 - SessionId 4c393e37-4e9a-41b8-9e9c-aca29694383c | 0 0 0 27 -128 0 0 2 0 0 0 14 0 0 0 1 84 97 115 99 111 109 66 97 110 107 0 
+2019-03-27 22:22:12,676 INFO  ClientSession THREAD:Thread-0:44 - SessionID 4c393e37-4e9a-41b8-9e9c-aca29694383c | Start new session.
+2019-03-27 22:22:12,677 ERROR ClientSession THREAD:Thread-0:214 - Socket is closed
+java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.getInputStream(Socket.java:905)
+	at org.dobrijzmej.smpp.ClientSession.readData(ClientSession.java:205)
+	at org.dobrijzmej.smpp.ClientSession.run(ClientSession.java:46)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-03-27 22:22:12,679 ERROR ClientSession THREAD:Thread-0:84 - EXCEPTION
+java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.getInputStream(Socket.java:905)
+	at org.dobrijzmej.smpp.ClientSession.readData(ClientSession.java:205)
+	at org.dobrijzmej.smpp.ClientSession.run(ClientSession.java:46)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-03-27 22:23:27,246 INFO  ClientSession:48 - Waiting data
+2019-03-27 22:23:27,246 INFO  ClientSession Thread-0:44 - SessionID 13e5786a-5bc7-451e-a7ba-5e47e4394c8c | Start new session.
+2019-03-27 22:23:27,251 DEBUG ClientSession Thread-0:209 - SessionID 13e5786a-5bc7-451e-a7ba-5e47e4394c8c | Read [43] bytes.
+2019-03-27 22:23:27,258 TRACE ClientSession Thread-0:210 - SessionID 13e5786a-5bc7-451e-a7ba-5e47e4394c8c | 0000002b000000020000000000000001746173327561646d00746173327531323300534d50500034000000
+2019-03-27 22:23:27,258 TRACE ClientSession Thread-0:211 - SessionID 13e5786a-5bc7-451e-a7ba-5e47e4394c8c | 0 0 0 43 0 0 0 2 0 0 0 0 0 0 0 1 116 97 115 50 117 97 100 109 0 116 97 115 50 117 49 50 51 0 83 77 80 80 0 52 0 0 0 
+2019-03-27 22:23:27,259 INFO  ClientSession Thread-0:58 - SessionID 13e5786a-5bc7-451e-a7ba-5e47e4394c8c | Incoming command_id is defined as TRANSMITTER
+2019-03-27 22:23:27,262 INFO  PDUTransmitter:55 - SessionID 13e5786a-5bc7-451e-a7ba-5e47e4394c8c | systemId:tas2uadm
+2019-03-27 22:23:27,262 DEBUG PDUTransmitter:56 - SessionId 13e5786a-5bc7-451e-a7ba-5e47e4394c8c | password:tas2u123
+2019-03-27 22:23:27,262 DEBUG PDUTransmitter:57 - SessionId 13e5786a-5bc7-451e-a7ba-5e47e4394c8c | systemTun:SMPP
+2019-03-27 22:23:27,271 TRACE PDUTransmitter:76 - User: username 'tas24admtest', password 'tas24tst', alias 'TAS24'
+2019-03-27 22:23:27,271 TRACE PDUTransmitter:76 - User: username 'tas2uadm', password 'tas2u123', alias 'TAS2U'
+2019-03-27 22:23:27,272 INFO  PDUTransmitter:79 - Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-03-27 22:23:27,275 TRACE PDU:41 - SessionId 13e5786a-5bc7-451e-a7ba-5e47e4394c8c | Prepare response:
+2019-03-27 22:23:27,276 TRACE PDU:42 - SessionId 13e5786a-5bc7-451e-a7ba-5e47e4394c8c | 0000001b0-800000020000000000000001546173636f6d42616e6b00
+2019-03-27 22:23:27,277 TRACE PDU:43 - SessionId 13e5786a-5bc7-451e-a7ba-5e47e4394c8c | 0 0 0 27 -128 0 0 2 0 0 0 0 0 0 0 1 84 97 115 99 111 109 66 97 110 107 0 
+2019-03-27 22:23:27,278 INFO  ClientSession Thread-0:44 - SessionID 13e5786a-5bc7-451e-a7ba-5e47e4394c8c | Start new session.
+2019-03-27 22:23:27,279 ERROR ClientSession Thread-0:214 - Socket is closed
+java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.getInputStream(Socket.java:905)
+	at org.dobrijzmej.smpp.ClientSession.readData(ClientSession.java:205)
+	at org.dobrijzmej.smpp.ClientSession.run(ClientSession.java:46)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-03-27 22:23:27,282 ERROR ClientSession Thread-0:84 - EXCEPTION
+java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.getInputStream(Socket.java:905)
+	at org.dobrijzmej.smpp.ClientSession.readData(ClientSession.java:205)
+	at org.dobrijzmej.smpp.ClientSession.run(ClientSession.java:46)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-03-27 22:24:10,770 INFO  ClientSession:48 - Waiting data
+2019-03-27 22:24:10,771 INFO  ClientSession Thread-0:44 - SessionID be0f6568-3ced-4241-af3a-f538822640ae | Start new session.
+2019-03-27 22:24:10,773 DEBUG ClientSession Thread-0:209 - SessionID be0f6568-3ced-4241-af3a-f538822640ae | Read [43] bytes.
+2019-03-27 22:24:10,780 TRACE ClientSession Thread-0:210 - SessionID be0f6568-3ced-4241-af3a-f538822640ae | 0000002b000000020000000000000001746173327561646d00746173327531323300534d50500034000000
+2019-03-27 22:24:10,780 TRACE ClientSession Thread-0:211 - SessionID be0f6568-3ced-4241-af3a-f538822640ae | 0 0 0 43 0 0 0 2 0 0 0 0 0 0 0 1 116 97 115 50 117 97 100 109 0 116 97 115 50 117 49 50 51 0 83 77 80 80 0 52 0 0 0 
+2019-03-27 22:24:10,780 INFO  ClientSession Thread-0:58 - SessionID be0f6568-3ced-4241-af3a-f538822640ae | Incoming command_id is defined as TRANSMITTER
+2019-03-27 22:24:10,784 INFO  PDUTransmitter:55 - SessionID be0f6568-3ced-4241-af3a-f538822640ae | systemId:tas2uadm
+2019-03-27 22:24:10,785 DEBUG PDUTransmitter:56 - SessionId be0f6568-3ced-4241-af3a-f538822640ae | password:tas2u123
+2019-03-27 22:24:10,785 DEBUG PDUTransmitter:57 - SessionId be0f6568-3ced-4241-af3a-f538822640ae | systemTun:SMPP
+2019-03-27 22:24:10,795 TRACE PDUTransmitter:76 - User: username 'tas24admtest', password 'tas24tst', alias 'TAS24'
+2019-03-27 22:24:10,796 TRACE PDUTransmitter:76 - User: username 'tas2uadm', password 'tas2u123', alias 'TAS2U'
+2019-03-27 22:24:10,796 INFO  PDUTransmitter:79 - Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-03-27 22:24:10,799 TRACE PDU:41 - SessionId be0f6568-3ced-4241-af3a-f538822640ae | Prepare response:
+2019-03-27 22:24:10,799 TRACE PDU:42 - SessionId be0f6568-3ced-4241-af3a-f538822640ae | 0000001b0-800000020000000000000001546173636f6d42616e6b00
+2019-03-27 22:24:10,801 TRACE PDU:43 - SessionId be0f6568-3ced-4241-af3a-f538822640ae | 0 0 0 27 -128 0 0 2 0 0 0 0 0 0 0 1 84 97 115 99 111 109 66 97 110 107 0 
+2019-03-27 22:24:10,802 INFO  ClientSession Thread-0:44 - SessionID be0f6568-3ced-4241-af3a-f538822640ae | Start new session.
+2019-03-27 22:24:10,813 DEBUG ClientSession Thread-0:209 - SessionID be0f6568-3ced-4241-af3a-f538822640ae | Read [16] bytes.
+2019-03-27 22:24:10,813 TRACE ClientSession Thread-0:210 - SessionID be0f6568-3ced-4241-af3a-f538822640ae | 00000010000000150000000000000002
+2019-03-27 22:24:10,814 TRACE ClientSession Thread-0:211 - SessionID be0f6568-3ced-4241-af3a-f538822640ae | 0 0 0 16 0 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 22:24:10,815 INFO  ClientSession Thread-0:66 - SessionID be0f6568-3ced-4241-af3a-f538822640ae | Incoming command_id is defined as ENQUIRE_LINK
+2019-03-27 22:24:10,818 TRACE PDU:36 - SessionId be0f6568-3ced-4241-af3a-f538822640ae | Prepare response:
+2019-03-27 22:24:10,818 TRACE PDU:37 - SessionId be0f6568-3ced-4241-af3a-f538822640ae | 000000100-800000150000000000000002
+2019-03-27 22:24:10,818 TRACE PDU:38 - SessionId be0f6568-3ced-4241-af3a-f538822640ae | 0 0 0 16 -128 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 22:24:10,819 INFO  ClientSession Thread-0:44 - SessionID be0f6568-3ced-4241-af3a-f538822640ae | Start new session.
+2019-03-27 22:24:10,819 DEBUG ClientSession Thread-0:209 - SessionID be0f6568-3ced-4241-af3a-f538822640ae | Read [68] bytes.
+2019-03-27 22:24:10,819 TRACE ClientSession Thread-0:210 - SessionID be0f6568-3ced-4241-af3a-f538822640ae | 00000044000000040000000000000003000001746173636f6d62616e6b00010133383035303437313830363000000000000000002300d736f6d652074650-2f0-760-2f0-6f0-300-7c
+2019-03-27 22:24:10,819 TRACE ClientSession Thread-0:211 - SessionID be0f6568-3ced-4241-af3a-f538822640ae | 0 0 0 68 0 0 0 4 0 0 0 0 0 0 0 3 0 0 1 116 97 115 99 111 109 98 97 110 107 0 1 1 51 56 48 53 48 52 55 49 56 48 54 48 0 0 0 0 0 0 0 0 35 0 13 115 111 109 101 32 116 101 -47 -118 -47 -111 -48 -124 
+2019-03-27 22:24:10,820 INFO  ClientSession Thread-0:70 - SessionID be0f6568-3ced-4241-af3a-f538822640ae | Incoming command_id is defined as SUBMIT_SM
+2019-03-27 22:24:10,824 TRACE PDU:99 - SessionId be0f6568-3ced-4241-af3a-f538822640ae | sequenceNumber:3
+2019-03-27 22:24:10,825 TRACE PDU:100 - SessionId be0f6568-3ced-4241-af3a-f538822640ae | serviceType:
+2019-03-27 22:24:10,825 TRACE PDU:101 - SessionId be0f6568-3ced-4241-af3a-f538822640ae | sourceAddr:tascombank
+2019-03-27 22:24:10,825 INFO  PDU:102 - SessionId be0f6568-3ced-4241-af3a-f538822640ae | destinationAddr:380504718060
+2019-03-27 22:24:10,826 TRACE PDU:103 - SessionId be0f6568-3ced-4241-af3a-f538822640ae | dataCoding:35
+2019-03-27 22:24:10,826 INFO  PDU:104 - SessionId be0f6568-3ced-4241-af3a-f538822640ae | shortMessage:some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 22:24:10,827 DEBUG ClientSession Thread-0:178 - Put into queue message some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 22:24:10,829 DEBUG MessageConsumer:57 - Getting next message Message on alias [TAS2U] for phone [380504718060]: [some te￑ﾊ￑ﾑ￐ﾄ]
+2019-03-27 22:24:10,834 TRACE PDU:37 - SessionId be0f6568-3ced-4241-af3a-f538822640ae | Prepare response:
+2019-03-27 22:24:10,835 TRACE PDU:38 - SessionId be0f6568-3ced-4241-af3a-f538822640ae | 000000350-80000004000000000000000362653066363536382d336365642d343234312d616633612d66353338383232363430616500
+2019-03-27 22:24:10,835 TRACE PDU:39 - SessionId be0f6568-3ced-4241-af3a-f538822640ae | 0 0 0 53 -128 0 0 4 0 0 0 0 0 0 0 3 98 101 48 102 54 53 54 56 45 51 99 101 100 45 52 50 52 49 45 97 102 51 97 45 102 53 51 56 56 50 50 54 52 48 97 101 0 
+2019-03-27 22:24:10,835 INFO  ClientSession Thread-0:44 - SessionID be0f6568-3ced-4241-af3a-f538822640ae | Start new session.
+2019-03-27 22:24:10,837 DEBUG MessageConsumer:79 - Start send message to channel Recipient on method [POST] to URL [https://httpbin.org/post] with mask [{"phone": "${phone}", "message": "${text}", "senderCode": "${alias}"}].
+2019-03-27 22:24:10,843 DEBUG ClientSession Thread-0:209 - SessionID be0f6568-3ced-4241-af3a-f538822640ae | Read [16] bytes.
+2019-03-27 22:24:10,844 TRACE ClientSession Thread-0:210 - SessionID be0f6568-3ced-4241-af3a-f538822640ae | 00000010000000060000000000000004
+2019-03-27 22:24:10,844 TRACE ClientSession Thread-0:211 - SessionID be0f6568-3ced-4241-af3a-f538822640ae | 0 0 0 16 0 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 22:24:10,845 INFO  ClientSession Thread-0:74 - SessionID be0f6568-3ced-4241-af3a-f538822640ae | Incoming command_id is defined as UNBIND
+2019-03-27 22:24:10,845 TRACE PDU:36 - SessionId be0f6568-3ced-4241-af3a-f538822640ae | Prepare response:
+2019-03-27 22:24:10,845 TRACE PDU:37 - SessionId be0f6568-3ced-4241-af3a-f538822640ae | 000000100-800000060000000000000004
+2019-03-27 22:24:10,846 TRACE PDU:38 - SessionId be0f6568-3ced-4241-af3a-f538822640ae | 0 0 0 16 -128 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 22:24:10,846 INFO  ClientSession Thread-0:76 - SessionID be0f6568-3ced-4241-af3a-f538822640ae | This command is the final session. I close the connection with the client.
+2019-03-27 22:24:12,648 TRACE MessageConsumer:146 - Send body:
+2019-03-27 22:24:12,649 TRACE MessageConsumer:147 - {"phone": "380504718060", "message": "some te￑ﾊ￑ﾑ￐ﾄ", "senderCode": "TAS2U"}
+2019-03-27 22:24:12,649 TRACE MessageConsumer:149 - HTTP/1.1 200 OK
+2019-03-27 22:24:12,663 TRACE MessageConsumer:150 - {
+  "args": {}, 
+  "data": "{\"phone\": \"380504718060\", \"message\": \"some te??????\", \"senderCode\": \"TAS2U\"}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "application/json", 
+    "Accept-Encoding": "gzip,deflate", 
+    "Content-Length": "76", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Apache-HttpClient/4.5.7 (Java/11.0.2)"
+  }, 
+  "json": {
+    "message": "some te??????", 
+    "phone": "380504718060", 
+    "senderCode": "TAS2U"
+  }, 
+  "origin": "176.38.190.18, 176.38.190.18", 
+  "url": "https://httpbin.org/post"
+}
+
+2019-03-27 22:24:31,567 INFO  ClientSession:48 - Waiting data
+2019-03-27 22:24:31,568 INFO  ClientSession Thread-0:44 - SessionID 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | Start new session.
+2019-03-27 22:24:31,569 DEBUG ClientSession Thread-0:209 - SessionID 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | Read [43] bytes.
+2019-03-27 22:24:31,570 TRACE ClientSession Thread-0:210 - SessionID 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | 0000002b000000020000000000000001746173327561646d00746173327531323300534d50500034000000
+2019-03-27 22:24:31,570 TRACE ClientSession Thread-0:211 - SessionID 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | 0 0 0 43 0 0 0 2 0 0 0 0 0 0 0 1 116 97 115 50 117 97 100 109 0 116 97 115 50 117 49 50 51 0 83 77 80 80 0 52 0 0 0 
+2019-03-27 22:24:31,570 INFO  ClientSession Thread-0:58 - SessionID 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | Incoming command_id is defined as TRANSMITTER
+2019-03-27 22:24:31,571 INFO  PDUTransmitter:55 - SessionID 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | systemId:tas2uadm
+2019-03-27 22:24:31,571 DEBUG PDUTransmitter:56 - SessionId 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | password:tas2u123
+2019-03-27 22:24:31,571 DEBUG PDUTransmitter:57 - SessionId 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | systemTun:SMPP
+2019-03-27 22:24:31,577 TRACE PDUTransmitter:76 - User: username 'tas24admtest', password 'tas24tst', alias 'TAS24'
+2019-03-27 22:24:31,577 TRACE PDUTransmitter:76 - User: username 'tas2uadm', password 'tas2u123', alias 'TAS2U'
+2019-03-27 22:24:31,578 INFO  PDUTransmitter:79 - Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-03-27 22:24:31,578 TRACE PDU:41 - SessionId 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | Prepare response:
+2019-03-27 22:24:31,578 TRACE PDU:42 - SessionId 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | 0000001b0-800000020000000000000001546173636f6d42616e6b00
+2019-03-27 22:24:31,578 TRACE PDU:43 - SessionId 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | 0 0 0 27 -128 0 0 2 0 0 0 0 0 0 0 1 84 97 115 99 111 109 66 97 110 107 0 
+2019-03-27 22:24:31,579 INFO  ClientSession Thread-0:44 - SessionID 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | Start new session.
+2019-03-27 22:24:31,594 DEBUG ClientSession Thread-0:209 - SessionID 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | Read [16] bytes.
+2019-03-27 22:24:31,594 TRACE ClientSession Thread-0:210 - SessionID 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | 00000010000000150000000000000002
+2019-03-27 22:24:31,594 TRACE ClientSession Thread-0:211 - SessionID 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | 0 0 0 16 0 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 22:24:31,595 INFO  ClientSession Thread-0:66 - SessionID 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | Incoming command_id is defined as ENQUIRE_LINK
+2019-03-27 22:24:31,595 TRACE PDU:36 - SessionId 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | Prepare response:
+2019-03-27 22:24:31,595 TRACE PDU:37 - SessionId 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | 000000100-800000150000000000000002
+2019-03-27 22:24:31,595 TRACE PDU:38 - SessionId 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | 0 0 0 16 -128 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 22:24:31,596 INFO  ClientSession Thread-0:44 - SessionID 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | Start new session.
+2019-03-27 22:24:31,596 DEBUG ClientSession Thread-0:209 - SessionID 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | Read [68] bytes.
+2019-03-27 22:24:31,597 TRACE ClientSession Thread-0:210 - SessionID 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | 00000044000000040000000000000003000001746173636f6d62616e6b00010133383035303437313830363000000000000000002300d736f6d652074650-2f0-760-2f0-6f0-300-7c
+2019-03-27 22:24:31,597 TRACE ClientSession Thread-0:211 - SessionID 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | 0 0 0 68 0 0 0 4 0 0 0 0 0 0 0 3 0 0 1 116 97 115 99 111 109 98 97 110 107 0 1 1 51 56 48 53 48 52 55 49 56 48 54 48 0 0 0 0 0 0 0 0 35 0 13 115 111 109 101 32 116 101 -47 -118 -47 -111 -48 -124 
+2019-03-27 22:24:31,597 INFO  ClientSession Thread-0:70 - SessionID 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | Incoming command_id is defined as SUBMIT_SM
+2019-03-27 22:24:31,597 TRACE PDU:99 - SessionId 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | sequenceNumber:3
+2019-03-27 22:24:31,597 TRACE PDU:100 - SessionId 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | serviceType:
+2019-03-27 22:24:31,598 TRACE PDU:101 - SessionId 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | sourceAddr:tascombank
+2019-03-27 22:24:31,598 INFO  PDU:102 - SessionId 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | destinationAddr:380504718060
+2019-03-27 22:24:31,598 TRACE PDU:103 - SessionId 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | dataCoding:35
+2019-03-27 22:24:31,598 INFO  PDU:104 - SessionId 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | shortMessage:some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 22:24:31,599 DEBUG ClientSession Thread-0:178 - Put into queue message some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 22:24:31,599 TRACE PDU:37 - SessionId 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | Prepare response:
+2019-03-27 22:24:31,599 TRACE PDU:38 - SessionId 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | 000000350-80000004000000000000000337646664336163652d326638612d343232312d393264302d37353137333333663066316200
+2019-03-27 22:24:31,599 TRACE PDU:39 - SessionId 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | 0 0 0 53 -128 0 0 4 0 0 0 0 0 0 0 3 55 100 102 100 51 97 99 101 45 50 102 56 97 45 52 50 50 49 45 57 50 100 48 45 55 53 49 55 51 51 51 102 48 102 49 98 0 
+2019-03-27 22:24:31,599 DEBUG MessageConsumer:57 - Getting next message Message on alias [TAS2U] for phone [380504718060]: [some te￑ﾊ￑ﾑ￐ﾄ]
+2019-03-27 22:24:31,600 INFO  ClientSession Thread-0:44 - SessionID 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | Start new session.
+2019-03-27 22:24:31,604 DEBUG MessageConsumer:79 - Start send message to channel Recipient on method [POST] to URL [https://httpbin.org/post] with mask [{"phone": "${phone}", "message": "${text}", "senderCode": "${alias}"}].
+2019-03-27 22:24:31,606 DEBUG ClientSession Thread-0:209 - SessionID 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | Read [16] bytes.
+2019-03-27 22:24:31,606 TRACE ClientSession Thread-0:210 - SessionID 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | 00000010000000060000000000000004
+2019-03-27 22:24:31,607 TRACE ClientSession Thread-0:211 - SessionID 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | 0 0 0 16 0 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 22:24:31,607 INFO  ClientSession Thread-0:74 - SessionID 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | Incoming command_id is defined as UNBIND
+2019-03-27 22:24:31,608 TRACE PDU:36 - SessionId 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | Prepare response:
+2019-03-27 22:24:31,608 TRACE PDU:37 - SessionId 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | 000000100-800000060000000000000004
+2019-03-27 22:24:31,609 TRACE PDU:38 - SessionId 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | 0 0 0 16 -128 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 22:24:31,610 INFO  ClientSession Thread-0:76 - SessionID 7dfd3ace-2f8a-4221-92d0-7517333f0f1b | This command is the final session. I close the connection with the client.
+2019-03-27 22:24:32,304 TRACE MessageConsumer:146 - Send body:
+2019-03-27 22:24:32,304 TRACE MessageConsumer:147 - {"phone": "380504718060", "message": "some te￑ﾊ￑ﾑ￐ﾄ", "senderCode": "TAS2U"}
+2019-03-27 22:24:32,305 TRACE MessageConsumer:149 - HTTP/1.1 200 OK
+2019-03-27 22:24:32,305 TRACE MessageConsumer:150 - {
+  "args": {}, 
+  "data": "{\"phone\": \"380504718060\", \"message\": \"some te??????\", \"senderCode\": \"TAS2U\"}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "application/json", 
+    "Accept-Encoding": "gzip,deflate", 
+    "Content-Length": "76", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Apache-HttpClient/4.5.7 (Java/11.0.2)"
+  }, 
+  "json": {
+    "message": "some te??????", 
+    "phone": "380504718060", 
+    "senderCode": "TAS2U"
+  }, 
+  "origin": "176.38.190.18, 176.38.190.18", 
+  "url": "https://httpbin.org/post"
+}
+
+2019-03-27 23:06:19,647 INFO  ClientSession:45 - Thread-2 | SessionID 30cb0569-62af-4551-aa5e-32847136d3cb | Waiting next command.
+2019-03-27 23:06:19,649 DEBUG ClientSession:210 - SessionID 30cb0569-62af-4551-aa5e-32847136d3cb | Read [43] bytes.
+2019-03-27 23:06:19,657 TRACE ClientSession:211 - SessionID 30cb0569-62af-4551-aa5e-32847136d3cb | 0000002b000000020000000000000001746173327561646d00746173327531323300534d50500034000000
+2019-03-27 23:06:19,658 TRACE ClientSession:212 - SessionID 30cb0569-62af-4551-aa5e-32847136d3cb | 0 0 0 43 0 0 0 2 0 0 0 0 0 0 0 1 116 97 115 50 117 97 100 109 0 116 97 115 50 117 49 50 51 0 83 77 80 80 0 52 0 0 0 
+2019-03-27 23:06:19,658 INFO  ClientSession:59 - Thread-2 | SessionID 30cb0569-62af-4551-aa5e-32847136d3cb | Incoming command_id is defined as TRANSMITTER
+2019-03-27 23:06:19,662 INFO  PDUTransmitter:55 - SessionID 30cb0569-62af-4551-aa5e-32847136d3cb | systemId:tas2uadm
+2019-03-27 23:06:19,663 DEBUG PDUTransmitter:56 - SessionId 30cb0569-62af-4551-aa5e-32847136d3cb | password:tas2u123
+2019-03-27 23:06:19,663 DEBUG PDUTransmitter:57 - SessionId 30cb0569-62af-4551-aa5e-32847136d3cb | systemTun:SMPP
+2019-03-27 23:06:19,675 TRACE PDUTransmitter:76 - User: username 'tas24admtest', password 'tas24tst', alias 'TAS24'
+2019-03-27 23:06:19,675 TRACE PDUTransmitter:76 - User: username 'tas2uadm', password 'tas2u123', alias 'TAS2U'
+2019-03-27 23:06:19,676 INFO  PDUTransmitter:79 - Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-03-27 23:06:19,682 TRACE PDU:41 - SessionId 30cb0569-62af-4551-aa5e-32847136d3cb | Prepare response:
+2019-03-27 23:06:19,683 TRACE PDU:42 - SessionId 30cb0569-62af-4551-aa5e-32847136d3cb | 0000001b0-800000020000000000000001546173636f6d42616e6b00
+2019-03-27 23:06:19,687 TRACE PDU:43 - SessionId 30cb0569-62af-4551-aa5e-32847136d3cb | 0 0 0 27 -128 0 0 2 0 0 0 0 0 0 0 1 84 97 115 99 111 109 66 97 110 107 0 
+2019-03-27 23:06:19,688 INFO  ClientSession:45 - Thread-2 | SessionID 30cb0569-62af-4551-aa5e-32847136d3cb | Waiting next command.
+2019-03-27 23:06:19,697 INFO  ClientSession:39 - Waiting next client
+2019-03-27 23:06:19,708 DEBUG ClientSession:210 - SessionID 30cb0569-62af-4551-aa5e-32847136d3cb | Read [16] bytes.
+2019-03-27 23:06:19,709 TRACE ClientSession:211 - SessionID 30cb0569-62af-4551-aa5e-32847136d3cb | 00000010000000150000000000000002
+2019-03-27 23:06:19,709 TRACE ClientSession:212 - SessionID 30cb0569-62af-4551-aa5e-32847136d3cb | 0 0 0 16 0 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 23:06:19,710 INFO  ClientSession:67 - Thread-2 | SessionID 30cb0569-62af-4551-aa5e-32847136d3cb | Incoming command_id is defined as ENQUIRE_LINK
+2019-03-27 23:06:19,716 TRACE PDU:36 - SessionId 30cb0569-62af-4551-aa5e-32847136d3cb | Prepare response:
+2019-03-27 23:06:19,717 TRACE PDU:37 - SessionId 30cb0569-62af-4551-aa5e-32847136d3cb | 000000100-800000150000000000000002
+2019-03-27 23:06:19,717 TRACE PDU:38 - SessionId 30cb0569-62af-4551-aa5e-32847136d3cb | 0 0 0 16 -128 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 23:06:19,718 INFO  ClientSession:45 - Thread-2 | SessionID 30cb0569-62af-4551-aa5e-32847136d3cb | Waiting next command.
+2019-03-27 23:06:19,719 DEBUG ClientSession:210 - SessionID 30cb0569-62af-4551-aa5e-32847136d3cb | Read [68] bytes.
+2019-03-27 23:06:19,720 TRACE ClientSession:211 - SessionID 30cb0569-62af-4551-aa5e-32847136d3cb | 00000044000000040000000000000003000001746173636f6d62616e6b00010133383035303437313830363000000000000000002300d736f6d652074650-2f0-760-2f0-6f0-300-7c
+2019-03-27 23:06:19,721 TRACE ClientSession:212 - SessionID 30cb0569-62af-4551-aa5e-32847136d3cb | 0 0 0 68 0 0 0 4 0 0 0 0 0 0 0 3 0 0 1 116 97 115 99 111 109 98 97 110 107 0 1 1 51 56 48 53 48 52 55 49 56 48 54 48 0 0 0 0 0 0 0 0 35 0 13 115 111 109 101 32 116 101 -47 -118 -47 -111 -48 -124 
+2019-03-27 23:06:19,722 INFO  ClientSession:71 - Thread-2 | SessionID 30cb0569-62af-4551-aa5e-32847136d3cb | Incoming command_id is defined as SUBMIT_SM
+2019-03-27 23:06:19,727 TRACE PDU:99 - SessionId 30cb0569-62af-4551-aa5e-32847136d3cb | sequenceNumber:3
+2019-03-27 23:06:19,727 TRACE PDU:100 - SessionId 30cb0569-62af-4551-aa5e-32847136d3cb | serviceType:
+2019-03-27 23:06:19,727 TRACE PDU:101 - SessionId 30cb0569-62af-4551-aa5e-32847136d3cb | sourceAddr:tascombank
+2019-03-27 23:06:19,728 INFO  PDU:102 - SessionId 30cb0569-62af-4551-aa5e-32847136d3cb | destinationAddr:380504718060
+2019-03-27 23:06:19,728 TRACE PDU:103 - SessionId 30cb0569-62af-4551-aa5e-32847136d3cb | dataCoding:35
+2019-03-27 23:06:19,729 INFO  PDU:104 - SessionId 30cb0569-62af-4551-aa5e-32847136d3cb | shortMessage:some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 23:06:19,729 DEBUG ClientSession:179 - Put into queue message some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 23:06:19,733 DEBUG MessageConsumer:57 - Getting next message Message on alias [TAS2U] for phone [380504718060]: [some te￑ﾊ￑ﾑ￐ﾄ]
+2019-03-27 23:06:19,740 TRACE PDU:37 - SessionId 30cb0569-62af-4551-aa5e-32847136d3cb | Prepare response:
+2019-03-27 23:06:19,740 TRACE PDU:38 - SessionId 30cb0569-62af-4551-aa5e-32847136d3cb | 000000350-80000004000000000000000333306362303536392d363261662d343535312d616135652d33323834373133366433636200
+2019-03-27 23:06:19,741 TRACE PDU:39 - SessionId 30cb0569-62af-4551-aa5e-32847136d3cb | 0 0 0 53 -128 0 0 4 0 0 0 0 0 0 0 3 51 48 99 98 48 53 54 57 45 54 50 97 102 45 52 53 53 49 45 97 97 53 101 45 51 50 56 52 55 49 51 54 100 51 99 98 0 
+2019-03-27 23:06:19,742 INFO  ClientSession:45 - Thread-2 | SessionID 30cb0569-62af-4551-aa5e-32847136d3cb | Waiting next command.
+2019-03-27 23:06:19,746 DEBUG MessageConsumer:79 - Start send message to channel Recipient on method [POST] to URL [https://httpbin.org/post] with mask [{"phone": "${phone}", "message": "${text}", "senderCode": "${alias}"}].
+2019-03-27 23:06:19,753 DEBUG ClientSession:210 - SessionID 30cb0569-62af-4551-aa5e-32847136d3cb | Read [16] bytes.
+2019-03-27 23:06:19,754 TRACE ClientSession:211 - SessionID 30cb0569-62af-4551-aa5e-32847136d3cb | 00000010000000060000000000000004
+2019-03-27 23:06:19,754 TRACE ClientSession:212 - SessionID 30cb0569-62af-4551-aa5e-32847136d3cb | 0 0 0 16 0 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 23:06:19,755 INFO  ClientSession:75 - Thread-2 | SessionID 30cb0569-62af-4551-aa5e-32847136d3cb | Incoming command_id is defined as UNBIND
+2019-03-27 23:06:19,755 TRACE PDU:36 - SessionId 30cb0569-62af-4551-aa5e-32847136d3cb | Prepare response:
+2019-03-27 23:06:19,756 TRACE PDU:37 - SessionId 30cb0569-62af-4551-aa5e-32847136d3cb | 000000100-800000060000000000000004
+2019-03-27 23:06:19,756 TRACE PDU:38 - SessionId 30cb0569-62af-4551-aa5e-32847136d3cb | 0 0 0 16 -128 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 23:06:19,757 INFO  ClientSession:77 - Thread-2 | SessionID 30cb0569-62af-4551-aa5e-32847136d3cb | This command is the final session. I close the connection with the client.
+2019-03-27 23:06:21,565 TRACE MessageConsumer:146 - Send body:
+2019-03-27 23:06:21,565 TRACE MessageConsumer:147 - {"phone": "380504718060", "message": "some te￑ﾊ￑ﾑ￐ﾄ", "senderCode": "TAS2U"}
+2019-03-27 23:06:21,566 TRACE MessageConsumer:149 - HTTP/1.1 200 OK
+2019-03-27 23:06:21,571 TRACE MessageConsumer:150 - {
+  "args": {}, 
+  "data": "{\"phone\": \"380504718060\", \"message\": \"some te??????\", \"senderCode\": \"TAS2U\"}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "application/json", 
+    "Accept-Encoding": "gzip,deflate", 
+    "Content-Length": "76", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Apache-HttpClient/4.5.7 (Java/11.0.2)"
+  }, 
+  "json": {
+    "message": "some te??????", 
+    "phone": "380504718060", 
+    "senderCode": "TAS2U"
+  }, 
+  "origin": "176.38.190.18, 176.38.190.18", 
+  "url": "https://httpbin.org/post"
+}
+
+2019-03-27 23:07:27,007 INFO  ClientSession:45 - Thread-3 | SessionID 63ef4221-82f6-45d8-a5c2-743ccedbeaac | Waiting next command.
+2019-03-27 23:07:27,009 DEBUG ClientSession:210 - SessionID 63ef4221-82f6-45d8-a5c2-743ccedbeaac | Read [43] bytes.
+2019-03-27 23:07:27,009 TRACE ClientSession:211 - SessionID 63ef4221-82f6-45d8-a5c2-743ccedbeaac | 0000002b000000020000000000000001746173327561646d00746173327531323300534d50500034000000
+2019-03-27 23:07:27,010 TRACE ClientSession:212 - SessionID 63ef4221-82f6-45d8-a5c2-743ccedbeaac | 0 0 0 43 0 0 0 2 0 0 0 0 0 0 0 1 116 97 115 50 117 97 100 109 0 116 97 115 50 117 49 50 51 0 83 77 80 80 0 52 0 0 0 
+2019-03-27 23:07:27,010 INFO  ClientSession:59 - Thread-3 | SessionID 63ef4221-82f6-45d8-a5c2-743ccedbeaac | Incoming command_id is defined as TRANSMITTER
+2019-03-27 23:07:27,010 INFO  PDUTransmitter:55 - SessionID 63ef4221-82f6-45d8-a5c2-743ccedbeaac | systemId:tas2uadm
+2019-03-27 23:07:27,011 DEBUG PDUTransmitter:56 - SessionId 63ef4221-82f6-45d8-a5c2-743ccedbeaac | password:tas2u123
+2019-03-27 23:07:27,011 DEBUG PDUTransmitter:57 - SessionId 63ef4221-82f6-45d8-a5c2-743ccedbeaac | systemTun:SMPP
+2019-03-27 23:07:27,021 TRACE PDUTransmitter:76 - User: username 'tas24admtest', password 'tas24tst', alias 'TAS24'
+2019-03-27 23:07:27,021 TRACE PDUTransmitter:76 - User: username 'tas2uadm', password 'tas2u123', alias 'TAS2U'
+2019-03-27 23:07:27,022 INFO  PDUTransmitter:79 - Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-03-27 23:07:27,022 TRACE PDU:41 - SessionId 63ef4221-82f6-45d8-a5c2-743ccedbeaac | Prepare response:
+2019-03-27 23:07:27,023 TRACE PDU:42 - SessionId 63ef4221-82f6-45d8-a5c2-743ccedbeaac | 0000001b0-800000020000000000000001546173636f6d42616e6b00
+2019-03-27 23:07:27,023 TRACE PDU:43 - SessionId 63ef4221-82f6-45d8-a5c2-743ccedbeaac | 0 0 0 27 -128 0 0 2 0 0 0 0 0 0 0 1 84 97 115 99 111 109 66 97 110 107 0 
+2019-03-27 23:07:27,024 INFO  ClientSession:45 - Thread-3 | SessionID 63ef4221-82f6-45d8-a5c2-743ccedbeaac | Waiting next command.
+2019-03-27 23:07:27,044 DEBUG ClientSession:210 - SessionID 63ef4221-82f6-45d8-a5c2-743ccedbeaac | Read [16] bytes.
+2019-03-27 23:07:27,044 TRACE ClientSession:211 - SessionID 63ef4221-82f6-45d8-a5c2-743ccedbeaac | 00000010000000150000000000000002
+2019-03-27 23:07:27,045 TRACE ClientSession:212 - SessionID 63ef4221-82f6-45d8-a5c2-743ccedbeaac | 0 0 0 16 0 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 23:07:27,045 INFO  ClientSession:67 - Thread-3 | SessionID 63ef4221-82f6-45d8-a5c2-743ccedbeaac | Incoming command_id is defined as ENQUIRE_LINK
+2019-03-27 23:07:27,045 TRACE PDU:36 - SessionId 63ef4221-82f6-45d8-a5c2-743ccedbeaac | Prepare response:
+2019-03-27 23:07:27,046 TRACE PDU:37 - SessionId 63ef4221-82f6-45d8-a5c2-743ccedbeaac | 000000100-800000150000000000000002
+2019-03-27 23:07:27,046 TRACE PDU:38 - SessionId 63ef4221-82f6-45d8-a5c2-743ccedbeaac | 0 0 0 16 -128 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 23:07:27,046 INFO  ClientSession:45 - Thread-3 | SessionID 63ef4221-82f6-45d8-a5c2-743ccedbeaac | Waiting next command.
+2019-03-27 23:07:27,047 DEBUG ClientSession:210 - SessionID 63ef4221-82f6-45d8-a5c2-743ccedbeaac | Read [68] bytes.
+2019-03-27 23:07:27,047 TRACE ClientSession:211 - SessionID 63ef4221-82f6-45d8-a5c2-743ccedbeaac | 00000044000000040000000000000003000001746173636f6d62616e6b00010133383035303437313830363000000000000000002300d736f6d652074650-2f0-760-2f0-6f0-300-7c
+2019-03-27 23:07:27,048 TRACE ClientSession:212 - SessionID 63ef4221-82f6-45d8-a5c2-743ccedbeaac | 0 0 0 68 0 0 0 4 0 0 0 0 0 0 0 3 0 0 1 116 97 115 99 111 109 98 97 110 107 0 1 1 51 56 48 53 48 52 55 49 56 48 54 48 0 0 0 0 0 0 0 0 35 0 13 115 111 109 101 32 116 101 -47 -118 -47 -111 -48 -124 
+2019-03-27 23:07:27,048 INFO  ClientSession:71 - Thread-3 | SessionID 63ef4221-82f6-45d8-a5c2-743ccedbeaac | Incoming command_id is defined as SUBMIT_SM
+2019-03-27 23:07:27,049 TRACE PDU:99 - SessionId 63ef4221-82f6-45d8-a5c2-743ccedbeaac | sequenceNumber:3
+2019-03-27 23:07:27,049 TRACE PDU:100 - SessionId 63ef4221-82f6-45d8-a5c2-743ccedbeaac | serviceType:
+2019-03-27 23:07:27,049 TRACE PDU:101 - SessionId 63ef4221-82f6-45d8-a5c2-743ccedbeaac | sourceAddr:tascombank
+2019-03-27 23:07:27,049 INFO  PDU:102 - SessionId 63ef4221-82f6-45d8-a5c2-743ccedbeaac | destinationAddr:380504718060
+2019-03-27 23:07:27,050 TRACE PDU:103 - SessionId 63ef4221-82f6-45d8-a5c2-743ccedbeaac | dataCoding:35
+2019-03-27 23:07:27,050 INFO  PDU:104 - SessionId 63ef4221-82f6-45d8-a5c2-743ccedbeaac | shortMessage:some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 23:07:27,050 DEBUG ClientSession:179 - Put into queue message some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 23:07:27,051 TRACE PDU:37 - SessionId 63ef4221-82f6-45d8-a5c2-743ccedbeaac | Prepare response:
+2019-03-27 23:07:27,051 DEBUG MessageConsumer:57 - Getting next message Message on alias [TAS2U] for phone [380504718060]: [some te￑ﾊ￑ﾑ￐ﾄ]
+2019-03-27 23:07:27,051 TRACE PDU:38 - SessionId 63ef4221-82f6-45d8-a5c2-743ccedbeaac | 000000350-80000004000000000000000336336566343232312d383266362d343564382d613563322d37343363636564626561616300
+2019-03-27 23:07:27,053 TRACE PDU:39 - SessionId 63ef4221-82f6-45d8-a5c2-743ccedbeaac | 0 0 0 53 -128 0 0 4 0 0 0 0 0 0 0 3 54 51 101 102 52 50 50 49 45 56 50 102 54 45 52 53 100 56 45 97 53 99 50 45 55 52 51 99 99 101 100 98 101 97 97 99 0 
+2019-03-27 23:07:27,054 INFO  ClientSession:45 - Thread-3 | SessionID 63ef4221-82f6-45d8-a5c2-743ccedbeaac | Waiting next command.
+2019-03-27 23:07:27,058 INFO  ClientSession:39 - Waiting next client
+2019-03-27 23:07:27,059 DEBUG MessageConsumer:79 - Start send message to channel Recipient on method [POST] to URL [https://httpbin.org/post] with mask [{"phone": "${phone}", "message": "${text}", "senderCode": "${alias}"}].
+2019-03-27 23:07:27,066 DEBUG ClientSession:210 - SessionID 63ef4221-82f6-45d8-a5c2-743ccedbeaac | Read [16] bytes.
+2019-03-27 23:07:27,066 TRACE ClientSession:211 - SessionID 63ef4221-82f6-45d8-a5c2-743ccedbeaac | 00000010000000060000000000000004
+2019-03-27 23:07:27,067 TRACE ClientSession:212 - SessionID 63ef4221-82f6-45d8-a5c2-743ccedbeaac | 0 0 0 16 0 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 23:07:27,067 INFO  ClientSession:75 - Thread-3 | SessionID 63ef4221-82f6-45d8-a5c2-743ccedbeaac | Incoming command_id is defined as UNBIND
+2019-03-27 23:07:27,068 TRACE PDU:36 - SessionId 63ef4221-82f6-45d8-a5c2-743ccedbeaac | Prepare response:
+2019-03-27 23:07:27,068 TRACE PDU:37 - SessionId 63ef4221-82f6-45d8-a5c2-743ccedbeaac | 000000100-800000060000000000000004
+2019-03-27 23:07:27,068 TRACE PDU:38 - SessionId 63ef4221-82f6-45d8-a5c2-743ccedbeaac | 0 0 0 16 -128 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 23:07:27,069 INFO  ClientSession:77 - Thread-3 | SessionID 63ef4221-82f6-45d8-a5c2-743ccedbeaac | This command is the final session. I close the connection with the client.
+2019-03-27 23:07:27,726 TRACE MessageConsumer:146 - Send body:
+2019-03-27 23:07:27,726 TRACE MessageConsumer:147 - {"phone": "380504718060", "message": "some te￑ﾊ￑ﾑ￐ﾄ", "senderCode": "TAS2U"}
+2019-03-27 23:07:27,727 TRACE MessageConsumer:149 - HTTP/1.1 200 OK
+2019-03-27 23:07:27,728 TRACE MessageConsumer:150 - {
+  "args": {}, 
+  "data": "{\"phone\": \"380504718060\", \"message\": \"some te??????\", \"senderCode\": \"TAS2U\"}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "application/json", 
+    "Accept-Encoding": "gzip,deflate", 
+    "Content-Length": "76", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Apache-HttpClient/4.5.7 (Java/11.0.2)"
+  }, 
+  "json": {
+    "message": "some te??????", 
+    "phone": "380504718060", 
+    "senderCode": "TAS2U"
+  }, 
+  "origin": "176.38.190.18, 176.38.190.18", 
+  "url": "https://httpbin.org/post"
+}
+
+2019-03-27 23:09:31,077 INFO  ClientSession:45 - Thread-4 | SessionID b6aaa181-351b-4f3c-a584-192d6f057254 | Waiting next command.
+2019-03-27 23:09:31,079 DEBUG ClientSession:210 - SessionID b6aaa181-351b-4f3c-a584-192d6f057254 | Read [43] bytes.
+2019-03-27 23:09:31,079 TRACE ClientSession:211 - SessionID b6aaa181-351b-4f3c-a584-192d6f057254 | 0000002b000000020000000000000001746173327561646d00746173327531323300534d50500034000000
+2019-03-27 23:09:31,079 TRACE ClientSession:212 - SessionID b6aaa181-351b-4f3c-a584-192d6f057254 | 0 0 0 43 0 0 0 2 0 0 0 0 0 0 0 1 116 97 115 50 117 97 100 109 0 116 97 115 50 117 49 50 51 0 83 77 80 80 0 52 0 0 0 
+2019-03-27 23:09:31,079 INFO  ClientSession:59 - Thread-4 | SessionID b6aaa181-351b-4f3c-a584-192d6f057254 | Incoming command_id is defined as TRANSMITTER
+2019-03-27 23:09:31,080 INFO  PDUTransmitter:55 - SessionID b6aaa181-351b-4f3c-a584-192d6f057254 | systemId:tas2uadm
+2019-03-27 23:09:31,080 DEBUG PDUTransmitter:56 - SessionId b6aaa181-351b-4f3c-a584-192d6f057254 | password:tas2u123
+2019-03-27 23:09:31,080 DEBUG PDUTransmitter:57 - SessionId b6aaa181-351b-4f3c-a584-192d6f057254 | systemTun:SMPP
+2019-03-27 23:09:31,085 TRACE PDUTransmitter:76 - User: username 'tas24admtest', password 'tas24tst', alias 'TAS24'
+2019-03-27 23:09:31,086 TRACE PDUTransmitter:76 - User: username 'tas2uadm', password 'tas2u123', alias 'TAS2U'
+2019-03-27 23:09:31,086 INFO  PDUTransmitter:79 - Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-03-27 23:09:31,087 TRACE PDU:41 - SessionId b6aaa181-351b-4f3c-a584-192d6f057254 | Prepare response:
+2019-03-27 23:09:31,087 TRACE PDU:42 - SessionId b6aaa181-351b-4f3c-a584-192d6f057254 | 0000001b0-800000020000000000000001546173636f6d42616e6b00
+2019-03-27 23:09:31,087 TRACE PDU:43 - SessionId b6aaa181-351b-4f3c-a584-192d6f057254 | 0 0 0 27 -128 0 0 2 0 0 0 0 0 0 0 1 84 97 115 99 111 109 66 97 110 107 0 
+2019-03-27 23:09:31,088 INFO  ClientSession:45 - Thread-4 | SessionID b6aaa181-351b-4f3c-a584-192d6f057254 | Waiting next command.
+2019-03-27 23:09:31,103 DEBUG ClientSession:210 - SessionID b6aaa181-351b-4f3c-a584-192d6f057254 | Read [16] bytes.
+2019-03-27 23:09:31,103 TRACE ClientSession:211 - SessionID b6aaa181-351b-4f3c-a584-192d6f057254 | 00000010000000150000000000000002
+2019-03-27 23:09:31,103 TRACE ClientSession:212 - SessionID b6aaa181-351b-4f3c-a584-192d6f057254 | 0 0 0 16 0 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 23:09:31,104 INFO  ClientSession:67 - Thread-4 | SessionID b6aaa181-351b-4f3c-a584-192d6f057254 | Incoming command_id is defined as ENQUIRE_LINK
+2019-03-27 23:09:31,104 TRACE PDU:36 - SessionId b6aaa181-351b-4f3c-a584-192d6f057254 | Prepare response:
+2019-03-27 23:09:31,104 TRACE PDU:37 - SessionId b6aaa181-351b-4f3c-a584-192d6f057254 | 000000100-800000150000000000000002
+2019-03-27 23:09:31,104 TRACE PDU:38 - SessionId b6aaa181-351b-4f3c-a584-192d6f057254 | 0 0 0 16 -128 0 0 21 0 0 0 0 0 0 0 2 
+2019-03-27 23:09:31,105 INFO  ClientSession:45 - Thread-4 | SessionID b6aaa181-351b-4f3c-a584-192d6f057254 | Waiting next command.
+2019-03-27 23:09:31,105 DEBUG ClientSession:210 - SessionID b6aaa181-351b-4f3c-a584-192d6f057254 | Read [68] bytes.
+2019-03-27 23:09:31,105 TRACE ClientSession:211 - SessionID b6aaa181-351b-4f3c-a584-192d6f057254 | 00000044000000040000000000000003000001746173636f6d62616e6b00010133383035303437313830363000000000000000002300d736f6d652074650-2f0-760-2f0-6f0-300-7c
+2019-03-27 23:09:31,105 TRACE ClientSession:212 - SessionID b6aaa181-351b-4f3c-a584-192d6f057254 | 0 0 0 68 0 0 0 4 0 0 0 0 0 0 0 3 0 0 1 116 97 115 99 111 109 98 97 110 107 0 1 1 51 56 48 53 48 52 55 49 56 48 54 48 0 0 0 0 0 0 0 0 35 0 13 115 111 109 101 32 116 101 -47 -118 -47 -111 -48 -124 
+2019-03-27 23:09:31,106 INFO  ClientSession:71 - Thread-4 | SessionID b6aaa181-351b-4f3c-a584-192d6f057254 | Incoming command_id is defined as SUBMIT_SM
+2019-03-27 23:09:31,106 TRACE PDU:99 - SessionId b6aaa181-351b-4f3c-a584-192d6f057254 | sequenceNumber:3
+2019-03-27 23:09:31,106 TRACE PDU:100 - SessionId b6aaa181-351b-4f3c-a584-192d6f057254 | serviceType:
+2019-03-27 23:09:31,106 TRACE PDU:101 - SessionId b6aaa181-351b-4f3c-a584-192d6f057254 | sourceAddr:tascombank
+2019-03-27 23:09:31,106 INFO  PDU:102 - SessionId b6aaa181-351b-4f3c-a584-192d6f057254 | destinationAddr:380504718060
+2019-03-27 23:09:31,107 TRACE PDU:103 - SessionId b6aaa181-351b-4f3c-a584-192d6f057254 | dataCoding:35
+2019-03-27 23:09:31,107 INFO  PDU:104 - SessionId b6aaa181-351b-4f3c-a584-192d6f057254 | shortMessage:some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 23:09:31,107 DEBUG ClientSession:179 - Put into queue message some te￑ﾊ￑ﾑ￐ﾄ
+2019-03-27 23:09:31,107 TRACE PDU:37 - SessionId b6aaa181-351b-4f3c-a584-192d6f057254 | Prepare response:
+2019-03-27 23:09:31,107 DEBUG MessageConsumer:57 - Getting next message Message on alias [TAS2U] for phone [380504718060]: [some te￑ﾊ￑ﾑ￐ﾄ]
+2019-03-27 23:09:31,108 TRACE PDU:38 - SessionId b6aaa181-351b-4f3c-a584-192d6f057254 | 000000350-80000004000000000000000362366161613138312d333531622d346633632d613538342d31393264366630353732353400
+2019-03-27 23:09:31,109 TRACE PDU:39 - SessionId b6aaa181-351b-4f3c-a584-192d6f057254 | 0 0 0 53 -128 0 0 4 0 0 0 0 0 0 0 3 98 54 97 97 97 49 56 49 45 51 53 49 98 45 52 102 51 99 45 97 53 56 52 45 49 57 50 100 54 102 48 53 55 50 53 52 0 
+2019-03-27 23:09:31,109 INFO  ClientSession:45 - Thread-4 | SessionID b6aaa181-351b-4f3c-a584-192d6f057254 | Waiting next command.
+2019-03-27 23:09:31,113 DEBUG MessageConsumer:79 - Start send message to channel Recipient on method [POST] to URL [https://httpbin.org/post] with mask [{"phone": "${phone}", "message": "${text}", "senderCode": "${alias}"}].
+2019-03-27 23:09:31,116 DEBUG ClientSession:210 - SessionID b6aaa181-351b-4f3c-a584-192d6f057254 | Read [16] bytes.
+2019-03-27 23:09:31,116 TRACE ClientSession:211 - SessionID b6aaa181-351b-4f3c-a584-192d6f057254 | 00000010000000060000000000000004
+2019-03-27 23:09:31,116 TRACE ClientSession:212 - SessionID b6aaa181-351b-4f3c-a584-192d6f057254 | 0 0 0 16 0 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 23:09:31,117 INFO  ClientSession:75 - Thread-4 | SessionID b6aaa181-351b-4f3c-a584-192d6f057254 | Incoming command_id is defined as UNBIND
+2019-03-27 23:09:31,117 TRACE PDU:36 - SessionId b6aaa181-351b-4f3c-a584-192d6f057254 | Prepare response:
+2019-03-27 23:09:31,117 TRACE PDU:37 - SessionId b6aaa181-351b-4f3c-a584-192d6f057254 | 000000100-800000060000000000000004
+2019-03-27 23:09:31,118 TRACE PDU:38 - SessionId b6aaa181-351b-4f3c-a584-192d6f057254 | 0 0 0 16 -128 0 0 6 0 0 0 0 0 0 0 4 
+2019-03-27 23:09:31,118 INFO  ClientSession:77 - Thread-4 | SessionID b6aaa181-351b-4f3c-a584-192d6f057254 | This command is the final session. I close the connection with the client.
+2019-03-27 23:09:31,128 INFO  ClientSession:39 - Waiting next client
+2019-03-27 23:09:31,913 TRACE MessageConsumer:146 - Send body:
+2019-03-27 23:09:31,914 TRACE MessageConsumer:147 - {"phone": "380504718060", "message": "some te￑ﾊ￑ﾑ￐ﾄ", "senderCode": "TAS2U"}
+2019-03-27 23:09:31,915 TRACE MessageConsumer:149 - HTTP/1.1 200 OK
+2019-03-27 23:09:31,916 TRACE MessageConsumer:150 - {
+  "args": {}, 
+  "data": "{\"phone\": \"380504718060\", \"message\": \"some te??????\", \"senderCode\": \"TAS2U\"}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "application/json", 
+    "Accept-Encoding": "gzip,deflate", 
+    "Content-Length": "76", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Apache-HttpClient/4.5.7 (Java/11.0.2)"
+  }, 
+  "json": {
+    "message": "some te??????", 
+    "phone": "380504718060", 
+    "senderCode": "TAS2U"
+  }, 
+  "origin": "176.38.190.18, 176.38.190.18", 
+  "url": "https://httpbin.org/post"
+}
+

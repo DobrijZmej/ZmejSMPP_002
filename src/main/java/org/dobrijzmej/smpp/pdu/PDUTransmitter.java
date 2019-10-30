@@ -1,8 +1,10 @@
 package org.dobrijzmej.smpp.pdu;
 
+//import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
 import org.dobrijzmej.smpp.config.User;
 import org.dobrijzmej.smpp.log.Log;
-import org.slf4j.Logger;
+//import org.slf4j.Logger;
 
 import java.nio.ByteBuffer;
 import java.util.HashMap;
@@ -52,7 +54,7 @@ public class PDUTransmitter extends PDU {
         offset += password.length() + 1;
         this.systemTun = PDU.getStringData(data, offset);
 //        System.arraycopy(data, 0, this.commandLength, 0, 4);
-        logger.info(labelPrefix + "systemId:" + systemId);
+        logger.debug(labelPrefix + "systemId:" + systemId);
         logger.debug(labelPrefix + "password:" + password);
         logger.debug(labelPrefix + "systemTun:" + systemTun);
 
@@ -82,7 +84,7 @@ public class PDUTransmitter extends PDU {
             }
         }
         if ("---".equals(this.user.getUsername())) {
-            logger.trace(labelPrefix+"Error authorize user with param: login [" + this.systemId + "], password [" + this.password + "]");
+            logger.error(labelPrefix+"Error authorize user with param: login [" + this.systemId + "], password [" + this.password + "]");
         }
     }
 

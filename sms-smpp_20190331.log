@@ -1,0 +1,400 @@
+31.03.19 13:30:07,903 [4] Подготовка обработчика сообщений SMS.
+31.03.19 13:30:07,904 [4] Подготовка отправителя сообщений.
+31.03.19 13:30:07,947 [4] Подключение к SMS-центру.
+31.03.19 13:30:07,952 [5] Сформирован запрос: (bindreq: (pdu: 0 2 0 [1]) bifitadmtest bifittest  52 (addrrang: 1 0 null) ) 
+31.03.19 13:30:07,954 [4] Инициализация успешно завершена.
+31.03.19 13:30:07,954 [4] Запуск обработчика сообщений SMS.
+31.03.19 13:30:07,977 [4] Подключение к SMS-центру.
+31.03.19 13:30:07,978 [5] Сформирован запрос: (bindreq: (pdu: 0 1 0 [2]) bifitadmtest bifittest  52 (addrrang: 1 0 null) ) 
+31.03.19 13:30:07,978 [4] Обработчик сообщений запущен.
+31.03.19 13:30:07,978 [4] Запуск сканирования списка сообщений, ожидающих ответа.
+31.03.19 13:30:07,978 [4] Сканер  списка сообщений запущен.
+31.03.19 13:30:07,979 [4] Цикл обработки сообщений запущен.
+31.03.19 13:30:07,979 [4] Ожидание поступления сообщения.
+31.03.19 13:30:08,039 [5] Получен результат запроса: (bindresp: (pdu: 27 80000002 0 1) TascomBank) 
+31.03.19 13:30:08,039 [4] Подключение выполнено успешно.
+31.03.19 13:30:11,504 [4] Обработка сообщения.
+31.03.19 13:30:11,504 [5] сообщение: адрес=+380953134878 тема Пароль расширенной аутентификации:йцукенгшщзхъфывапролджэячсмитьбюqwertyuiop[asdfghjkl;'zxcvbnm,.qwertyuiopasdfghjkl;zxcvbnm,.12234567890--qwqwqwqwqwqwqwqыавпараррраPassword: 418162 
+31.03.19 13:30:11,505 [4] Отправка сообщения йцукенгшщзхъфывапролджэячсмитьбюqwertyuiop[asdfghjkl;'zxcvbnm,.qwertyuiopasdfghjkl;zxcvbnm,.12234567890--qwqwqwqwqwqwqwqыавпараррраPassword: 418162  на адрес +380953134878
+31.03.19 13:30:11,509 [5] SML: Добавление сообщения 2 в список сообщений, ожидающих ответа.
+31.03.19 13:30:11,514 [5] Сформирован запрос: (submit: (pdu: 0 4 0 2) (addr: 1 0 BIFIT)  (addr: 0 0 380953134878)  (sm: msg: ?@?????9?F?C?:?5?=?3?H?I?7?E?J?D?K?2?0?????>?;?4?6?M?O?G?A?<?8?B?L?1?N@q@w@e@r@t@y@u@i@o@p@?@a@s@d@f@g@h@j@k@l@;@'@z@x@c@v@b@n@m@,@.@q@w@e@r)  (opt: ) ) 
+31.03.19 13:30:11,516 [5] Сформирован запрос: (submit: (pdu: 190 4 0 2) (addr: 1 0 BIFIT)  (addr: 0 0 380953134878)  (sm: msg: ?@???$@t@y@u@i@o@p@a@s@d@f@g@h@j@k@l@;@z@x@c@v@b@n@m@,@.@1@2@2@3@4@5@6@7@8@9@0@-@-@q@w@q@w@q@w@q@w@q@w@q@w@q@w@q?K?0?2???0???0???????0@P@a@s)  (opt: ) ) 
+31.03.19 13:30:11,518 [5] Сформирован запрос: (submit: (pdu: 190 4 0 2) (addr: 1 0 BIFIT)  (addr: 0 0 380953134878)  (sm: msg: ?@????@s@w@o@r@d@:@ @4@1@8@1@6@2@ )  (opt: ) ) 
+31.03.19 13:30:11,526 [4] Полученное сообщение успешно обработано.
+31.03.19 13:30:11,526 [4] Ожидание поступления сообщения.
+31.03.19 13:30:13,021 [4] SML: Повторная отправка 2 (2): йцукенгшщзхъфывапролджэячсмитьбюqwertyuiop[asdfghjkl;'zxcvbnm,.qwertyuiopasdfghjkl;zxcvbnm,.12234567890--qwqwqwqwqwqwqwqыавпараррраPassword: 418162  на адрес 380953134878
+31.03.19 13:30:13,021 [4] Отправка сообщения йцукенгшщзхъфывапролджэячсмитьбюqwertyuiop[asdfghjkl;'zxcvbnm,.qwertyuiopasdfghjkl;zxcvbnm,.12234567890--qwqwqwqwqwqwqwqыавпараррраPassword: 418162  на адрес 380953134878
+31.03.19 13:30:13,022 [5] SML: Обновление сообщения 2 в список сообщений, ожидающих ответа.
+31.03.19 13:30:13,023 [5] Сформирован запрос: (submit: (pdu: 0 4 0 2) (addr: 1 0 BIFIT)  (addr: 0 0 380953134878)  (sm: msg: ?@?w???9?F?C?:?5?=?3?H?I?7?E?J?D?K?2?0?????>?;?4?6?M?O?G?A?<?8?B?L?1?N@q@w@e@r@t@y@u@i@o@p@?@a@s@d@f@g@h@j@k@l@;@'@z@x@c@v@b@n@m@,@.@q@w@e@r)  (opt: ) ) 
+31.03.19 13:30:13,024 [2] При отправке сообщения:
+31.03.19 13:30:13,026 [2] java.io.IOException: Not connected
+	at org.smpp.TCPIPConnection.send(TCPIPConnection.java:342)
+	at org.smpp.Transmitter.send(Transmitter.java:69)
+	at org.smpp.Session.send(Session.java:931)
+	at org.smpp.Session.send(Session.java:984)
+	at org.smpp.Session.submit(Session.java:585)
+	at com.bifit.pegasus.channel.smssmpp.SenderSession.writeMessageData(SenderSession.java:408)
+	at com.bifit.pegasus.channel.smssmpp.SenderSession.submit(SenderSession.java:361)
+	at com.bifit.pegasus.channel.smssmpp.SenderSession.sendMessage(SenderSession.java:489)
+	at com.bifit.pegasus.channel.smssmpp.MessageSender.sendMessage(MessageSender.java:99)
+	at com.bifit.pegasus.channel.smssmpp.SendedMessagesList.sendMessage(SendedMessagesList.java:75)
+	at com.bifit.pegasus.channel.smssmpp.SendedMessagesList.scaneSendedMessages(SendedMessagesList.java:59)
+	at com.bifit.pegasus.channel.smssmpp.SendedMessagesScaner.run(SendedMessagesScaner.java:20)
+
+31.03.19 13:30:13,027 [4] Отключение от SMS-центра.
+31.03.19 13:30:13,028 [2] При выполнении отключения:
+31.03.19 13:30:13,028 [2] java.io.IOException: Not connected
+	at org.smpp.TCPIPConnection.send(TCPIPConnection.java:342)
+	at org.smpp.Transmitter.send(Transmitter.java:69)
+	at org.smpp.Session.send(Session.java:931)
+	at org.smpp.Session.send(Session.java:984)
+	at org.smpp.Session.unbind(Session.java:491)
+	at com.bifit.pegasus.channel.smssmpp.SenderSession.unbind(SenderSession.java:230)
+	at com.bifit.pegasus.channel.smssmpp.SenderSession.submit(SenderSession.java:368)
+	at com.bifit.pegasus.channel.smssmpp.SenderSession.sendMessage(SenderSession.java:489)
+	at com.bifit.pegasus.channel.smssmpp.MessageSender.sendMessage(MessageSender.java:99)
+	at com.bifit.pegasus.channel.smssmpp.SendedMessagesList.sendMessage(SendedMessagesList.java:75)
+	at com.bifit.pegasus.channel.smssmpp.SendedMessagesList.scaneSendedMessages(SendedMessagesList.java:59)
+	at com.bifit.pegasus.channel.smssmpp.SendedMessagesScaner.run(SendedMessagesScaner.java:20)
+
+31.03.19 13:30:14,539 [4] SML: Повторная отправка 3 (2): йцукенгшщзхъфывапролджэячсмитьбюqwertyuiop[asdfghjkl;'zxcvbnm,.qwertyuiopasdfghjkl;zxcvbnm,.12234567890--qwqwqwqwqwqwqwqыавпараррраPassword: 418162  на адрес 380953134878
+31.03.19 13:30:23,045 [4] Подключение к SMS-центру.
+31.03.19 13:30:23,045 [5] Сформирован запрос: (bindreq: (pdu: 0 2 0 [4]) bifitadmtest bifittest  52 (addrrang: 1 0 null) ) 
+31.03.19 13:30:23,085 [5] Получен результат запроса: (bindresp: (pdu: 27 80000002 0 4) TascomBank) 
+31.03.19 13:30:23,085 [4] Подключение выполнено успешно.
+31.03.19 13:30:38,093 [4] Проверка подключения к SMS-центру.
+31.03.19 13:30:38,093 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 5) ) 
+31.03.19 13:30:38,105 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 5) ) 
+31.03.19 13:30:38,106 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 5) ) 
+31.03.19 13:30:38,106 [4] Проверка подключения прошла успешно.
+31.03.19 13:30:53,112 [4] Проверка подключения к SMS-центру.
+31.03.19 13:30:53,113 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 6) ) 
+31.03.19 13:30:53,118 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 6) ) 
+31.03.19 13:30:53,118 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 6) ) 
+31.03.19 13:30:53,118 [4] Проверка подключения прошла успешно.
+31.03.19 13:31:08,124 [4] Проверка подключения к SMS-центру.
+31.03.19 13:31:08,124 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 7) ) 
+31.03.19 13:31:08,129 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 7) ) 
+31.03.19 13:31:08,129 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 7) ) 
+31.03.19 13:31:08,129 [4] Проверка подключения прошла успешно.
+31.03.19 13:31:23,135 [4] Проверка подключения к SMS-центру.
+31.03.19 13:31:23,136 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 8) ) 
+31.03.19 13:31:23,141 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 8) ) 
+31.03.19 13:31:23,141 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 8) ) 
+31.03.19 13:31:23,142 [4] Проверка подключения прошла успешно.
+31.03.19 13:31:38,147 [4] Проверка подключения к SMS-центру.
+31.03.19 13:31:38,147 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 9) ) 
+31.03.19 13:31:38,152 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 9) ) 
+31.03.19 13:31:38,152 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 9) ) 
+31.03.19 13:31:38,152 [4] Проверка подключения прошла успешно.
+31.03.19 13:31:53,155 [4] Проверка подключения к SMS-центру.
+31.03.19 13:31:53,155 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 10) ) 
+31.03.19 13:31:53,161 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 10) ) 
+31.03.19 13:31:53,170 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 10) ) 
+31.03.19 13:31:53,170 [4] Проверка подключения прошла успешно.
+31.03.19 13:32:08,166 [4] Проверка подключения к SMS-центру.
+31.03.19 13:32:08,166 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 11) ) 
+31.03.19 13:32:08,172 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 11) ) 
+31.03.19 13:32:08,172 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 11) ) 
+31.03.19 13:32:08,172 [4] Проверка подключения прошла успешно.
+31.03.19 13:32:23,174 [4] Проверка подключения к SMS-центру.
+31.03.19 13:32:23,174 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 12) ) 
+31.03.19 13:32:23,182 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 12) ) 
+31.03.19 13:32:23,183 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 12) ) 
+31.03.19 13:32:23,183 [4] Проверка подключения прошла успешно.
+31.03.19 13:32:38,185 [4] Проверка подключения к SMS-центру.
+31.03.19 13:32:38,185 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 13) ) 
+31.03.19 13:32:38,190 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 13) ) 
+31.03.19 13:32:38,190 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 13) ) 
+31.03.19 13:32:38,190 [4] Проверка подключения прошла успешно.
+31.03.19 13:32:53,193 [4] Проверка подключения к SMS-центру.
+31.03.19 13:32:53,193 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 14) ) 
+31.03.19 13:32:53,199 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 14) ) 
+31.03.19 13:32:53,199 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 14) ) 
+31.03.19 13:32:53,199 [4] Проверка подключения прошла успешно.
+31.03.19 13:33:08,204 [4] Проверка подключения к SMS-центру.
+31.03.19 13:33:08,204 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 15) ) 
+31.03.19 13:33:08,209 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 15) ) 
+31.03.19 13:33:08,209 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 15) ) 
+31.03.19 13:33:08,209 [4] Проверка подключения прошла успешно.
+31.03.19 13:33:16,981 [2] При выполнении подключения:
+31.03.19 13:33:16,981 [2] java.net.ConnectException: Время ожидания соединения истекло (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:271)
+	at org.smpp.TCPIPConnection.open(TCPIPConnection.java:249)
+	at org.smpp.Session.open(Session.java:272)
+	at org.smpp.Session.bind(Session.java:403)
+	at com.bifit.pegasus.channel.smssmpp.SenderSession.bind(SenderSession.java:195)
+	at com.bifit.pegasus.channel.smssmpp.SenderSession.run(SenderSession.java:118)
+
+31.03.19 13:33:23,216 [4] Проверка подключения к SMS-центру.
+31.03.19 13:33:23,216 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 16) ) 
+31.03.19 13:33:23,221 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 16) ) 
+31.03.19 13:33:23,221 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 16) ) 
+31.03.19 13:33:23,221 [4] Проверка подключения прошла успешно.
+31.03.19 13:33:31,988 [4] Подключение к SMS-центру.
+31.03.19 13:33:31,988 [5] Сформирован запрос: (bindreq: (pdu: 0 1 0 [17]) bifitadmtest bifittest  52 (addrrang: 1 0 null) ) 
+31.03.19 13:33:38,227 [4] Проверка подключения к SMS-центру.
+31.03.19 13:33:38,228 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 17) ) 
+31.03.19 13:33:38,232 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 17) ) 
+31.03.19 13:33:38,232 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 17) ) 
+31.03.19 13:33:38,232 [4] Проверка подключения прошла успешно.
+31.03.19 13:33:53,235 [4] Проверка подключения к SMS-центру.
+31.03.19 13:33:53,235 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 18) ) 
+31.03.19 13:33:53,242 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 18) ) 
+31.03.19 13:33:53,242 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 18) ) 
+31.03.19 13:33:53,242 [4] Проверка подключения прошла успешно.
+31.03.19 13:34:08,246 [4] Проверка подключения к SMS-центру.
+31.03.19 13:34:08,247 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 19) ) 
+31.03.19 13:34:08,252 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 19) ) 
+31.03.19 13:34:08,252 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 19) ) 
+31.03.19 13:34:08,252 [4] Проверка подключения прошла успешно.
+31.03.19 13:34:23,258 [4] Проверка подключения к SMS-центру.
+31.03.19 13:34:23,258 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 20) ) 
+31.03.19 13:34:23,263 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 20) ) 
+31.03.19 13:34:23,263 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 20) ) 
+31.03.19 13:34:23,264 [4] Проверка подключения прошла успешно.
+31.03.19 13:34:38,265 [4] Проверка подключения к SMS-центру.
+31.03.19 13:34:38,266 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 21) ) 
+31.03.19 13:34:38,267 [2] При проверке подключения:
+31.03.19 13:34:38,267 [2] java.io.IOException: Not connected
+	at org.smpp.TCPIPConnection.send(TCPIPConnection.java:342)
+	at org.smpp.Transmitter.send(Transmitter.java:69)
+	at org.smpp.Session.send(Session.java:931)
+	at org.smpp.Session.send(Session.java:984)
+	at org.smpp.Session.enquireLink(Session.java:740)
+	at com.bifit.pegasus.channel.smssmpp.SenderSession.enquireLink(SenderSession.java:263)
+	at com.bifit.pegasus.channel.smssmpp.SenderSession.run(SenderSession.java:130)
+
+31.03.19 13:34:38,268 [4] Отключение от SMS-центра.
+31.03.19 13:34:38,270 [2] При выполнении отключения:
+31.03.19 13:34:38,271 [2] java.io.IOException: Not connected
+	at org.smpp.TCPIPConnection.send(TCPIPConnection.java:342)
+	at org.smpp.Transmitter.send(Transmitter.java:69)
+	at org.smpp.Session.send(Session.java:931)
+	at org.smpp.Session.send(Session.java:984)
+	at org.smpp.Session.unbind(Session.java:491)
+	at com.bifit.pegasus.channel.smssmpp.SenderSession.unbind(SenderSession.java:230)
+	at com.bifit.pegasus.channel.smssmpp.SenderSession.enquireLink(SenderSession.java:269)
+	at com.bifit.pegasus.channel.smssmpp.SenderSession.run(SenderSession.java:130)
+
+31.03.19 13:34:38,272 [4] Подключение к SMS-центру.
+31.03.19 13:34:38,272 [5] Сформирован запрос: (bindreq: (pdu: 0 2 0 [23]) bifitadmtest bifittest  52 (addrrang: 1 0 null) ) 
+31.03.19 13:34:38,354 [5] Получен результат запроса: (bindresp: (pdu: 27 80000002 0 23) TascomBank) 
+31.03.19 13:34:38,356 [4] Подключение выполнено успешно.
+31.03.19 13:34:53,362 [4] Проверка подключения к SMS-центру.
+31.03.19 13:34:53,362 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 24) ) 
+31.03.19 13:34:53,372 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 24) ) 
+31.03.19 13:34:53,372 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 24) ) 
+31.03.19 13:34:53,372 [4] Проверка подключения прошла успешно.
+31.03.19 13:35:08,377 [4] Проверка подключения к SMS-центру.
+31.03.19 13:35:08,378 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 25) ) 
+31.03.19 13:35:08,385 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 25) ) 
+31.03.19 13:35:08,385 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 25) ) 
+31.03.19 13:35:08,385 [4] Проверка подключения прошла успешно.
+31.03.19 13:35:23,389 [4] Проверка подключения к SMS-центру.
+31.03.19 13:35:23,389 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 26) ) 
+31.03.19 13:35:23,396 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 26) ) 
+31.03.19 13:35:23,396 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 26) ) 
+31.03.19 13:35:23,396 [4] Проверка подключения прошла успешно.
+31.03.19 13:35:38,401 [4] Проверка подключения к SMS-центру.
+31.03.19 13:35:38,401 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 27) ) 
+31.03.19 13:35:38,406 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 27) ) 
+31.03.19 13:35:38,406 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 27) ) 
+31.03.19 13:35:38,406 [4] Проверка подключения прошла успешно.
+31.03.19 13:35:46,980 [4] Обработка сообщения.
+31.03.19 13:35:46,981 [5] сообщение: адрес=+380953134878 тема Пароль расширенной аутентификации:йцукенгшщзхъфывапролджэячсмитьбюqwertyuiop[asdfghjkl;'zxcvbnm,.qwertyuiopasdfghjkl;zxcvbnm,.12234567890--qwqwqwqwqwqwqwqыавпараррраPassword: 157869 
+31.03.19 13:35:46,981 [4] Отправка сообщения йцукенгшщзхъфывапролджэячсмитьбюqwertyuiop[asdfghjkl;'zxcvbnm,.qwertyuiopasdfghjkl;zxcvbnm,.12234567890--qwqwqwqwqwqwqwqыавпараррраPassword: 157869  на адрес +380953134878
+31.03.19 13:35:46,981 [5] SML: Добавление сообщения 28 в список сообщений, ожидающих ответа.
+31.03.19 13:35:46,982 [5] Сформирован запрос: (submit: (pdu: 0 4 0 28) (addr: 1 0 BIFIT)  (addr: 0 0 380953134878)  (sm: msg: ?@?????9?F?C?:?5?=?3?H?I?7?E?J?D?K?2?0?????>?;?4?6?M?O?G?A?<?8?B?L?1?N@q@w@e@r@t@y@u@i@o@p@?@a@s@d@f@g@h@j@k@l@;@'@z@x@c@v@b@n@m@,@.@q@w@e@r)  (opt: ) ) 
+31.03.19 13:35:46,984 [5] Сформирован запрос: (submit: (pdu: 190 4 0 28) (addr: 1 0 BIFIT)  (addr: 0 0 380953134878)  (sm: msg: ?@???$@t@y@u@i@o@p@a@s@d@f@g@h@j@k@l@;@z@x@c@v@b@n@m@,@.@1@2@2@3@4@5@6@7@8@9@0@-@-@q@w@q@w@q@w@q@w@q@w@q@w@q@w@q?K?0?2???0???0???????0@P@a@s)  (opt: ) ) 
+31.03.19 13:35:46,986 [5] Сформирован запрос: (submit: (pdu: 190 4 0 28) (addr: 1 0 BIFIT)  (addr: 0 0 380953134878)  (sm: msg: ?@????@s@w@o@r@d@:@ @1@5@7@8@6@9@ )  (opt: ) ) 
+31.03.19 13:35:46,990 [4] Полученное сообщение успешно обработано.
+31.03.19 13:35:46,991 [4] Ожидание поступления сообщения.
+31.03.19 13:35:47,010 [5] Получен пакет: (submit_resp: (pdu: 53 80000004 0 28) 4b78fc2a-1321-4312-a22b-fe8af0c13936 ) 
+31.03.19 13:35:47,010 [5] SML: Фиксация ответа на сообщение 28
+31.03.19 13:35:47,021 [5] Получен пакет: (submit_resp: (pdu: 53 80000004 0 28) 4b78fc2a-1321-4312-a22b-fe8af0c13936 ) 
+31.03.19 13:35:47,021 [5] SML: Фиксация ответа на сообщение 28
+31.03.19 13:35:48,764 [4] SML: Повторная отправка 2 (28): йцукенгшщзхъфывапролджэячсмитьбюqwertyuiop[asdfghjkl;'zxcvbnm,.qwertyuiopasdfghjkl;zxcvbnm,.12234567890--qwqwqwqwqwqwqwqыавпараррраPassword: 157869  на адрес 380953134878
+31.03.19 13:35:48,764 [4] Отправка сообщения йцукенгшщзхъфывапролджэячсмитьбюqwertyuiop[asdfghjkl;'zxcvbnm,.qwertyuiopasdfghjkl;zxcvbnm,.12234567890--qwqwqwqwqwqwqwqыавпараррраPassword: 157869  на адрес 380953134878
+31.03.19 13:35:48,764 [5] SML: Обновление сообщения 28 в список сообщений, ожидающих ответа.
+31.03.19 13:35:48,765 [5] Сформирован запрос: (submit: (pdu: 0 4 0 28) (addr: 1 0 BIFIT)  (addr: 0 0 380953134878)  (sm: msg: ?@?????9?F?C?:?5?=?3?H?I?7?E?J?D?K?2?0?????>?;?4?6?M?O?G?A?<?8?B?L?1?N@q@w@e@r@t@y@u@i@o@p@?@a@s@d@f@g@h@j@k@l@;@'@z@x@c@v@b@n@m@,@.@q@w@e@r)  (opt: ) ) 
+31.03.19 13:35:48,766 [5] Сформирован запрос: (submit: (pdu: 190 4 0 28) (addr: 1 0 BIFIT)  (addr: 0 0 380953134878)  (sm: msg: ?@???$@t@y@u@i@o@p@a@s@d@f@g@h@j@k@l@;@z@x@c@v@b@n@m@,@.@1@2@2@3@4@5@6@7@8@9@0@-@-@q@w@q@w@q@w@q@w@q@w@q@w@q@w@q?K?0?2???0???0???????0@P@a@s)  (opt: ) ) 
+31.03.19 13:35:48,767 [5] Сформирован запрос: (submit: (pdu: 190 4 0 28) (addr: 1 0 BIFIT)  (addr: 0 0 380953134878)  (sm: msg: ?@????@s@w@o@r@d@:@ @1@5@7@8@6@9@ )  (opt: ) ) 
+31.03.19 13:35:48,776 [5] Получен пакет: (submit_resp: (pdu: 53 80000004 0 28) 4b78fc2a-1321-4312-a22b-fe8af0c13936 ) 
+31.03.19 13:35:48,776 [5] SML: Фиксация ответа на сообщение 28
+31.03.19 13:35:48,804 [5] Получен пакет: (submit_resp: (pdu: 53 80000004 0 28) 4b78fc2a-1321-4312-a22b-fe8af0c13936 ) 
+31.03.19 13:35:48,804 [5] SML: Фиксация ответа на сообщение 28
+31.03.19 13:35:48,804 [2] Ошибка фиксации полученного ответа
+31.03.19 13:35:48,804 [2] java.lang.Exception: Сообщения с номером 28 нет в списке.
+	at com.bifit.pegasus.channel.smssmpp.SendedMessagesList.fixResponse(SendedMessagesList.java:118)
+	at com.bifit.pegasus.channel.smssmpp.SenderSession$PDUEventListener.handleEvent(SenderSession.java:530)
+	at org.smpp.Receiver.process(Receiver.java:401)
+	at org.smpp.Receiver.receiveAsync(Receiver.java:382)
+	at org.smpp.ReceiverBase.process(ReceiverBase.java:96)
+	at org.smpp.util.ProcessingThread.run(ProcessingThread.java:191)
+	at java.lang.Thread.run(Thread.java:748)
+
+31.03.19 13:36:03,812 [4] Проверка подключения к SMS-центру.
+31.03.19 13:36:03,812 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 29) ) 
+31.03.19 13:36:03,818 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 29) ) 
+31.03.19 13:36:03,819 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 29) ) 
+31.03.19 13:36:03,819 [4] Проверка подключения прошла успешно.
+31.03.19 13:36:18,823 [4] Проверка подключения к SMS-центру.
+31.03.19 13:36:18,824 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 30) ) 
+31.03.19 13:36:18,829 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 30) ) 
+31.03.19 13:36:18,830 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 30) ) 
+31.03.19 13:36:18,830 [4] Проверка подключения прошла успешно.
+31.03.19 13:36:33,835 [4] Проверка подключения к SMS-центру.
+31.03.19 13:36:33,835 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 31) ) 
+31.03.19 13:36:33,840 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 31) ) 
+31.03.19 13:36:33,840 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 31) ) 
+31.03.19 13:36:33,840 [4] Проверка подключения прошла успешно.
+31.03.19 13:36:40,991 [2] При выполнении подключения:
+31.03.19 13:36:40,992 [2] java.net.ConnectException: Время ожидания соединения истекло (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:271)
+	at org.smpp.TCPIPConnection.open(TCPIPConnection.java:249)
+	at org.smpp.Session.open(Session.java:272)
+	at org.smpp.Session.bind(Session.java:403)
+	at com.bifit.pegasus.channel.smssmpp.SenderSession.bind(SenderSession.java:195)
+	at com.bifit.pegasus.channel.smssmpp.SenderSession.run(SenderSession.java:118)
+
+31.03.19 13:36:48,846 [4] Проверка подключения к SMS-центру.
+31.03.19 13:36:48,846 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 32) ) 
+31.03.19 13:36:48,851 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 32) ) 
+31.03.19 13:36:48,851 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 32) ) 
+31.03.19 13:36:48,851 [4] Проверка подключения прошла успешно.
+31.03.19 13:36:55,999 [4] Подключение к SMS-центру.
+31.03.19 13:36:55,999 [5] Сформирован запрос: (bindreq: (pdu: 0 1 0 [33]) bifitadmtest bifittest  52 (addrrang: 1 0 null) ) 
+31.03.19 13:37:03,854 [4] Проверка подключения к SMS-центру.
+31.03.19 13:37:03,854 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 33) ) 
+31.03.19 13:37:03,859 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 33) ) 
+31.03.19 13:37:03,859 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 33) ) 
+31.03.19 13:37:03,859 [4] Проверка подключения прошла успешно.
+31.03.19 13:37:18,865 [4] Проверка подключения к SMS-центру.
+31.03.19 13:37:18,866 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 34) ) 
+31.03.19 13:37:18,871 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 34) ) 
+31.03.19 13:37:18,871 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 34) ) 
+31.03.19 13:37:18,871 [4] Проверка подключения прошла успешно.
+31.03.19 13:37:33,877 [4] Проверка подключения к SMS-центру.
+31.03.19 13:37:33,877 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 35) ) 
+31.03.19 13:37:33,881 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 35) ) 
+31.03.19 13:37:33,881 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 35) ) 
+31.03.19 13:37:33,881 [4] Проверка подключения прошла успешно.
+31.03.19 13:37:48,884 [4] Проверка подключения к SMS-центру.
+31.03.19 13:37:48,885 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 36) ) 
+31.03.19 13:37:48,888 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 36) ) 
+31.03.19 13:37:48,889 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 36) ) 
+31.03.19 13:37:48,889 [4] Проверка подключения прошла успешно.
+31.03.19 13:38:03,892 [4] Проверка подключения к SMS-центру.
+31.03.19 13:38:03,892 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 37) ) 
+31.03.19 13:38:03,897 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 37) ) 
+31.03.19 13:38:03,897 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 37) ) 
+31.03.19 13:38:03,897 [4] Проверка подключения прошла успешно.
+31.03.19 13:38:18,899 [4] Проверка подключения к SMS-центру.
+31.03.19 13:38:18,900 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 38) ) 
+31.03.19 13:38:18,904 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 38) ) 
+31.03.19 13:38:18,904 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 38) ) 
+31.03.19 13:38:18,904 [4] Проверка подключения прошла успешно.
+31.03.19 13:38:33,911 [4] Проверка подключения к SMS-центру.
+31.03.19 13:38:33,911 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 39) ) 
+31.03.19 13:38:33,916 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 39) ) 
+31.03.19 13:38:33,917 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 39) ) 
+31.03.19 13:38:33,917 [4] Проверка подключения прошла успешно.
+31.03.19 13:38:48,923 [4] Проверка подключения к SMS-центру.
+31.03.19 13:38:48,923 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 40) ) 
+31.03.19 13:38:48,928 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 40) ) 
+31.03.19 13:38:48,928 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 40) ) 
+31.03.19 13:38:48,928 [4] Проверка подключения прошла успешно.
+31.03.19 13:39:03,934 [4] Проверка подключения к SMS-центру.
+31.03.19 13:39:03,934 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 41) ) 
+31.03.19 13:39:03,939 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 41) ) 
+31.03.19 13:39:03,939 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 41) ) 
+31.03.19 13:39:03,939 [4] Проверка подключения прошла успешно.
+31.03.19 13:39:18,942 [4] Проверка подключения к SMS-центру.
+31.03.19 13:39:18,942 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 42) ) 
+31.03.19 13:39:18,946 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 42) ) 
+31.03.19 13:39:18,946 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 42) ) 
+31.03.19 13:39:18,947 [4] Проверка подключения прошла успешно.
+31.03.19 13:39:33,949 [4] Проверка подключения к SMS-центру.
+31.03.19 13:39:33,949 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 43) ) 
+31.03.19 13:39:33,954 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 43) ) 
+31.03.19 13:39:33,954 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 43) ) 
+31.03.19 13:39:33,954 [4] Проверка подключения прошла успешно.
+31.03.19 13:39:48,957 [4] Проверка подключения к SMS-центру.
+31.03.19 13:39:48,957 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 44) ) 
+31.03.19 13:39:48,961 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 44) ) 
+31.03.19 13:39:48,961 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 44) ) 
+31.03.19 13:39:48,961 [4] Проверка подключения прошла успешно.
+31.03.19 13:40:03,964 [4] Проверка подключения к SMS-центру.
+31.03.19 13:40:03,964 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 45) ) 
+31.03.19 13:40:03,968 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 45) ) 
+31.03.19 13:40:03,968 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 45) ) 
+31.03.19 13:40:03,968 [4] Проверка подключения прошла успешно.
+31.03.19 13:40:04,994 [2] При выполнении подключения:
+31.03.19 13:40:04,995 [2] java.net.ConnectException: Время ожидания соединения истекло (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:271)
+	at org.smpp.TCPIPConnection.open(TCPIPConnection.java:249)
+	at org.smpp.Session.open(Session.java:272)
+	at org.smpp.Session.bind(Session.java:403)
+	at com.bifit.pegasus.channel.smssmpp.SenderSession.bind(SenderSession.java:195)
+	at com.bifit.pegasus.channel.smssmpp.SenderSession.run(SenderSession.java:118)
+
+31.03.19 13:40:18,972 [4] Проверка подключения к SMS-центру.
+31.03.19 13:40:18,972 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 46) ) 
+31.03.19 13:40:18,977 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 46) ) 
+31.03.19 13:40:18,977 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 46) ) 
+31.03.19 13:40:18,977 [4] Проверка подключения прошла успешно.
+31.03.19 13:40:20,002 [4] Подключение к SMS-центру.
+31.03.19 13:40:20,002 [5] Сформирован запрос: (bindreq: (pdu: 0 1 0 [47]) bifitadmtest bifittest  52 (addrrang: 1 0 null) ) 
+31.03.19 13:40:33,979 [4] Проверка подключения к SMS-центру.
+31.03.19 13:40:33,980 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 47) ) 
+31.03.19 13:40:33,984 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 47) ) 
+31.03.19 13:40:33,984 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 47) ) 
+31.03.19 13:40:33,984 [4] Проверка подключения прошла успешно.
+31.03.19 13:40:48,991 [4] Проверка подключения к SMS-центру.
+31.03.19 13:40:48,991 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 48) ) 
+31.03.19 13:40:48,995 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 48) ) 
+31.03.19 13:40:48,995 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 48) ) 
+31.03.19 13:40:48,995 [4] Проверка подключения прошла успешно.
+31.03.19 13:41:03,998 [4] Проверка подключения к SMS-центру.
+31.03.19 13:41:03,999 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 49) ) 
+31.03.19 13:41:04,003 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 49) ) 
+31.03.19 13:41:04,003 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 49) ) 
+31.03.19 13:41:04,003 [4] Проверка подключения прошла успешно.
+31.03.19 13:41:19,006 [4] Проверка подключения к SMS-центру.
+31.03.19 13:41:19,006 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 50) ) 
+31.03.19 13:41:19,010 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 50) ) 
+31.03.19 13:41:19,010 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 50) ) 
+31.03.19 13:41:19,011 [4] Проверка подключения прошла успешно.
+31.03.19 13:41:34,013 [4] Проверка подключения к SMS-центру.
+31.03.19 13:41:34,014 [5] Сформирован запрос: (enquirelink: (pdu: 0 15 0 51) ) 
+31.03.19 13:41:34,017 [5] Получен пакет: (enquirelink_resp: (pdu: 16 80000015 0 51) ) 
+31.03.19 13:41:34,018 [5] Получен результат запроса: (enquirelink_resp: (pdu: 16 80000015 0 51) ) 
+31.03.19 13:41:34,018 [4] Проверка подключения прошла успешно.

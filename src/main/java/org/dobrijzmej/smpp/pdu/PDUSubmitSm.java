@@ -1,7 +1,9 @@
 package org.dobrijzmej.smpp.pdu;
 
+//import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
 import org.dobrijzmej.smpp.log.Log;
-import org.slf4j.Logger;
+//import org.slf4j.Logger;
 
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
@@ -119,13 +121,14 @@ public class PDUSubmitSm extends PDU {
         logger.trace(labelPrefix + "sequenceNumber:" + sequenceNumber);
         logger.trace(labelPrefix + "serviceType:" + serviceType);
         logger.trace(labelPrefix + "sourceAddr:" + sourceAddr);
-        logger.info(labelPrefix + "destinationAddr:" + destinationAddr);
+        logger.debug(labelPrefix + "destinationAddr:" + destinationAddr);
         logger.trace(labelPrefix + "esmClass:" + esmClass);
         logger.trace(labelPrefix + "dataCoding:" + dataCoding);
         logger.trace(labelPrefix + "headerLength:" + headerLength);
         logger.trace(labelPrefix + "headerPartsCount:" + headerPartsCount);
         logger.trace(labelPrefix + "headerPartNumber:" + headerPartNumber);
-        logger.info(labelPrefix + "shortMessage:" + shortMessage);
+        logger.debug(labelPrefix + "shortMessage:" + shortMessage);
+        logger.info(labelPrefix + "Read message for phone ["+destinationAddr+"] with text ["+shortMessage+"]");
 
     }
 

@@ -1,0 +1,576 @@
+2019-04-10 08:29:01,726 INFO  ClientSession:52 - [22] [cd01f906-b1e5-4390-a402-114c157b2a5c] Waiting next command.
+2019-04-10 08:29:01,731 INFO  ClientSession:66 - [22] [cd01f906-b1e5-4390-a402-114c157b2a5c] Incoming command_id is defined as TRANSMITTER
+2019-04-10 08:29:01,733 INFO  PDUTransmitter:55 - [22] [cd01f906-b1e5-4390-a402-114c157b2a5c] systemId:tas2uadm
+2019-04-10 08:29:01,741 INFO  PDUTransmitter:80 - [22] [cd01f906-b1e5-4390-a402-114c157b2a5c] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 08:29:01,744 INFO  ClientSession:52 - [22] [cd01f906-b1e5-4390-a402-114c157b2a5c] Waiting next command.
+2019-04-10 08:29:01,755 INFO  ClientSession:74 - [22] [cd01f906-b1e5-4390-a402-114c157b2a5c] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 08:29:01,758 INFO  ClientSession:52 - [22] [cd01f906-b1e5-4390-a402-114c157b2a5c] Waiting next command.
+2019-04-10 08:29:01,759 INFO  ClientSession:78 - [22] [cd01f906-b1e5-4390-a402-114c157b2a5c] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 08:29:01,762 INFO  PDUSubmitSm:122 - [22] [cd01f906-b1e5-4390-a402-114c157b2a5c] destinationAddr:380504718060
+2019-04-10 08:29:01,763 INFO  PDUSubmitSm:128 - [22] [cd01f906-b1e5-4390-a402-114c157b2a5c] shortMessage:some teêñò
+2019-04-10 08:29:01,770 INFO  ClientSession:52 - [22] [cd01f906-b1e5-4390-a402-114c157b2a5c] Waiting next command.
+2019-04-10 08:29:01,770 INFO  ClientSession:82 - [22] [cd01f906-b1e5-4390-a402-114c157b2a5c] Incoming command_id is defined as UNBIND
+2019-04-10 08:29:01,771 INFO  ClientSession:84 - [22] [cd01f906-b1e5-4390-a402-114c157b2a5c] This command is the final session. I close the connection with the client.
+2019-04-10 08:29:01,777 INFO  ClientSession:39 - Waiting next client
+2019-04-10 08:29:04,441 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 08:29:04,441 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 08:29:38,613 INFO  ClientSession:52 - [23] [dd3bf713-ea6a-47af-9be0-48e1879a9d09] Waiting next command.
+2019-04-10 08:29:38,614 INFO  ClientSession:66 - [23] [dd3bf713-ea6a-47af-9be0-48e1879a9d09] Incoming command_id is defined as TRANSMITTER
+2019-04-10 08:29:38,614 INFO  PDUTransmitter:55 - [23] [dd3bf713-ea6a-47af-9be0-48e1879a9d09] systemId:tas2uadm
+2019-04-10 08:29:38,620 INFO  PDUTransmitter:80 - [23] [dd3bf713-ea6a-47af-9be0-48e1879a9d09] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 08:29:38,621 INFO  ClientSession:52 - [23] [dd3bf713-ea6a-47af-9be0-48e1879a9d09] Waiting next command.
+2019-04-10 08:29:38,649 INFO  ClientSession:74 - [23] [dd3bf713-ea6a-47af-9be0-48e1879a9d09] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 08:29:38,650 INFO  ClientSession:52 - [23] [dd3bf713-ea6a-47af-9be0-48e1879a9d09] Waiting next command.
+2019-04-10 08:29:38,651 INFO  ClientSession:78 - [23] [dd3bf713-ea6a-47af-9be0-48e1879a9d09] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 08:29:38,652 INFO  PDUSubmitSm:122 - [23] [dd3bf713-ea6a-47af-9be0-48e1879a9d09] destinationAddr:380504718060
+2019-04-10 08:29:38,652 INFO  PDUSubmitSm:128 - [23] [dd3bf713-ea6a-47af-9be0-48e1879a9d09] shortMessage:some teêñò
+2019-04-10 08:29:38,653 INFO  ClientSession:52 - [23] [dd3bf713-ea6a-47af-9be0-48e1879a9d09] Waiting next command.
+2019-04-10 08:29:38,661 INFO  ClientSession:82 - [23] [dd3bf713-ea6a-47af-9be0-48e1879a9d09] Incoming command_id is defined as UNBIND
+2019-04-10 08:29:38,662 INFO  ClientSession:84 - [23] [dd3bf713-ea6a-47af-9be0-48e1879a9d09] This command is the final session. I close the connection with the client.
+2019-04-10 08:29:38,663 INFO  ClientSession:39 - Waiting next client
+2019-04-10 08:29:39,205 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 08:29:39,206 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 08:30:22,018 INFO  ClientSession:52 - [24] [3a9903f3-042d-49c0-ad45-9199ff8c5664] Waiting next command.
+2019-04-10 08:30:22,019 INFO  ClientSession:66 - [24] [3a9903f3-042d-49c0-ad45-9199ff8c5664] Incoming command_id is defined as TRANSMITTER
+2019-04-10 08:30:22,020 INFO  PDUTransmitter:55 - [24] [3a9903f3-042d-49c0-ad45-9199ff8c5664] systemId:tas2uadm
+2019-04-10 08:30:22,024 INFO  PDUTransmitter:80 - [24] [3a9903f3-042d-49c0-ad45-9199ff8c5664] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 08:30:22,025 INFO  ClientSession:52 - [24] [3a9903f3-042d-49c0-ad45-9199ff8c5664] Waiting next command.
+2019-04-10 08:30:22,051 INFO  ClientSession:74 - [24] [3a9903f3-042d-49c0-ad45-9199ff8c5664] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 08:30:22,052 INFO  ClientSession:52 - [24] [3a9903f3-042d-49c0-ad45-9199ff8c5664] Waiting next command.
+2019-04-10 08:30:22,054 INFO  ClientSession:78 - [24] [3a9903f3-042d-49c0-ad45-9199ff8c5664] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 08:30:22,055 INFO  PDUSubmitSm:122 - [24] [3a9903f3-042d-49c0-ad45-9199ff8c5664] destinationAddr:380504718060
+2019-04-10 08:30:22,055 INFO  PDUSubmitSm:128 - [24] [3a9903f3-042d-49c0-ad45-9199ff8c5664] shortMessage:some teêñò
+2019-04-10 08:30:22,056 INFO  ClientSession:52 - [24] [3a9903f3-042d-49c0-ad45-9199ff8c5664] Waiting next command.
+2019-04-10 08:30:22,067 INFO  ClientSession:82 - [24] [3a9903f3-042d-49c0-ad45-9199ff8c5664] Incoming command_id is defined as UNBIND
+2019-04-10 08:30:22,068 INFO  ClientSession:84 - [24] [3a9903f3-042d-49c0-ad45-9199ff8c5664] This command is the final session. I close the connection with the client.
+2019-04-10 08:30:22,069 INFO  ClientSession:39 - Waiting next client
+2019-04-10 08:30:22,696 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 08:30:22,696 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 08:30:48,258 INFO  ClientSession:52 - [25] [49d1044d-5781-451d-8ce6-0bf583c19225] Waiting next command.
+2019-04-10 08:30:48,259 INFO  ClientSession:66 - [25] [49d1044d-5781-451d-8ce6-0bf583c19225] Incoming command_id is defined as TRANSMITTER
+2019-04-10 08:30:48,262 INFO  PDUTransmitter:55 - [25] [49d1044d-5781-451d-8ce6-0bf583c19225] systemId:tas2uadm
+2019-04-10 08:30:48,265 INFO  PDUTransmitter:80 - [25] [49d1044d-5781-451d-8ce6-0bf583c19225] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 08:30:48,265 INFO  ClientSession:52 - [25] [49d1044d-5781-451d-8ce6-0bf583c19225] Waiting next command.
+2019-04-10 08:30:48,279 INFO  ClientSession:74 - [25] [49d1044d-5781-451d-8ce6-0bf583c19225] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 08:30:48,279 INFO  ClientSession:52 - [25] [49d1044d-5781-451d-8ce6-0bf583c19225] Waiting next command.
+2019-04-10 08:30:48,281 INFO  ClientSession:78 - [25] [49d1044d-5781-451d-8ce6-0bf583c19225] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 08:30:48,287 INFO  PDUSubmitSm:122 - [25] [49d1044d-5781-451d-8ce6-0bf583c19225] destinationAddr:380504718060
+2019-04-10 08:30:48,288 INFO  PDUSubmitSm:128 - [25] [49d1044d-5781-451d-8ce6-0bf583c19225] shortMessage:some teêñò
+2019-04-10 08:30:48,288 INFO  ClientSession:52 - [25] [49d1044d-5781-451d-8ce6-0bf583c19225] Waiting next command.
+2019-04-10 08:30:48,294 INFO  ClientSession:82 - [25] [49d1044d-5781-451d-8ce6-0bf583c19225] Incoming command_id is defined as UNBIND
+2019-04-10 08:30:48,295 INFO  ClientSession:84 - [25] [49d1044d-5781-451d-8ce6-0bf583c19225] This command is the final session. I close the connection with the client.
+2019-04-10 08:30:48,308 INFO  ClientSession:39 - Waiting next client
+2019-04-10 08:30:48,799 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 08:30:48,800 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 08:30:54,882 INFO  ClientSession:52 - [26] [7a52b446-8873-4338-b892-98cd0fc83ce3] Waiting next command.
+2019-04-10 08:30:54,883 INFO  ClientSession:66 - [26] [7a52b446-8873-4338-b892-98cd0fc83ce3] Incoming command_id is defined as TRANSMITTER
+2019-04-10 08:30:54,883 INFO  PDUTransmitter:55 - [26] [7a52b446-8873-4338-b892-98cd0fc83ce3] systemId:tas2uadm
+2019-04-10 08:30:54,887 INFO  PDUTransmitter:80 - [26] [7a52b446-8873-4338-b892-98cd0fc83ce3] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 08:30:54,888 INFO  ClientSession:52 - [26] [7a52b446-8873-4338-b892-98cd0fc83ce3] Waiting next command.
+2019-04-10 08:30:54,899 INFO  ClientSession:74 - [26] [7a52b446-8873-4338-b892-98cd0fc83ce3] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 08:30:54,900 INFO  ClientSession:52 - [26] [7a52b446-8873-4338-b892-98cd0fc83ce3] Waiting next command.
+2019-04-10 08:30:54,902 INFO  ClientSession:78 - [26] [7a52b446-8873-4338-b892-98cd0fc83ce3] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 08:30:54,903 INFO  PDUSubmitSm:122 - [26] [7a52b446-8873-4338-b892-98cd0fc83ce3] destinationAddr:380504718060
+2019-04-10 08:30:54,903 INFO  PDUSubmitSm:128 - [26] [7a52b446-8873-4338-b892-98cd0fc83ce3] shortMessage:some teêñò
+2019-04-10 08:30:54,903 INFO  ClientSession:52 - [26] [7a52b446-8873-4338-b892-98cd0fc83ce3] Waiting next command.
+2019-04-10 08:30:54,912 INFO  ClientSession:82 - [26] [7a52b446-8873-4338-b892-98cd0fc83ce3] Incoming command_id is defined as UNBIND
+2019-04-10 08:30:54,913 INFO  ClientSession:84 - [26] [7a52b446-8873-4338-b892-98cd0fc83ce3] This command is the final session. I close the connection with the client.
+2019-04-10 08:30:54,932 INFO  ClientSession:39 - Waiting next client
+2019-04-10 08:30:55,413 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 08:30:55,413 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 08:30:55,871 INFO  ClientSession:52 - [27] [fd8eaf2d-67e5-42bc-a666-1309293c9b98] Waiting next command.
+2019-04-10 08:30:55,872 INFO  ClientSession:66 - [27] [fd8eaf2d-67e5-42bc-a666-1309293c9b98] Incoming command_id is defined as TRANSMITTER
+2019-04-10 08:30:55,873 INFO  PDUTransmitter:55 - [27] [fd8eaf2d-67e5-42bc-a666-1309293c9b98] systemId:tas2uadm
+2019-04-10 08:30:55,877 INFO  PDUTransmitter:80 - [27] [fd8eaf2d-67e5-42bc-a666-1309293c9b98] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 08:30:55,878 INFO  ClientSession:52 - [27] [fd8eaf2d-67e5-42bc-a666-1309293c9b98] Waiting next command.
+2019-04-10 08:30:55,892 INFO  ClientSession:74 - [27] [fd8eaf2d-67e5-42bc-a666-1309293c9b98] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 08:30:55,892 INFO  ClientSession:52 - [27] [fd8eaf2d-67e5-42bc-a666-1309293c9b98] Waiting next command.
+2019-04-10 08:30:55,906 INFO  ClientSession:78 - [27] [fd8eaf2d-67e5-42bc-a666-1309293c9b98] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 08:30:55,907 INFO  PDUSubmitSm:122 - [27] [fd8eaf2d-67e5-42bc-a666-1309293c9b98] destinationAddr:380504718060
+2019-04-10 08:30:55,907 INFO  PDUSubmitSm:128 - [27] [fd8eaf2d-67e5-42bc-a666-1309293c9b98] shortMessage:some teêñò
+2019-04-10 08:30:55,908 INFO  ClientSession:52 - [27] [fd8eaf2d-67e5-42bc-a666-1309293c9b98] Waiting next command.
+2019-04-10 08:30:55,921 INFO  ClientSession:82 - [27] [fd8eaf2d-67e5-42bc-a666-1309293c9b98] Incoming command_id is defined as UNBIND
+2019-04-10 08:30:55,921 INFO  ClientSession:84 - [27] [fd8eaf2d-67e5-42bc-a666-1309293c9b98] This command is the final session. I close the connection with the client.
+2019-04-10 08:30:55,922 INFO  ClientSession:39 - Waiting next client
+2019-04-10 08:30:56,418 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 08:30:56,419 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 08:30:56,725 INFO  ClientSession:52 - [28] [261ec015-6ed9-4cc9-9a96-ad40664b7650] Waiting next command.
+2019-04-10 08:30:56,727 INFO  ClientSession:66 - [28] [261ec015-6ed9-4cc9-9a96-ad40664b7650] Incoming command_id is defined as TRANSMITTER
+2019-04-10 08:30:56,727 INFO  PDUTransmitter:55 - [28] [261ec015-6ed9-4cc9-9a96-ad40664b7650] systemId:tas2uadm
+2019-04-10 08:30:56,732 INFO  PDUTransmitter:80 - [28] [261ec015-6ed9-4cc9-9a96-ad40664b7650] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 08:30:56,732 INFO  ClientSession:52 - [28] [261ec015-6ed9-4cc9-9a96-ad40664b7650] Waiting next command.
+2019-04-10 08:30:56,745 INFO  ClientSession:74 - [28] [261ec015-6ed9-4cc9-9a96-ad40664b7650] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 08:30:56,745 INFO  ClientSession:52 - [28] [261ec015-6ed9-4cc9-9a96-ad40664b7650] Waiting next command.
+2019-04-10 08:30:56,747 INFO  ClientSession:78 - [28] [261ec015-6ed9-4cc9-9a96-ad40664b7650] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 08:30:56,753 INFO  PDUSubmitSm:122 - [28] [261ec015-6ed9-4cc9-9a96-ad40664b7650] destinationAddr:380504718060
+2019-04-10 08:30:56,754 INFO  PDUSubmitSm:128 - [28] [261ec015-6ed9-4cc9-9a96-ad40664b7650] shortMessage:some teêñò
+2019-04-10 08:30:56,754 INFO  ClientSession:52 - [28] [261ec015-6ed9-4cc9-9a96-ad40664b7650] Waiting next command.
+2019-04-10 08:30:56,761 INFO  ClientSession:82 - [28] [261ec015-6ed9-4cc9-9a96-ad40664b7650] Incoming command_id is defined as UNBIND
+2019-04-10 08:30:56,762 INFO  ClientSession:84 - [28] [261ec015-6ed9-4cc9-9a96-ad40664b7650] This command is the final session. I close the connection with the client.
+2019-04-10 08:30:56,772 INFO  ClientSession:39 - Waiting next client
+2019-04-10 08:30:57,264 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 08:30:57,264 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 08:34:19,746 INFO  ClientSession:52 - [30] [643d949b-9698-4562-bdbc-1d0bf31142a7] Waiting next command.
+2019-04-10 08:34:19,747 INFO  ClientSession:66 - [30] [643d949b-9698-4562-bdbc-1d0bf31142a7] Incoming command_id is defined as TRANSMITTER
+2019-04-10 08:34:19,748 INFO  PDUTransmitter:55 - [30] [643d949b-9698-4562-bdbc-1d0bf31142a7] systemId:tas2uadm
+2019-04-10 08:34:19,750 INFO  PDUTransmitter:80 - [30] [643d949b-9698-4562-bdbc-1d0bf31142a7] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 08:34:19,751 INFO  ClientSession:52 - [30] [643d949b-9698-4562-bdbc-1d0bf31142a7] Waiting next command.
+2019-04-10 08:34:19,770 INFO  ClientSession:74 - [30] [643d949b-9698-4562-bdbc-1d0bf31142a7] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 08:34:19,771 INFO  ClientSession:52 - [30] [643d949b-9698-4562-bdbc-1d0bf31142a7] Waiting next command.
+2019-04-10 08:34:19,773 INFO  ClientSession:78 - [30] [643d949b-9698-4562-bdbc-1d0bf31142a7] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 08:34:19,777 INFO  PDUSubmitSm:122 - [30] [643d949b-9698-4562-bdbc-1d0bf31142a7] destinationAddr:380504718060
+2019-04-10 08:34:19,778 INFO  PDUSubmitSm:128 - [30] [643d949b-9698-4562-bdbc-1d0bf31142a7] shortMessage:some teêñò
+2019-04-10 08:34:19,778 INFO  ClientSession:52 - [30] [643d949b-9698-4562-bdbc-1d0bf31142a7] Waiting next command.
+2019-04-10 08:34:19,788 INFO  ClientSession:82 - [30] [643d949b-9698-4562-bdbc-1d0bf31142a7] Incoming command_id is defined as UNBIND
+2019-04-10 08:34:19,789 INFO  ClientSession:84 - [30] [643d949b-9698-4562-bdbc-1d0bf31142a7] This command is the final session. I close the connection with the client.
+2019-04-10 08:34:19,797 INFO  ClientSession:39 - Waiting next client
+2019-04-10 08:34:20,320 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 08:34:20,320 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 08:34:20,541 INFO  ClientSession:52 - [31] [6e98a25c-40b4-46c4-96e1-89ddee3e0495] Waiting next command.
+2019-04-10 08:34:20,542 INFO  ClientSession:66 - [31] [6e98a25c-40b4-46c4-96e1-89ddee3e0495] Incoming command_id is defined as TRANSMITTER
+2019-04-10 08:34:20,542 INFO  PDUTransmitter:55 - [31] [6e98a25c-40b4-46c4-96e1-89ddee3e0495] systemId:tas2uadm
+2019-04-10 08:34:20,547 INFO  PDUTransmitter:80 - [31] [6e98a25c-40b4-46c4-96e1-89ddee3e0495] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 08:34:20,548 INFO  ClientSession:52 - [31] [6e98a25c-40b4-46c4-96e1-89ddee3e0495] Waiting next command.
+2019-04-10 08:34:20,559 INFO  ClientSession:74 - [31] [6e98a25c-40b4-46c4-96e1-89ddee3e0495] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 08:34:20,560 INFO  ClientSession:52 - [31] [6e98a25c-40b4-46c4-96e1-89ddee3e0495] Waiting next command.
+2019-04-10 08:34:20,560 INFO  ClientSession:78 - [31] [6e98a25c-40b4-46c4-96e1-89ddee3e0495] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 08:34:20,561 INFO  PDUSubmitSm:122 - [31] [6e98a25c-40b4-46c4-96e1-89ddee3e0495] destinationAddr:380504718060
+2019-04-10 08:34:20,562 INFO  PDUSubmitSm:128 - [31] [6e98a25c-40b4-46c4-96e1-89ddee3e0495] shortMessage:some teêñò
+2019-04-10 08:34:20,563 INFO  ClientSession:52 - [31] [6e98a25c-40b4-46c4-96e1-89ddee3e0495] Waiting next command.
+2019-04-10 08:34:20,572 INFO  ClientSession:82 - [31] [6e98a25c-40b4-46c4-96e1-89ddee3e0495] Incoming command_id is defined as UNBIND
+2019-04-10 08:34:20,573 INFO  ClientSession:84 - [31] [6e98a25c-40b4-46c4-96e1-89ddee3e0495] This command is the final session. I close the connection with the client.
+2019-04-10 08:34:20,591 INFO  ClientSession:39 - Waiting next client
+2019-04-10 08:34:21,294 INFO  ClientSession:52 - [32] [76b6b026-dc9b-46b2-a1e7-15bf1993a484] Waiting next command.
+2019-04-10 08:34:21,295 INFO  ClientSession:66 - [32] [76b6b026-dc9b-46b2-a1e7-15bf1993a484] Incoming command_id is defined as TRANSMITTER
+2019-04-10 08:34:21,295 INFO  PDUTransmitter:55 - [32] [76b6b026-dc9b-46b2-a1e7-15bf1993a484] systemId:tas2uadm
+2019-04-10 08:34:21,298 INFO  PDUTransmitter:80 - [32] [76b6b026-dc9b-46b2-a1e7-15bf1993a484] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 08:34:21,298 INFO  ClientSession:52 - [32] [76b6b026-dc9b-46b2-a1e7-15bf1993a484] Waiting next command.
+2019-04-10 08:34:21,310 INFO  ClientSession:74 - [32] [76b6b026-dc9b-46b2-a1e7-15bf1993a484] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 08:34:21,310 INFO  ClientSession:52 - [32] [76b6b026-dc9b-46b2-a1e7-15bf1993a484] Waiting next command.
+2019-04-10 08:34:21,311 INFO  ClientSession:78 - [32] [76b6b026-dc9b-46b2-a1e7-15bf1993a484] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 08:34:21,311 INFO  PDUSubmitSm:122 - [32] [76b6b026-dc9b-46b2-a1e7-15bf1993a484] destinationAddr:380504718060
+2019-04-10 08:34:21,311 INFO  PDUSubmitSm:128 - [32] [76b6b026-dc9b-46b2-a1e7-15bf1993a484] shortMessage:some teêñò
+2019-04-10 08:34:21,312 INFO  ClientSession:52 - [32] [76b6b026-dc9b-46b2-a1e7-15bf1993a484] Waiting next command.
+2019-04-10 08:34:21,318 INFO  ClientSession:82 - [32] [76b6b026-dc9b-46b2-a1e7-15bf1993a484] Incoming command_id is defined as UNBIND
+2019-04-10 08:34:21,319 INFO  ClientSession:84 - [32] [76b6b026-dc9b-46b2-a1e7-15bf1993a484] This command is the final session. I close the connection with the client.
+2019-04-10 08:34:21,344 INFO  ClientSession:39 - Waiting next client
+2019-04-10 08:34:21,375 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 08:34:21,375 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 08:34:21,881 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 08:34:21,882 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 08:34:22,072 INFO  ClientSession:52 - [33] [40e80471-cad1-4ccd-98db-9855c40ec0a2] Waiting next command.
+2019-04-10 08:34:22,073 INFO  ClientSession:66 - [33] [40e80471-cad1-4ccd-98db-9855c40ec0a2] Incoming command_id is defined as TRANSMITTER
+2019-04-10 08:34:22,073 INFO  PDUTransmitter:55 - [33] [40e80471-cad1-4ccd-98db-9855c40ec0a2] systemId:tas2uadm
+2019-04-10 08:34:22,076 INFO  PDUTransmitter:80 - [33] [40e80471-cad1-4ccd-98db-9855c40ec0a2] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 08:34:22,076 INFO  ClientSession:52 - [33] [40e80471-cad1-4ccd-98db-9855c40ec0a2] Waiting next command.
+2019-04-10 08:34:22,088 INFO  ClientSession:74 - [33] [40e80471-cad1-4ccd-98db-9855c40ec0a2] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 08:34:22,089 INFO  ClientSession:52 - [33] [40e80471-cad1-4ccd-98db-9855c40ec0a2] Waiting next command.
+2019-04-10 08:34:22,089 INFO  ClientSession:78 - [33] [40e80471-cad1-4ccd-98db-9855c40ec0a2] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 08:34:22,093 INFO  PDUSubmitSm:122 - [33] [40e80471-cad1-4ccd-98db-9855c40ec0a2] destinationAddr:380504718060
+2019-04-10 08:34:22,095 INFO  PDUSubmitSm:128 - [33] [40e80471-cad1-4ccd-98db-9855c40ec0a2] shortMessage:some teêñò
+2019-04-10 08:34:22,095 INFO  ClientSession:52 - [33] [40e80471-cad1-4ccd-98db-9855c40ec0a2] Waiting next command.
+2019-04-10 08:34:22,101 INFO  ClientSession:82 - [33] [40e80471-cad1-4ccd-98db-9855c40ec0a2] Incoming command_id is defined as UNBIND
+2019-04-10 08:34:22,105 INFO  ClientSession:84 - [33] [40e80471-cad1-4ccd-98db-9855c40ec0a2] This command is the final session. I close the connection with the client.
+2019-04-10 08:34:22,123 INFO  ClientSession:39 - Waiting next client
+2019-04-10 08:34:22,713 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 08:34:22,714 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 08:58:47,504 INFO  ClientSession:52 - [35] [6b5e50cf-6bfa-4bff-91de-251f49c6243c] Waiting next command.
+2019-04-10 08:58:47,508 INFO  ClientSession:66 - [35] [6b5e50cf-6bfa-4bff-91de-251f49c6243c] Incoming command_id is defined as TRANSMITTER
+2019-04-10 08:58:47,511 INFO  PDUTransmitter:55 - [35] [6b5e50cf-6bfa-4bff-91de-251f49c6243c] systemId:tas2uadm
+2019-04-10 08:58:47,516 INFO  PDUTransmitter:80 - [35] [6b5e50cf-6bfa-4bff-91de-251f49c6243c] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 08:58:47,516 INFO  ClientSession:52 - [35] [6b5e50cf-6bfa-4bff-91de-251f49c6243c] Waiting next command.
+2019-04-10 08:58:47,527 INFO  ClientSession:74 - [35] [6b5e50cf-6bfa-4bff-91de-251f49c6243c] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 08:58:47,527 INFO  ClientSession:52 - [35] [6b5e50cf-6bfa-4bff-91de-251f49c6243c] Waiting next command.
+2019-04-10 08:58:47,527 INFO  ClientSession:78 - [35] [6b5e50cf-6bfa-4bff-91de-251f49c6243c] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 08:58:47,528 INFO  PDUSubmitSm:122 - [35] [6b5e50cf-6bfa-4bff-91de-251f49c6243c] destinationAddr:380504718060
+2019-04-10 08:58:47,528 INFO  PDUSubmitSm:128 - [35] [6b5e50cf-6bfa-4bff-91de-251f49c6243c] shortMessage:some teêñò
+2019-04-10 08:58:47,529 INFO  ClientSession:52 - [35] [6b5e50cf-6bfa-4bff-91de-251f49c6243c] Waiting next command.
+2019-04-10 08:58:47,534 INFO  ClientSession:82 - [35] [6b5e50cf-6bfa-4bff-91de-251f49c6243c] Incoming command_id is defined as UNBIND
+2019-04-10 08:58:47,535 INFO  ClientSession:84 - [35] [6b5e50cf-6bfa-4bff-91de-251f49c6243c] This command is the final session. I close the connection with the client.
+2019-04-10 08:58:47,555 INFO  ClientSession:39 - Waiting next client
+2019-04-10 08:58:48,229 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 08:58:48,260 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 08:59:01,386 INFO  ClientSession:52 - [36] [27f46796-b0c2-4036-a9fc-1f296bd827f6] Waiting next command.
+2019-04-10 08:59:01,387 INFO  ClientSession:66 - [36] [27f46796-b0c2-4036-a9fc-1f296bd827f6] Incoming command_id is defined as TRANSMITTER
+2019-04-10 08:59:01,388 INFO  PDUTransmitter:55 - [36] [27f46796-b0c2-4036-a9fc-1f296bd827f6] systemId:tas2uadm
+2019-04-10 08:59:01,390 INFO  PDUTransmitter:80 - [36] [27f46796-b0c2-4036-a9fc-1f296bd827f6] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 08:59:01,391 INFO  ClientSession:52 - [36] [27f46796-b0c2-4036-a9fc-1f296bd827f6] Waiting next command.
+2019-04-10 08:59:01,400 INFO  ClientSession:74 - [36] [27f46796-b0c2-4036-a9fc-1f296bd827f6] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 08:59:01,400 INFO  ClientSession:52 - [36] [27f46796-b0c2-4036-a9fc-1f296bd827f6] Waiting next command.
+2019-04-10 08:59:01,400 INFO  ClientSession:78 - [36] [27f46796-b0c2-4036-a9fc-1f296bd827f6] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 08:59:01,401 INFO  PDUSubmitSm:122 - [36] [27f46796-b0c2-4036-a9fc-1f296bd827f6] destinationAddr:380504718060
+2019-04-10 08:59:01,401 INFO  PDUSubmitSm:128 - [36] [27f46796-b0c2-4036-a9fc-1f296bd827f6] shortMessage:some teêñò
+2019-04-10 08:59:01,402 INFO  ClientSession:52 - [36] [27f46796-b0c2-4036-a9fc-1f296bd827f6] Waiting next command.
+2019-04-10 08:59:01,408 INFO  ClientSession:82 - [36] [27f46796-b0c2-4036-a9fc-1f296bd827f6] Incoming command_id is defined as UNBIND
+2019-04-10 08:59:01,408 INFO  ClientSession:84 - [36] [27f46796-b0c2-4036-a9fc-1f296bd827f6] This command is the final session. I close the connection with the client.
+2019-04-10 08:59:01,436 INFO  ClientSession:39 - Waiting next client
+2019-04-10 08:59:01,907 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 08:59:01,907 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 08:59:02,699 INFO  ClientSession:52 - [37] [bfc9adfb-83ed-4bbf-a9f5-bcb6f5e0ded7] Waiting next command.
+2019-04-10 08:59:02,700 INFO  ClientSession:66 - [37] [bfc9adfb-83ed-4bbf-a9f5-bcb6f5e0ded7] Incoming command_id is defined as TRANSMITTER
+2019-04-10 08:59:02,701 INFO  PDUTransmitter:55 - [37] [bfc9adfb-83ed-4bbf-a9f5-bcb6f5e0ded7] systemId:tas2uadm
+2019-04-10 08:59:02,703 INFO  PDUTransmitter:80 - [37] [bfc9adfb-83ed-4bbf-a9f5-bcb6f5e0ded7] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 08:59:02,704 INFO  ClientSession:52 - [37] [bfc9adfb-83ed-4bbf-a9f5-bcb6f5e0ded7] Waiting next command.
+2019-04-10 08:59:02,714 INFO  ClientSession:74 - [37] [bfc9adfb-83ed-4bbf-a9f5-bcb6f5e0ded7] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 08:59:02,715 INFO  ClientSession:52 - [37] [bfc9adfb-83ed-4bbf-a9f5-bcb6f5e0ded7] Waiting next command.
+2019-04-10 08:59:02,715 INFO  ClientSession:78 - [37] [bfc9adfb-83ed-4bbf-a9f5-bcb6f5e0ded7] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 08:59:02,716 INFO  PDUSubmitSm:122 - [37] [bfc9adfb-83ed-4bbf-a9f5-bcb6f5e0ded7] destinationAddr:380504718060
+2019-04-10 08:59:02,716 INFO  PDUSubmitSm:128 - [37] [bfc9adfb-83ed-4bbf-a9f5-bcb6f5e0ded7] shortMessage:some teêñò
+2019-04-10 08:59:02,716 INFO  ClientSession:52 - [37] [bfc9adfb-83ed-4bbf-a9f5-bcb6f5e0ded7] Waiting next command.
+2019-04-10 08:59:02,722 INFO  ClientSession:82 - [37] [bfc9adfb-83ed-4bbf-a9f5-bcb6f5e0ded7] Incoming command_id is defined as UNBIND
+2019-04-10 08:59:02,723 INFO  ClientSession:84 - [37] [bfc9adfb-83ed-4bbf-a9f5-bcb6f5e0ded7] This command is the final session. I close the connection with the client.
+2019-04-10 08:59:02,750 INFO  ClientSession:39 - Waiting next client
+2019-04-10 08:59:03,595 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 08:59:03,595 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 08:59:03,804 INFO  ClientSession:52 - [38] [1f53ceae-1da7-498e-a320-8002f1227f23] Waiting next command.
+2019-04-10 08:59:03,805 INFO  ClientSession:66 - [38] [1f53ceae-1da7-498e-a320-8002f1227f23] Incoming command_id is defined as TRANSMITTER
+2019-04-10 08:59:03,806 INFO  PDUTransmitter:55 - [38] [1f53ceae-1da7-498e-a320-8002f1227f23] systemId:tas2uadm
+2019-04-10 08:59:03,808 INFO  PDUTransmitter:80 - [38] [1f53ceae-1da7-498e-a320-8002f1227f23] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 08:59:03,809 INFO  ClientSession:52 - [38] [1f53ceae-1da7-498e-a320-8002f1227f23] Waiting next command.
+2019-04-10 08:59:03,820 INFO  ClientSession:74 - [38] [1f53ceae-1da7-498e-a320-8002f1227f23] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 08:59:03,821 INFO  ClientSession:52 - [38] [1f53ceae-1da7-498e-a320-8002f1227f23] Waiting next command.
+2019-04-10 08:59:03,829 INFO  ClientSession:78 - [38] [1f53ceae-1da7-498e-a320-8002f1227f23] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 08:59:03,830 INFO  PDUSubmitSm:122 - [38] [1f53ceae-1da7-498e-a320-8002f1227f23] destinationAddr:380504718060
+2019-04-10 08:59:03,831 INFO  PDUSubmitSm:128 - [38] [1f53ceae-1da7-498e-a320-8002f1227f23] shortMessage:some teêñò
+2019-04-10 08:59:03,831 INFO  ClientSession:52 - [38] [1f53ceae-1da7-498e-a320-8002f1227f23] Waiting next command.
+2019-04-10 08:59:03,836 INFO  ClientSession:82 - [38] [1f53ceae-1da7-498e-a320-8002f1227f23] Incoming command_id is defined as UNBIND
+2019-04-10 08:59:03,836 INFO  ClientSession:84 - [38] [1f53ceae-1da7-498e-a320-8002f1227f23] This command is the final session. I close the connection with the client.
+2019-04-10 08:59:03,855 INFO  ClientSession:39 - Waiting next client
+2019-04-10 08:59:04,328 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 08:59:04,329 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 08:59:06,236 INFO  ClientSession:52 - [39] [d528dd8e-62f4-4db7-82be-4625e0110659] Waiting next command.
+2019-04-10 08:59:06,237 INFO  ClientSession:66 - [39] [d528dd8e-62f4-4db7-82be-4625e0110659] Incoming command_id is defined as TRANSMITTER
+2019-04-10 08:59:06,238 INFO  PDUTransmitter:55 - [39] [d528dd8e-62f4-4db7-82be-4625e0110659] systemId:tas2uadm
+2019-04-10 08:59:06,241 INFO  PDUTransmitter:80 - [39] [d528dd8e-62f4-4db7-82be-4625e0110659] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 08:59:06,241 INFO  ClientSession:52 - [39] [d528dd8e-62f4-4db7-82be-4625e0110659] Waiting next command.
+2019-04-10 08:59:06,251 INFO  ClientSession:74 - [39] [d528dd8e-62f4-4db7-82be-4625e0110659] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 08:59:06,252 INFO  ClientSession:52 - [39] [d528dd8e-62f4-4db7-82be-4625e0110659] Waiting next command.
+2019-04-10 08:59:06,252 INFO  ClientSession:78 - [39] [d528dd8e-62f4-4db7-82be-4625e0110659] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 08:59:06,253 INFO  PDUSubmitSm:122 - [39] [d528dd8e-62f4-4db7-82be-4625e0110659] destinationAddr:380504718060
+2019-04-10 08:59:06,254 INFO  PDUSubmitSm:128 - [39] [d528dd8e-62f4-4db7-82be-4625e0110659] shortMessage:some teêñò
+2019-04-10 08:59:06,254 INFO  ClientSession:52 - [39] [d528dd8e-62f4-4db7-82be-4625e0110659] Waiting next command.
+2019-04-10 08:59:06,262 INFO  ClientSession:82 - [39] [d528dd8e-62f4-4db7-82be-4625e0110659] Incoming command_id is defined as UNBIND
+2019-04-10 08:59:06,263 INFO  ClientSession:84 - [39] [d528dd8e-62f4-4db7-82be-4625e0110659] This command is the final session. I close the connection with the client.
+2019-04-10 08:59:06,286 INFO  ClientSession:39 - Waiting next client
+2019-04-10 08:59:06,763 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 08:59:06,764 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 09:00:42,730 INFO  ClientSession:52 - [40] [fe43f783-5e42-4cb8-bfa2-f1d1e181354d] Waiting next command.
+2019-04-10 09:00:42,731 INFO  ClientSession:66 - [40] [fe43f783-5e42-4cb8-bfa2-f1d1e181354d] Incoming command_id is defined as TRANSMITTER
+2019-04-10 09:00:42,732 INFO  PDUTransmitter:55 - [40] [fe43f783-5e42-4cb8-bfa2-f1d1e181354d] systemId:tas2uadm
+2019-04-10 09:00:42,734 INFO  PDUTransmitter:80 - [40] [fe43f783-5e42-4cb8-bfa2-f1d1e181354d] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 09:00:42,734 INFO  ClientSession:52 - [40] [fe43f783-5e42-4cb8-bfa2-f1d1e181354d] Waiting next command.
+2019-04-10 09:00:42,745 INFO  ClientSession:74 - [40] [fe43f783-5e42-4cb8-bfa2-f1d1e181354d] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 09:00:42,746 INFO  ClientSession:52 - [40] [fe43f783-5e42-4cb8-bfa2-f1d1e181354d] Waiting next command.
+2019-04-10 09:00:42,748 INFO  ClientSession:78 - [40] [fe43f783-5e42-4cb8-bfa2-f1d1e181354d] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 09:00:42,748 INFO  PDUSubmitSm:122 - [40] [fe43f783-5e42-4cb8-bfa2-f1d1e181354d] destinationAddr:380504718060
+2019-04-10 09:00:42,748 INFO  PDUSubmitSm:128 - [40] [fe43f783-5e42-4cb8-bfa2-f1d1e181354d] shortMessage:some teêñò
+2019-04-10 09:00:42,749 INFO  ClientSession:52 - [40] [fe43f783-5e42-4cb8-bfa2-f1d1e181354d] Waiting next command.
+2019-04-10 09:00:42,757 INFO  ClientSession:82 - [40] [fe43f783-5e42-4cb8-bfa2-f1d1e181354d] Incoming command_id is defined as UNBIND
+2019-04-10 09:00:42,757 INFO  ClientSession:84 - [40] [fe43f783-5e42-4cb8-bfa2-f1d1e181354d] This command is the final session. I close the connection with the client.
+2019-04-10 09:00:42,781 INFO  ClientSession:39 - Waiting next client
+2019-04-10 09:00:43,758 INFO  ClientSession:52 - [41] [e260b0ea-5261-484f-85f4-82769a5cda1a] Waiting next command.
+2019-04-10 09:00:43,759 INFO  ClientSession:66 - [41] [e260b0ea-5261-484f-85f4-82769a5cda1a] Incoming command_id is defined as TRANSMITTER
+2019-04-10 09:00:43,759 INFO  PDUTransmitter:55 - [41] [e260b0ea-5261-484f-85f4-82769a5cda1a] systemId:tas2uadm
+2019-04-10 09:00:43,762 INFO  PDUTransmitter:80 - [41] [e260b0ea-5261-484f-85f4-82769a5cda1a] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 09:00:43,762 INFO  ClientSession:52 - [41] [e260b0ea-5261-484f-85f4-82769a5cda1a] Waiting next command.
+2019-04-10 09:00:43,773 INFO  ClientSession:74 - [41] [e260b0ea-5261-484f-85f4-82769a5cda1a] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 09:00:43,774 INFO  ClientSession:52 - [41] [e260b0ea-5261-484f-85f4-82769a5cda1a] Waiting next command.
+2019-04-10 09:00:43,774 INFO  ClientSession:78 - [41] [e260b0ea-5261-484f-85f4-82769a5cda1a] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 09:00:43,775 INFO  PDUSubmitSm:122 - [41] [e260b0ea-5261-484f-85f4-82769a5cda1a] destinationAddr:380504718060
+2019-04-10 09:00:43,775 INFO  PDUSubmitSm:128 - [41] [e260b0ea-5261-484f-85f4-82769a5cda1a] shortMessage:some teêñò
+2019-04-10 09:00:43,776 INFO  ClientSession:52 - [41] [e260b0ea-5261-484f-85f4-82769a5cda1a] Waiting next command.
+2019-04-10 09:00:43,781 INFO  ClientSession:82 - [41] [e260b0ea-5261-484f-85f4-82769a5cda1a] Incoming command_id is defined as UNBIND
+2019-04-10 09:00:43,781 INFO  ClientSession:84 - [41] [e260b0ea-5261-484f-85f4-82769a5cda1a] This command is the final session. I close the connection with the client.
+2019-04-10 09:00:43,809 INFO  ClientSession:39 - Waiting next client
+2019-04-10 09:00:43,935 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 09:00:43,935 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 09:00:44,582 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 09:00:44,582 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 09:00:44,712 INFO  ClientSession:52 - [42] [06691dfb-d24c-476c-853b-7314f1a45743] Waiting next command.
+2019-04-10 09:00:44,713 INFO  ClientSession:66 - [42] [06691dfb-d24c-476c-853b-7314f1a45743] Incoming command_id is defined as TRANSMITTER
+2019-04-10 09:00:44,713 INFO  PDUTransmitter:55 - [42] [06691dfb-d24c-476c-853b-7314f1a45743] systemId:tas2uadm
+2019-04-10 09:00:44,719 INFO  PDUTransmitter:80 - [42] [06691dfb-d24c-476c-853b-7314f1a45743] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 09:00:44,719 INFO  ClientSession:52 - [42] [06691dfb-d24c-476c-853b-7314f1a45743] Waiting next command.
+2019-04-10 09:00:44,733 INFO  ClientSession:74 - [42] [06691dfb-d24c-476c-853b-7314f1a45743] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 09:00:44,734 INFO  ClientSession:52 - [42] [06691dfb-d24c-476c-853b-7314f1a45743] Waiting next command.
+2019-04-10 09:00:44,735 INFO  ClientSession:78 - [42] [06691dfb-d24c-476c-853b-7314f1a45743] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 09:00:44,736 INFO  PDUSubmitSm:122 - [42] [06691dfb-d24c-476c-853b-7314f1a45743] destinationAddr:380504718060
+2019-04-10 09:00:44,736 INFO  PDUSubmitSm:128 - [42] [06691dfb-d24c-476c-853b-7314f1a45743] shortMessage:some teêñò
+2019-04-10 09:00:44,737 INFO  ClientSession:52 - [42] [06691dfb-d24c-476c-853b-7314f1a45743] Waiting next command.
+2019-04-10 09:00:44,744 INFO  ClientSession:82 - [42] [06691dfb-d24c-476c-853b-7314f1a45743] Incoming command_id is defined as UNBIND
+2019-04-10 09:00:44,746 INFO  ClientSession:84 - [42] [06691dfb-d24c-476c-853b-7314f1a45743] This command is the final session. I close the connection with the client.
+2019-04-10 09:00:44,763 INFO  ClientSession:39 - Waiting next client
+2019-04-10 09:00:45,400 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 09:00:45,400 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 09:00:45,906 INFO  ClientSession:52 - [43] [b65c870b-8281-4661-9af0-38da7c13fe0b] Waiting next command.
+2019-04-10 09:00:45,907 INFO  ClientSession:66 - [43] [b65c870b-8281-4661-9af0-38da7c13fe0b] Incoming command_id is defined as TRANSMITTER
+2019-04-10 09:00:45,907 INFO  PDUTransmitter:55 - [43] [b65c870b-8281-4661-9af0-38da7c13fe0b] systemId:tas2uadm
+2019-04-10 09:00:45,910 INFO  PDUTransmitter:80 - [43] [b65c870b-8281-4661-9af0-38da7c13fe0b] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 09:00:45,910 INFO  ClientSession:52 - [43] [b65c870b-8281-4661-9af0-38da7c13fe0b] Waiting next command.
+2019-04-10 09:00:45,922 INFO  ClientSession:74 - [43] [b65c870b-8281-4661-9af0-38da7c13fe0b] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 09:00:45,923 INFO  ClientSession:52 - [43] [b65c870b-8281-4661-9af0-38da7c13fe0b] Waiting next command.
+2019-04-10 09:00:45,923 INFO  ClientSession:78 - [43] [b65c870b-8281-4661-9af0-38da7c13fe0b] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 09:00:45,924 INFO  PDUSubmitSm:122 - [43] [b65c870b-8281-4661-9af0-38da7c13fe0b] destinationAddr:380504718060
+2019-04-10 09:00:45,924 INFO  PDUSubmitSm:128 - [43] [b65c870b-8281-4661-9af0-38da7c13fe0b] shortMessage:some teêñò
+2019-04-10 09:00:45,925 INFO  ClientSession:52 - [43] [b65c870b-8281-4661-9af0-38da7c13fe0b] Waiting next command.
+2019-04-10 09:00:45,932 INFO  ClientSession:82 - [43] [b65c870b-8281-4661-9af0-38da7c13fe0b] Incoming command_id is defined as UNBIND
+2019-04-10 09:00:45,932 INFO  ClientSession:84 - [43] [b65c870b-8281-4661-9af0-38da7c13fe0b] This command is the final session. I close the connection with the client.
+2019-04-10 09:00:45,956 INFO  ClientSession:39 - Waiting next client
+2019-04-10 09:00:46,577 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 09:00:46,577 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 09:00:47,127 INFO  ClientSession:52 - [44] [d5bb8928-2e49-4154-bb2b-5f1b0aa2b6c0] Waiting next command.
+2019-04-10 09:00:47,128 INFO  ClientSession:66 - [44] [d5bb8928-2e49-4154-bb2b-5f1b0aa2b6c0] Incoming command_id is defined as TRANSMITTER
+2019-04-10 09:00:47,128 INFO  PDUTransmitter:55 - [44] [d5bb8928-2e49-4154-bb2b-5f1b0aa2b6c0] systemId:tas2uadm
+2019-04-10 09:00:47,130 INFO  PDUTransmitter:80 - [44] [d5bb8928-2e49-4154-bb2b-5f1b0aa2b6c0] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 09:00:47,131 INFO  ClientSession:52 - [44] [d5bb8928-2e49-4154-bb2b-5f1b0aa2b6c0] Waiting next command.
+2019-04-10 09:00:47,143 INFO  ClientSession:74 - [44] [d5bb8928-2e49-4154-bb2b-5f1b0aa2b6c0] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 09:00:47,143 INFO  ClientSession:52 - [44] [d5bb8928-2e49-4154-bb2b-5f1b0aa2b6c0] Waiting next command.
+2019-04-10 09:00:47,149 INFO  ClientSession:78 - [44] [d5bb8928-2e49-4154-bb2b-5f1b0aa2b6c0] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 09:00:47,150 INFO  PDUSubmitSm:122 - [44] [d5bb8928-2e49-4154-bb2b-5f1b0aa2b6c0] destinationAddr:380504718060
+2019-04-10 09:00:47,150 INFO  PDUSubmitSm:128 - [44] [d5bb8928-2e49-4154-bb2b-5f1b0aa2b6c0] shortMessage:some teêñò
+2019-04-10 09:00:47,150 INFO  ClientSession:52 - [44] [d5bb8928-2e49-4154-bb2b-5f1b0aa2b6c0] Waiting next command.
+2019-04-10 09:00:47,156 INFO  ClientSession:82 - [44] [d5bb8928-2e49-4154-bb2b-5f1b0aa2b6c0] Incoming command_id is defined as UNBIND
+2019-04-10 09:00:47,156 INFO  ClientSession:84 - [44] [d5bb8928-2e49-4154-bb2b-5f1b0aa2b6c0] This command is the final session. I close the connection with the client.
+2019-04-10 09:00:47,177 INFO  ClientSession:39 - Waiting next client
+2019-04-10 09:00:47,821 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 09:00:47,821 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 09:00:48,535 INFO  ClientSession:52 - [45] [64cd97ee-c00a-4409-93f2-4c731aae4dc3] Waiting next command.
+2019-04-10 09:00:48,536 INFO  ClientSession:66 - [45] [64cd97ee-c00a-4409-93f2-4c731aae4dc3] Incoming command_id is defined as TRANSMITTER
+2019-04-10 09:00:48,536 INFO  PDUTransmitter:55 - [45] [64cd97ee-c00a-4409-93f2-4c731aae4dc3] systemId:tas2uadm
+2019-04-10 09:00:48,539 INFO  PDUTransmitter:80 - [45] [64cd97ee-c00a-4409-93f2-4c731aae4dc3] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 09:00:48,539 INFO  ClientSession:52 - [45] [64cd97ee-c00a-4409-93f2-4c731aae4dc3] Waiting next command.
+2019-04-10 09:00:48,550 INFO  ClientSession:74 - [45] [64cd97ee-c00a-4409-93f2-4c731aae4dc3] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 09:00:48,550 INFO  ClientSession:52 - [45] [64cd97ee-c00a-4409-93f2-4c731aae4dc3] Waiting next command.
+2019-04-10 09:00:48,551 INFO  ClientSession:78 - [45] [64cd97ee-c00a-4409-93f2-4c731aae4dc3] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 09:00:48,551 INFO  PDUSubmitSm:122 - [45] [64cd97ee-c00a-4409-93f2-4c731aae4dc3] destinationAddr:380504718060
+2019-04-10 09:00:48,552 INFO  PDUSubmitSm:128 - [45] [64cd97ee-c00a-4409-93f2-4c731aae4dc3] shortMessage:some teêñò
+2019-04-10 09:00:48,552 INFO  ClientSession:52 - [45] [64cd97ee-c00a-4409-93f2-4c731aae4dc3] Waiting next command.
+2019-04-10 09:00:48,560 INFO  ClientSession:82 - [45] [64cd97ee-c00a-4409-93f2-4c731aae4dc3] Incoming command_id is defined as UNBIND
+2019-04-10 09:00:48,561 INFO  ClientSession:84 - [45] [64cd97ee-c00a-4409-93f2-4c731aae4dc3] This command is the final session. I close the connection with the client.
+2019-04-10 09:00:48,586 INFO  ClientSession:39 - Waiting next client
+2019-04-10 09:00:49,211 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 09:00:49,211 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 09:00:49,753 INFO  ClientSession:52 - [46] [a24e43a3-a06f-4c83-9ee3-b94e47a030c2] Waiting next command.
+2019-04-10 09:00:49,754 INFO  ClientSession:66 - [46] [a24e43a3-a06f-4c83-9ee3-b94e47a030c2] Incoming command_id is defined as TRANSMITTER
+2019-04-10 09:00:49,755 INFO  PDUTransmitter:55 - [46] [a24e43a3-a06f-4c83-9ee3-b94e47a030c2] systemId:tas2uadm
+2019-04-10 09:00:49,758 INFO  PDUTransmitter:80 - [46] [a24e43a3-a06f-4c83-9ee3-b94e47a030c2] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 09:00:49,758 INFO  ClientSession:52 - [46] [a24e43a3-a06f-4c83-9ee3-b94e47a030c2] Waiting next command.
+2019-04-10 09:00:49,769 INFO  ClientSession:74 - [46] [a24e43a3-a06f-4c83-9ee3-b94e47a030c2] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 09:00:49,770 INFO  ClientSession:52 - [46] [a24e43a3-a06f-4c83-9ee3-b94e47a030c2] Waiting next command.
+2019-04-10 09:00:49,771 INFO  ClientSession:78 - [46] [a24e43a3-a06f-4c83-9ee3-b94e47a030c2] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 09:00:49,772 INFO  PDUSubmitSm:122 - [46] [a24e43a3-a06f-4c83-9ee3-b94e47a030c2] destinationAddr:380504718060
+2019-04-10 09:00:49,772 INFO  PDUSubmitSm:128 - [46] [a24e43a3-a06f-4c83-9ee3-b94e47a030c2] shortMessage:some teêñò
+2019-04-10 09:00:49,773 INFO  ClientSession:52 - [46] [a24e43a3-a06f-4c83-9ee3-b94e47a030c2] Waiting next command.
+2019-04-10 09:00:49,781 INFO  ClientSession:82 - [46] [a24e43a3-a06f-4c83-9ee3-b94e47a030c2] Incoming command_id is defined as UNBIND
+2019-04-10 09:00:49,781 INFO  ClientSession:84 - [46] [a24e43a3-a06f-4c83-9ee3-b94e47a030c2] This command is the final session. I close the connection with the client.
+2019-04-10 09:00:49,804 INFO  ClientSession:39 - Waiting next client
+2019-04-10 09:00:50,430 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 09:00:50,430 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 09:00:51,149 INFO  ClientSession:52 - [47] [68c7d321-2a37-4ad8-9065-b7d7ad80019f] Waiting next command.
+2019-04-10 09:00:51,150 INFO  ClientSession:66 - [47] [68c7d321-2a37-4ad8-9065-b7d7ad80019f] Incoming command_id is defined as TRANSMITTER
+2019-04-10 09:00:51,151 INFO  PDUTransmitter:55 - [47] [68c7d321-2a37-4ad8-9065-b7d7ad80019f] systemId:tas2uadm
+2019-04-10 09:00:51,154 INFO  PDUTransmitter:80 - [47] [68c7d321-2a37-4ad8-9065-b7d7ad80019f] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 09:00:51,155 INFO  ClientSession:52 - [47] [68c7d321-2a37-4ad8-9065-b7d7ad80019f] Waiting next command.
+2019-04-10 09:00:51,168 INFO  ClientSession:74 - [47] [68c7d321-2a37-4ad8-9065-b7d7ad80019f] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 09:00:51,168 INFO  ClientSession:52 - [47] [68c7d321-2a37-4ad8-9065-b7d7ad80019f] Waiting next command.
+2019-04-10 09:00:51,169 INFO  ClientSession:78 - [47] [68c7d321-2a37-4ad8-9065-b7d7ad80019f] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 09:00:51,171 INFO  PDUSubmitSm:122 - [47] [68c7d321-2a37-4ad8-9065-b7d7ad80019f] destinationAddr:380504718060
+2019-04-10 09:00:51,172 INFO  PDUSubmitSm:128 - [47] [68c7d321-2a37-4ad8-9065-b7d7ad80019f] shortMessage:some teêñò
+2019-04-10 09:00:51,172 INFO  ClientSession:52 - [47] [68c7d321-2a37-4ad8-9065-b7d7ad80019f] Waiting next command.
+2019-04-10 09:00:51,180 INFO  ClientSession:82 - [47] [68c7d321-2a37-4ad8-9065-b7d7ad80019f] Incoming command_id is defined as UNBIND
+2019-04-10 09:00:51,180 INFO  ClientSession:84 - [47] [68c7d321-2a37-4ad8-9065-b7d7ad80019f] This command is the final session. I close the connection with the client.
+2019-04-10 09:00:51,200 INFO  ClientSession:39 - Waiting next client
+2019-04-10 09:00:51,835 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 09:00:51,836 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 09:00:52,566 INFO  ClientSession:52 - [48] [326a84ab-fbf4-4ecf-b8fa-e4d7886f944d] Waiting next command.
+2019-04-10 09:00:52,567 INFO  ClientSession:66 - [48] [326a84ab-fbf4-4ecf-b8fa-e4d7886f944d] Incoming command_id is defined as TRANSMITTER
+2019-04-10 09:00:52,568 INFO  PDUTransmitter:55 - [48] [326a84ab-fbf4-4ecf-b8fa-e4d7886f944d] systemId:tas2uadm
+2019-04-10 09:00:52,570 INFO  PDUTransmitter:80 - [48] [326a84ab-fbf4-4ecf-b8fa-e4d7886f944d] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 09:00:52,570 INFO  ClientSession:52 - [48] [326a84ab-fbf4-4ecf-b8fa-e4d7886f944d] Waiting next command.
+2019-04-10 09:00:52,580 INFO  ClientSession:74 - [48] [326a84ab-fbf4-4ecf-b8fa-e4d7886f944d] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 09:00:52,581 INFO  ClientSession:52 - [48] [326a84ab-fbf4-4ecf-b8fa-e4d7886f944d] Waiting next command.
+2019-04-10 09:00:52,581 INFO  ClientSession:78 - [48] [326a84ab-fbf4-4ecf-b8fa-e4d7886f944d] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 09:00:52,582 INFO  PDUSubmitSm:122 - [48] [326a84ab-fbf4-4ecf-b8fa-e4d7886f944d] destinationAddr:380504718060
+2019-04-10 09:00:52,582 INFO  PDUSubmitSm:128 - [48] [326a84ab-fbf4-4ecf-b8fa-e4d7886f944d] shortMessage:some teêñò
+2019-04-10 09:00:52,583 INFO  ClientSession:52 - [48] [326a84ab-fbf4-4ecf-b8fa-e4d7886f944d] Waiting next command.
+2019-04-10 09:00:52,590 INFO  ClientSession:82 - [48] [326a84ab-fbf4-4ecf-b8fa-e4d7886f944d] Incoming command_id is defined as UNBIND
+2019-04-10 09:00:52,591 INFO  ClientSession:84 - [48] [326a84ab-fbf4-4ecf-b8fa-e4d7886f944d] This command is the final session. I close the connection with the client.
+2019-04-10 09:00:52,616 INFO  ClientSession:39 - Waiting next client
+2019-04-10 09:00:53,244 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 09:00:53,245 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 09:00:53,903 INFO  ClientSession:52 - [49] [ca1d3a53-cc31-422e-b26f-e07fe7992891] Waiting next command.
+2019-04-10 09:00:53,904 INFO  ClientSession:66 - [49] [ca1d3a53-cc31-422e-b26f-e07fe7992891] Incoming command_id is defined as TRANSMITTER
+2019-04-10 09:00:53,904 INFO  PDUTransmitter:55 - [49] [ca1d3a53-cc31-422e-b26f-e07fe7992891] systemId:tas2uadm
+2019-04-10 09:00:53,907 INFO  PDUTransmitter:80 - [49] [ca1d3a53-cc31-422e-b26f-e07fe7992891] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 09:00:53,908 INFO  ClientSession:52 - [49] [ca1d3a53-cc31-422e-b26f-e07fe7992891] Waiting next command.
+2019-04-10 09:00:53,918 INFO  ClientSession:74 - [49] [ca1d3a53-cc31-422e-b26f-e07fe7992891] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 09:00:53,918 INFO  ClientSession:52 - [49] [ca1d3a53-cc31-422e-b26f-e07fe7992891] Waiting next command.
+2019-04-10 09:00:53,919 INFO  ClientSession:78 - [49] [ca1d3a53-cc31-422e-b26f-e07fe7992891] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 09:00:53,919 INFO  PDUSubmitSm:122 - [49] [ca1d3a53-cc31-422e-b26f-e07fe7992891] destinationAddr:380504718060
+2019-04-10 09:00:53,920 INFO  PDUSubmitSm:128 - [49] [ca1d3a53-cc31-422e-b26f-e07fe7992891] shortMessage:some teêñò
+2019-04-10 09:00:53,921 INFO  ClientSession:52 - [49] [ca1d3a53-cc31-422e-b26f-e07fe7992891] Waiting next command.
+2019-04-10 09:00:53,930 INFO  ClientSession:82 - [49] [ca1d3a53-cc31-422e-b26f-e07fe7992891] Incoming command_id is defined as UNBIND
+2019-04-10 09:00:53,930 INFO  ClientSession:84 - [49] [ca1d3a53-cc31-422e-b26f-e07fe7992891] This command is the final session. I close the connection with the client.
+2019-04-10 09:00:53,954 INFO  ClientSession:39 - Waiting next client
+2019-04-10 09:00:54,948 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 09:00:54,948 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 09:04:20,466 INFO  ClientSession:52 - [50] [e053f708-28af-4168-909a-b7973d838e7e] Waiting next command.
+2019-04-10 09:04:20,466 INFO  ClientSession:66 - [50] [e053f708-28af-4168-909a-b7973d838e7e] Incoming command_id is defined as TRANSMITTER
+2019-04-10 09:04:20,467 INFO  PDUTransmitter:55 - [50] [e053f708-28af-4168-909a-b7973d838e7e] systemId:tas2uadm
+2019-04-10 09:04:20,470 INFO  PDUTransmitter:80 - [50] [e053f708-28af-4168-909a-b7973d838e7e] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 09:04:20,471 INFO  ClientSession:52 - [50] [e053f708-28af-4168-909a-b7973d838e7e] Waiting next command.
+2019-04-10 09:04:20,480 INFO  ClientSession:74 - [50] [e053f708-28af-4168-909a-b7973d838e7e] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 09:04:20,481 INFO  ClientSession:52 - [50] [e053f708-28af-4168-909a-b7973d838e7e] Waiting next command.
+2019-04-10 09:04:20,481 INFO  ClientSession:78 - [50] [e053f708-28af-4168-909a-b7973d838e7e] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 09:04:20,484 INFO  PDUSubmitSm:122 - [50] [e053f708-28af-4168-909a-b7973d838e7e] destinationAddr:380504718060
+2019-04-10 09:04:20,485 INFO  PDUSubmitSm:128 - [50] [e053f708-28af-4168-909a-b7973d838e7e] shortMessage:some teêñò
+2019-04-10 09:04:20,485 INFO  ClientSession:52 - [50] [e053f708-28af-4168-909a-b7973d838e7e] Waiting next command.
+2019-04-10 09:04:20,491 INFO  ClientSession:82 - [50] [e053f708-28af-4168-909a-b7973d838e7e] Incoming command_id is defined as UNBIND
+2019-04-10 09:04:20,491 INFO  ClientSession:84 - [50] [e053f708-28af-4168-909a-b7973d838e7e] This command is the final session. I close the connection with the client.
+2019-04-10 09:04:20,516 INFO  ClientSession:39 - Waiting next client
+2019-04-10 09:04:21,182 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 09:04:21,182 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 09:04:21,452 INFO  ClientSession:52 - [51] [8afec6ab-c816-41f4-83bc-45a3f14925d1] Waiting next command.
+2019-04-10 09:04:21,453 INFO  ClientSession:66 - [51] [8afec6ab-c816-41f4-83bc-45a3f14925d1] Incoming command_id is defined as TRANSMITTER
+2019-04-10 09:04:21,454 INFO  PDUTransmitter:55 - [51] [8afec6ab-c816-41f4-83bc-45a3f14925d1] systemId:tas2uadm
+2019-04-10 09:04:21,456 INFO  PDUTransmitter:80 - [51] [8afec6ab-c816-41f4-83bc-45a3f14925d1] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 09:04:21,457 INFO  ClientSession:52 - [51] [8afec6ab-c816-41f4-83bc-45a3f14925d1] Waiting next command.
+2019-04-10 09:04:21,470 INFO  ClientSession:74 - [51] [8afec6ab-c816-41f4-83bc-45a3f14925d1] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 09:04:21,470 INFO  ClientSession:52 - [51] [8afec6ab-c816-41f4-83bc-45a3f14925d1] Waiting next command.
+2019-04-10 09:04:21,470 INFO  ClientSession:78 - [51] [8afec6ab-c816-41f4-83bc-45a3f14925d1] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 09:04:21,471 INFO  PDUSubmitSm:122 - [51] [8afec6ab-c816-41f4-83bc-45a3f14925d1] destinationAddr:380504718060
+2019-04-10 09:04:21,471 INFO  PDUSubmitSm:128 - [51] [8afec6ab-c816-41f4-83bc-45a3f14925d1] shortMessage:some teêñò
+2019-04-10 09:04:21,472 INFO  ClientSession:52 - [51] [8afec6ab-c816-41f4-83bc-45a3f14925d1] Waiting next command.
+2019-04-10 09:04:21,477 INFO  ClientSession:82 - [51] [8afec6ab-c816-41f4-83bc-45a3f14925d1] Incoming command_id is defined as UNBIND
+2019-04-10 09:04:21,478 INFO  ClientSession:84 - [51] [8afec6ab-c816-41f4-83bc-45a3f14925d1] This command is the final session. I close the connection with the client.
+2019-04-10 09:04:21,503 INFO  ClientSession:39 - Waiting next client
+2019-04-10 09:04:21,975 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 09:04:21,975 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 09:04:22,374 INFO  ClientSession:52 - [52] [35d5d22f-e814-4c2c-baef-c0996d5b3f1f] Waiting next command.
+2019-04-10 09:04:22,375 INFO  ClientSession:66 - [52] [35d5d22f-e814-4c2c-baef-c0996d5b3f1f] Incoming command_id is defined as TRANSMITTER
+2019-04-10 09:04:22,376 INFO  PDUTransmitter:55 - [52] [35d5d22f-e814-4c2c-baef-c0996d5b3f1f] systemId:tas2uadm
+2019-04-10 09:04:22,378 INFO  PDUTransmitter:80 - [52] [35d5d22f-e814-4c2c-baef-c0996d5b3f1f] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 09:04:22,379 INFO  ClientSession:52 - [52] [35d5d22f-e814-4c2c-baef-c0996d5b3f1f] Waiting next command.
+2019-04-10 09:04:22,388 INFO  ClientSession:74 - [52] [35d5d22f-e814-4c2c-baef-c0996d5b3f1f] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 09:04:22,389 INFO  ClientSession:52 - [52] [35d5d22f-e814-4c2c-baef-c0996d5b3f1f] Waiting next command.
+2019-04-10 09:04:22,389 INFO  ClientSession:78 - [52] [35d5d22f-e814-4c2c-baef-c0996d5b3f1f] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 09:04:22,390 INFO  PDUSubmitSm:122 - [52] [35d5d22f-e814-4c2c-baef-c0996d5b3f1f] destinationAddr:380504718060
+2019-04-10 09:04:22,390 INFO  PDUSubmitSm:128 - [52] [35d5d22f-e814-4c2c-baef-c0996d5b3f1f] shortMessage:some teêñò
+2019-04-10 09:04:22,391 INFO  ClientSession:52 - [52] [35d5d22f-e814-4c2c-baef-c0996d5b3f1f] Waiting next command.
+2019-04-10 09:04:22,398 INFO  ClientSession:82 - [52] [35d5d22f-e814-4c2c-baef-c0996d5b3f1f] Incoming command_id is defined as UNBIND
+2019-04-10 09:04:22,399 INFO  ClientSession:84 - [52] [35d5d22f-e814-4c2c-baef-c0996d5b3f1f] This command is the final session. I close the connection with the client.
+2019-04-10 09:04:22,425 INFO  ClientSession:39 - Waiting next client
+2019-04-10 09:04:23,091 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 09:04:23,092 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 09:04:23,282 INFO  ClientSession:52 - [53] [f90069ed-4879-4751-a9de-fcf5fc111c97] Waiting next command.
+2019-04-10 09:04:23,282 INFO  ClientSession:66 - [53] [f90069ed-4879-4751-a9de-fcf5fc111c97] Incoming command_id is defined as TRANSMITTER
+2019-04-10 09:04:23,283 INFO  PDUTransmitter:55 - [53] [f90069ed-4879-4751-a9de-fcf5fc111c97] systemId:tas2uadm
+2019-04-10 09:04:23,286 INFO  PDUTransmitter:80 - [53] [f90069ed-4879-4751-a9de-fcf5fc111c97] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 09:04:23,287 INFO  ClientSession:52 - [53] [f90069ed-4879-4751-a9de-fcf5fc111c97] Waiting next command.
+2019-04-10 09:04:23,299 INFO  ClientSession:74 - [53] [f90069ed-4879-4751-a9de-fcf5fc111c97] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 09:04:23,299 INFO  ClientSession:52 - [53] [f90069ed-4879-4751-a9de-fcf5fc111c97] Waiting next command.
+2019-04-10 09:04:23,302 INFO  ClientSession:78 - [53] [f90069ed-4879-4751-a9de-fcf5fc111c97] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 09:04:23,304 INFO  PDUSubmitSm:122 - [53] [f90069ed-4879-4751-a9de-fcf5fc111c97] destinationAddr:380504718060
+2019-04-10 09:04:23,304 INFO  PDUSubmitSm:128 - [53] [f90069ed-4879-4751-a9de-fcf5fc111c97] shortMessage:some teêñò
+2019-04-10 09:04:23,305 INFO  ClientSession:52 - [53] [f90069ed-4879-4751-a9de-fcf5fc111c97] Waiting next command.
+2019-04-10 09:04:23,309 INFO  ClientSession:82 - [53] [f90069ed-4879-4751-a9de-fcf5fc111c97] Incoming command_id is defined as UNBIND
+2019-04-10 09:04:23,309 INFO  ClientSession:84 - [53] [f90069ed-4879-4751-a9de-fcf5fc111c97] This command is the final session. I close the connection with the client.
+2019-04-10 09:04:23,333 INFO  ClientSession:39 - Waiting next client
+2019-04-10 09:04:23,817 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 09:04:23,817 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 09:04:24,239 INFO  ClientSession:52 - [54] [96f6d4eb-5b76-4061-bd95-4b70dfd5252e] Waiting next command.
+2019-04-10 09:04:24,239 INFO  ClientSession:66 - [54] [96f6d4eb-5b76-4061-bd95-4b70dfd5252e] Incoming command_id is defined as TRANSMITTER
+2019-04-10 09:04:24,240 INFO  PDUTransmitter:55 - [54] [96f6d4eb-5b76-4061-bd95-4b70dfd5252e] systemId:tas2uadm
+2019-04-10 09:04:24,242 INFO  PDUTransmitter:80 - [54] [96f6d4eb-5b76-4061-bd95-4b70dfd5252e] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 09:04:24,242 INFO  ClientSession:52 - [54] [96f6d4eb-5b76-4061-bd95-4b70dfd5252e] Waiting next command.
+2019-04-10 09:04:24,256 INFO  ClientSession:74 - [54] [96f6d4eb-5b76-4061-bd95-4b70dfd5252e] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 09:04:24,256 INFO  ClientSession:52 - [54] [96f6d4eb-5b76-4061-bd95-4b70dfd5252e] Waiting next command.
+2019-04-10 09:04:24,257 INFO  ClientSession:78 - [54] [96f6d4eb-5b76-4061-bd95-4b70dfd5252e] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 09:04:24,257 INFO  PDUSubmitSm:122 - [54] [96f6d4eb-5b76-4061-bd95-4b70dfd5252e] destinationAddr:380504718060
+2019-04-10 09:04:24,258 INFO  PDUSubmitSm:128 - [54] [96f6d4eb-5b76-4061-bd95-4b70dfd5252e] shortMessage:some teêñò
+2019-04-10 09:04:24,258 INFO  ClientSession:52 - [54] [96f6d4eb-5b76-4061-bd95-4b70dfd5252e] Waiting next command.
+2019-04-10 09:04:24,268 INFO  ClientSession:82 - [54] [96f6d4eb-5b76-4061-bd95-4b70dfd5252e] Incoming command_id is defined as UNBIND
+2019-04-10 09:04:24,269 INFO  ClientSession:84 - [54] [96f6d4eb-5b76-4061-bd95-4b70dfd5252e] This command is the final session. I close the connection with the client.
+2019-04-10 09:04:24,290 INFO  ClientSession:39 - Waiting next client
+2019-04-10 09:04:24,915 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 09:04:24,915 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 09:04:25,139 INFO  ClientSession:52 - [55] [a579f74e-424e-44c0-a891-dc1569d7e242] Waiting next command.
+2019-04-10 09:04:25,140 INFO  ClientSession:66 - [55] [a579f74e-424e-44c0-a891-dc1569d7e242] Incoming command_id is defined as TRANSMITTER
+2019-04-10 09:04:25,141 INFO  PDUTransmitter:55 - [55] [a579f74e-424e-44c0-a891-dc1569d7e242] systemId:tas2uadm
+2019-04-10 09:04:25,143 INFO  PDUTransmitter:80 - [55] [a579f74e-424e-44c0-a891-dc1569d7e242] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 09:04:25,144 INFO  ClientSession:52 - [55] [a579f74e-424e-44c0-a891-dc1569d7e242] Waiting next command.
+2019-04-10 09:04:25,154 INFO  ClientSession:74 - [55] [a579f74e-424e-44c0-a891-dc1569d7e242] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 09:04:25,155 INFO  ClientSession:52 - [55] [a579f74e-424e-44c0-a891-dc1569d7e242] Waiting next command.
+2019-04-10 09:04:25,155 INFO  ClientSession:78 - [55] [a579f74e-424e-44c0-a891-dc1569d7e242] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 09:04:25,156 INFO  PDUSubmitSm:122 - [55] [a579f74e-424e-44c0-a891-dc1569d7e242] destinationAddr:380504718060
+2019-04-10 09:04:25,156 INFO  PDUSubmitSm:128 - [55] [a579f74e-424e-44c0-a891-dc1569d7e242] shortMessage:some teêñò
+2019-04-10 09:04:25,157 INFO  ClientSession:52 - [55] [a579f74e-424e-44c0-a891-dc1569d7e242] Waiting next command.
+2019-04-10 09:04:25,164 INFO  ClientSession:82 - [55] [a579f74e-424e-44c0-a891-dc1569d7e242] Incoming command_id is defined as UNBIND
+2019-04-10 09:04:25,164 INFO  ClientSession:84 - [55] [a579f74e-424e-44c0-a891-dc1569d7e242] This command is the final session. I close the connection with the client.
+2019-04-10 09:04:25,190 INFO  ClientSession:39 - Waiting next client
+2019-04-10 09:04:25,655 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 09:04:25,656 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 09:04:25,963 INFO  ClientSession:52 - [56] [fa86a428-da04-49b4-b660-f364fb0483fd] Waiting next command.
+2019-04-10 09:04:25,964 INFO  ClientSession:66 - [56] [fa86a428-da04-49b4-b660-f364fb0483fd] Incoming command_id is defined as TRANSMITTER
+2019-04-10 09:04:25,965 INFO  PDUTransmitter:55 - [56] [fa86a428-da04-49b4-b660-f364fb0483fd] systemId:tas2uadm
+2019-04-10 09:04:25,967 INFO  PDUTransmitter:80 - [56] [fa86a428-da04-49b4-b660-f364fb0483fd] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 09:04:25,967 INFO  ClientSession:52 - [56] [fa86a428-da04-49b4-b660-f364fb0483fd] Waiting next command.
+2019-04-10 09:04:25,978 INFO  ClientSession:74 - [56] [fa86a428-da04-49b4-b660-f364fb0483fd] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 09:04:25,978 INFO  ClientSession:52 - [56] [fa86a428-da04-49b4-b660-f364fb0483fd] Waiting next command.
+2019-04-10 09:04:25,979 INFO  ClientSession:78 - [56] [fa86a428-da04-49b4-b660-f364fb0483fd] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 09:04:25,979 INFO  PDUSubmitSm:122 - [56] [fa86a428-da04-49b4-b660-f364fb0483fd] destinationAddr:380504718060
+2019-04-10 09:04:25,979 INFO  PDUSubmitSm:128 - [56] [fa86a428-da04-49b4-b660-f364fb0483fd] shortMessage:some teêñò
+2019-04-10 09:04:25,980 INFO  ClientSession:52 - [56] [fa86a428-da04-49b4-b660-f364fb0483fd] Waiting next command.
+2019-04-10 09:04:25,987 INFO  ClientSession:82 - [56] [fa86a428-da04-49b4-b660-f364fb0483fd] Incoming command_id is defined as UNBIND
+2019-04-10 09:04:25,987 INFO  ClientSession:84 - [56] [fa86a428-da04-49b4-b660-f364fb0483fd] This command is the final session. I close the connection with the client.
+2019-04-10 09:04:26,014 INFO  ClientSession:39 - Waiting next client
+2019-04-10 09:04:27,586 INFO  ClientSession:52 - [57] [fd945628-6743-40a3-bc49-9d4147677c5e] Waiting next command.
+2019-04-10 09:04:27,586 INFO  ClientSession:66 - [57] [fd945628-6743-40a3-bc49-9d4147677c5e] Incoming command_id is defined as TRANSMITTER
+2019-04-10 09:04:27,587 INFO  PDUTransmitter:55 - [57] [fd945628-6743-40a3-bc49-9d4147677c5e] systemId:tas2uadm
+2019-04-10 09:04:27,590 INFO  PDUTransmitter:80 - [57] [fd945628-6743-40a3-bc49-9d4147677c5e] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 09:04:27,590 INFO  ClientSession:52 - [57] [fd945628-6743-40a3-bc49-9d4147677c5e] Waiting next command.
+2019-04-10 09:04:27,600 INFO  ClientSession:74 - [57] [fd945628-6743-40a3-bc49-9d4147677c5e] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 09:04:27,601 INFO  ClientSession:52 - [57] [fd945628-6743-40a3-bc49-9d4147677c5e] Waiting next command.
+2019-04-10 09:04:27,601 INFO  ClientSession:78 - [57] [fd945628-6743-40a3-bc49-9d4147677c5e] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 09:04:27,601 INFO  PDUSubmitSm:122 - [57] [fd945628-6743-40a3-bc49-9d4147677c5e] destinationAddr:380504718060
+2019-04-10 09:04:27,602 INFO  PDUSubmitSm:128 - [57] [fd945628-6743-40a3-bc49-9d4147677c5e] shortMessage:some teêñò
+2019-04-10 09:04:27,602 INFO  ClientSession:52 - [57] [fd945628-6743-40a3-bc49-9d4147677c5e] Waiting next command.
+2019-04-10 09:04:27,608 INFO  ClientSession:82 - [57] [fd945628-6743-40a3-bc49-9d4147677c5e] Incoming command_id is defined as UNBIND
+2019-04-10 09:04:27,608 INFO  ClientSession:84 - [57] [fd945628-6743-40a3-bc49-9d4147677c5e] This command is the final session. I close the connection with the client.
+2019-04-10 09:04:27,637 INFO  ClientSession:39 - Waiting next client
+2019-04-10 09:04:28,152 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 09:04:28,153 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 09:04:28,814 INFO  ClientSession:52 - [58] [4d2216b1-66d8-4754-98c3-227b24b16b8d] Waiting next command.
+2019-04-10 09:04:28,815 INFO  ClientSession:66 - [58] [4d2216b1-66d8-4754-98c3-227b24b16b8d] Incoming command_id is defined as TRANSMITTER
+2019-04-10 09:04:28,816 INFO  PDUTransmitter:55 - [58] [4d2216b1-66d8-4754-98c3-227b24b16b8d] systemId:tas2uadm
+2019-04-10 09:04:28,818 INFO  PDUTransmitter:80 - [58] [4d2216b1-66d8-4754-98c3-227b24b16b8d] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 09:04:28,818 INFO  ClientSession:52 - [58] [4d2216b1-66d8-4754-98c3-227b24b16b8d] Waiting next command.
+2019-04-10 09:04:28,828 INFO  ClientSession:74 - [58] [4d2216b1-66d8-4754-98c3-227b24b16b8d] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 09:04:28,829 INFO  ClientSession:52 - [58] [4d2216b1-66d8-4754-98c3-227b24b16b8d] Waiting next command.
+2019-04-10 09:04:28,829 INFO  ClientSession:78 - [58] [4d2216b1-66d8-4754-98c3-227b24b16b8d] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 09:04:28,837 INFO  PDUSubmitSm:122 - [58] [4d2216b1-66d8-4754-98c3-227b24b16b8d] destinationAddr:380504718060
+2019-04-10 09:04:28,838 INFO  PDUSubmitSm:128 - [58] [4d2216b1-66d8-4754-98c3-227b24b16b8d] shortMessage:some teêñò
+2019-04-10 09:04:28,838 INFO  ClientSession:52 - [58] [4d2216b1-66d8-4754-98c3-227b24b16b8d] Waiting next command.
+2019-04-10 09:04:28,843 INFO  ClientSession:82 - [58] [4d2216b1-66d8-4754-98c3-227b24b16b8d] Incoming command_id is defined as UNBIND
+2019-04-10 09:04:28,843 INFO  ClientSession:84 - [58] [4d2216b1-66d8-4754-98c3-227b24b16b8d] This command is the final session. I close the connection with the client.
+2019-04-10 09:04:28,865 INFO  ClientSession:39 - Waiting next client
+2019-04-10 09:04:29,562 INFO  ClientSession:52 - [59] [497b375e-5c28-4b89-a0cc-084a4889cf3f] Waiting next command.
+2019-04-10 09:04:29,563 INFO  ClientSession:66 - [59] [497b375e-5c28-4b89-a0cc-084a4889cf3f] Incoming command_id is defined as TRANSMITTER
+2019-04-10 09:04:29,564 INFO  PDUTransmitter:55 - [59] [497b375e-5c28-4b89-a0cc-084a4889cf3f] systemId:tas2uadm
+2019-04-10 09:04:29,566 INFO  PDUTransmitter:80 - [59] [497b375e-5c28-4b89-a0cc-084a4889cf3f] Authorized user on param [TAS2U]: login [tas2uadm], alias [TAS2U]
+2019-04-10 09:04:29,567 INFO  ClientSession:52 - [59] [497b375e-5c28-4b89-a0cc-084a4889cf3f] Waiting next command.
+2019-04-10 09:04:29,576 INFO  ClientSession:74 - [59] [497b375e-5c28-4b89-a0cc-084a4889cf3f] Incoming command_id is defined as ENQUIRE_LINK
+2019-04-10 09:04:29,576 INFO  ClientSession:52 - [59] [497b375e-5c28-4b89-a0cc-084a4889cf3f] Waiting next command.
+2019-04-10 09:04:29,577 INFO  ClientSession:78 - [59] [497b375e-5c28-4b89-a0cc-084a4889cf3f] Incoming command_id is defined as SUBMIT_SM
+2019-04-10 09:04:29,578 INFO  PDUSubmitSm:122 - [59] [497b375e-5c28-4b89-a0cc-084a4889cf3f] destinationAddr:380504718060
+2019-04-10 09:04:29,578 INFO  PDUSubmitSm:128 - [59] [497b375e-5c28-4b89-a0cc-084a4889cf3f] shortMessage:some teêñò
+2019-04-10 09:04:29,578 INFO  ClientSession:52 - [59] [497b375e-5c28-4b89-a0cc-084a4889cf3f] Waiting next command.
+2019-04-10 09:04:29,585 INFO  ClientSession:82 - [59] [497b375e-5c28-4b89-a0cc-084a4889cf3f] Incoming command_id is defined as UNBIND
+2019-04-10 09:04:29,585 INFO  ClientSession:84 - [59] [497b375e-5c28-4b89-a0cc-084a4889cf3f] This command is the final session. I close the connection with the client.
+2019-04-10 09:04:29,613 INFO  ClientSession:39 - Waiting next client
+2019-04-10 09:04:42,712 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 09:04:42,713 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 09:04:43,388 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 09:04:43,388 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}
+2019-04-10 09:04:43,890 INFO  MessageConsumer:147 - Send body to URL[https://httpbin.org/post]:
+2019-04-10 09:04:43,890 INFO  MessageConsumer:148 - {"phone": "380504718060", "message": "some teêñò", "senderCode": "TAS2U"}

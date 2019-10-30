@@ -10,13 +10,16 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.ssl.SSLContexts;
 import org.apache.http.util.EntityUtils;
+//import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
 import org.dobrijzmej.smpp.config.Configuration;
 import org.dobrijzmej.smpp.config.Output;
 import org.dobrijzmej.smpp.log.Log;
-import org.slf4j.Logger;
+//import org.slf4j.Logger;
 
 import javax.net.ssl.SSLContext;
 import java.io.*;
+import java.net.URLEncoder;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.security.*;
@@ -110,7 +113,9 @@ public class MessageConsumer implements Runnable {
         String bodyRequest;
         bodyRequest = output.getMask()
                 .replace("${phone}", message.getPhone())
-                .replace("${text}", message.getMessage())
+//                .replace("${text}",  message.getMessage().replaceAll("[^\\p{L}\\p{Nd}\\s]+", "*"))
+//                .replace("${text}",  message.getMessage().replaceAll("[^\\x00-\\x09]+", "*").replace("\"", "\\\""))
+                .replace("${text}",  message.getMessage().replace("\"", "\\\""))
                 .replace("${alias}", message.getAlias());
 
         // підключаємо конфіг та читаємо налаштування сховища сертифікатів
@@ -138,6 +143,7 @@ public class MessageConsumer implements Runnable {
         // наповнюємо запит даними
         HttpPost post = new HttpPost(output.getUrl());
         post.setEntity(new StringEntity(bodyRequest, HTTP.UTF_8));
+//        post.setEntity(new StringEntity(bodyRequest));
         post.setHeader("Accept", "application/json");
         post.setHeader("Content-type", "application/json");
         // відправляємо на сервер
@@ -147,7 +153,7 @@ public class MessageConsumer implements Runnable {
         logger.info("Send body to URL["+output.getUrl()+"]:");
         logger.info(bodyRequest);
         // записуємо результат
-        logger.trace(responce.getStatusLine().toString());
-        logger.trace(EntityUtils.toString(responce.getEntity()));
+        logger.info(responce.getStatusLine().toString());
+        logger.info(EntityUtils.toString(responce.getEntity()));
     }
 }

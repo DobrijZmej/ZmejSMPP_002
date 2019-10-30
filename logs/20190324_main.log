@@ -1,0 +1,47 @@
+2019-03-24 12:53:22,408 INFO  org.dobrijzmej.smpp.ClientSession:25 - Server listener start on port 2775
+2019-03-24 12:53:57,457 INFO  org.dobrijzmej.smpp.ClientSession:25 - Server listener start on port 2775
+2019-03-24 12:54:58,353 INFO  org.dobrijzmej.smpp.ClientSession:25 - Server listener start on port 2775
+2019-03-24 16:30:24,694 INFO  ClientSession:29 - Server listener start on port 1
+2019-03-24 16:45:04,956 INFO  ClientSession:29 - Server listener start on port 1
+2019-03-24 16:45:40,174 INFO  ClientSession:29 - Server listener start on port 1
+2019-03-24 16:45:59,412 INFO  ClientSession:29 - Server listener start on port 1
+2019-03-24 16:47:07,108 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 16:49:13,542 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 18:12:25,653 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 18:28:42,599 ERROR ClientSession:20 - MAIN EXCEPTION
+java.net.BindException: Address already in use: NET_Bind
+	at java.base/java.net.PlainSocketImpl.bind0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketBind(PlainSocketImpl.java:132)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:381)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:243)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:135)
+	at org.dobrijzmej.smpp.MessageProducer.<init>(MessageProducer.java:28)
+	at org.dobrijzmej.smpp.Listener.<init>(Listener.java:23)
+	at org.dobrijzmej.smpp.ZmejSMPP.main(ZmejSMPP.java:17)
+2019-03-24 18:29:01,345 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 18:32:22,148 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 18:33:40,149 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 18:33:54,864 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 18:35:14,327 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 18:45:01,467 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 19:14:12,570 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 19:14:45,533 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 19:15:35,618 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 19:18:44,646 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 19:20:12,066 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 19:21:34,797 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 19:26:29,106 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 19:39:38,246 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 20:16:34,941 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 20:24:54,991 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 20:27:12,012 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 20:42:46,169 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 21:04:17,975 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 21:20:13,327 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 21:21:01,169 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 21:21:23,864 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 21:23:25,228 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 21:35:57,128 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 21:36:43,711 INFO  ClientSession:29 - Server listener start on port 2775
+2019-03-24 21:37:10,445 INFO  ClientSession:29 - Server listener start on port 2775

@@ -1,9 +1,11 @@
 package org.dobrijzmej.smpp;
 
+//import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
 import org.dobrijzmej.smpp.config.Configuration;
 import org.dobrijzmej.smpp.config.User;
 import org.dobrijzmej.smpp.log.Log;
-import org.slf4j.Logger;
+//import org.slf4j.Logger;
 import org.dobrijzmej.smpp.pdu.*;
 
 import java.io.IOException;
@@ -49,7 +51,7 @@ public class ClientSession implements Runnable {
         //public void process() throws InterruptedException {
         boolean isProcessed = true;
         while (isProcessed) {
-            logger.info(labelPrefix + "Waiting next command.");
+            logger.debug(labelPrefix + "Waiting next command.");
             try {
                 byte[] buffer = readData(labelPrefix);
                 if (buffer == null || buffer.length <= 0) {
@@ -59,33 +61,33 @@ public class ClientSession implements Runnable {
                 pdu.init();
                 switch (pdu.getCommandId()) {
                     case (BIND_RECEIVER):
-                        logger.info(labelPrefix + "Incoming command_id is defined as RECEIVER");
+                        logger.debug(labelPrefix + "Incoming command_id is defined as RECEIVER");
                         processReceiver(buffer, labelPrefix);
                         break;
                     case (BIND_TRANSMITTER):
-                        logger.info(labelPrefix + "Incoming command_id is defined as TRANSMITTER");
+                        logger.debug(labelPrefix + "Incoming command_id is defined as TRANSMITTER");
                         processTransmitter(buffer, labelPrefix);
                         break;
                     case (BIND_TRANSCEIVER):
-                        logger.info(labelPrefix + "Incoming command_id is defined as TRANSCEIVER");
+                        logger.debug(labelPrefix + "Incoming command_id is defined as TRANSCEIVER");
                         processTransciver(buffer, labelPrefix);
                         break;
                     case (ENQUIRE_LINK):
-                        logger.info(labelPrefix + "Incoming command_id is defined as ENQUIRE_LINK");
+                        logger.debug(labelPrefix + "Incoming command_id is defined as ENQUIRE_LINK");
                         processEnquire(buffer, pdu, labelPrefix);
                         break;
                     case (SUBMIT_SM):
-                        logger.info(labelPrefix + "Incoming command_id is defined as SUBMIT_SM");
+                        logger.debug(labelPrefix + "Incoming command_id is defined as SUBMIT_SM");
                         processSubmitSm(buffer, labelPrefix);
                         break;
                     case (UNBIND):
-                        logger.info(labelPrefix + "Incoming command_id is defined as UNBIND");
+                        logger.debug(labelPrefix + "Incoming command_id is defined as UNBIND");
                         processUnbind(buffer, pdu, labelPrefix);
-                        logger.info(labelPrefix + "This command is the final session. I close the connection with the client.");
+                        logger.debug(labelPrefix + "This command is the final session. I close the connection with the client.");
                         isProcessed = false;
                         break;
                     case (DATA_SM):
-                        logger.info(labelPrefix + "Incoming command_id is defined as DATA_SM");
+                        logger.debug(labelPrefix + "Incoming command_id is defined as DATA_SM");
                         processDataSm(buffer);
                         break;
                     default:
@@ -242,6 +244,9 @@ public class ClientSession implements Runnable {
             int stremBytesLoad = clientChannel.getInputStream().read(packSize);
             if (stremBytesLoad > -1) {
                 int packSizeInt = ByteBuffer.wrap(packSize, 0, 4).getInt() - 4;
+                if(packSizeInt > (100*1024)){
+                    throw new RuntimeException("Error packet size! Bigger of 100 kBytes!");
+                }
                 logger.debug(labelPrefix + "Wait next " + packSizeInt + " bytes...");
                 byte[] bufferStream = new byte[packSizeInt];
                 stremBytesLoad = clientChannel.getInputStream().read(bufferStream);

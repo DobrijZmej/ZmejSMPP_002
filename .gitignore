@@ -4,3 +4,4 @@ log_file.org.dobrijzmej.smpp.log
 target/
 *.iml
 .logs/
+logs/

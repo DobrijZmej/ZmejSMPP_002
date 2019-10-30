@@ -1,8 +1,10 @@
 package org.dobrijzmej.smpp.config;
 
+//import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
 import org.dobrijzmej.smpp.log.Log;
 import org.dobrijzmej.smpp.ClientSession;
-import org.slf4j.Logger;
+//import org.slf4j.Logger;
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.constructor.Constructor;
 

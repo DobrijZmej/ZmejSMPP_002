@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="error">
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <!--PatternLayout-->
+        <PatternLayout pattern="%p|[%t]|%C{2}|%F:%L:%M|%m%n"/>
+        <!--MarkerPatternSelector defaultPattern="%sn. %msg: Logger5=%logger%n">
+          <PatternMatch key="CLASS" pattern="%sn. %msg: Class2=%class%n"/>
+        </MarkerPatternSelector-->
+      <!--/PatternLayout-->
+    </Console>
+    <http name="logstash" url="http://172.17.0.132:5045" method="POST">
+        <Property name="x-java-runtime" value="$${java:runtime}" />
+        <!--JsonLayout properties="true"/-->
+        <!--PatternLayout pattern="%-5p | %d{yyyy-MM-dd HH:mm:ss} | [%t] %C{2} (%F:%L) - %m%n"/-->
+        <PatternLayout pattern="%p|[%t]|%C{2}|%F:%L:%M|%m%n"/>
+    </http>
+    <Async name="Async">
+      <AppenderRef ref="logstash"/>
+    </Async>
+  </Appenders>
+  <Loggers>
+    <Root level="INFO">
+      <AppenderRef ref="Console" />
+      <!--AppenderRef ref="logstash" /-->
+      <AppenderRef ref="Async" />
+    </Root>
+  </Loggers>
+</Configuration>
